@@ -24,9 +24,9 @@ Global="*uid://cmr78knoo7vyy"
 [display]
 
 window/size/viewport_width=960
-window/size/viewport_height=540
+window/size/viewport_height=680
 window/size/window_width_override=960
-window/size/window_height_override=540
+window/size/window_height_override=680
 
 [physics]
 

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://wtpsan6b8r5g"]
+
+[ext_resource type="Script" uid="uid://cero17deafd3u" path="res://Scenes/flower_interface.gd" id="1_efdvc"]
+[ext_resource type="PackedScene" uid="uid://b6na3rf6infyf" path="res://Scenes/flower_button.tscn" id="2_efdvc"]
+[ext_resource type="Texture2D" uid="uid://df4ybo0h1bjm" path="res://sprites/test/test-hd-flower-1-sm.png" id="4_mvhdn"]
+[ext_resource type="Texture2D" uid="uid://bu1klplb2qg32" path="res://sprites/test/tset-hd-flower-2-sm.png" id="4_rjigq"]
+[ext_resource type="Texture2D" uid="uid://bxlrnw58k2ev7" path="res://sprites/test/test-hd-flower-3-sm.png" id="5_qavux"]
+[ext_resource type="Script" uid="uid://52gaifsxknen" path="res://Scenes/flower_area.gd" id="5_umdps"]
+
+[node name="FlowerInterface" type="Control" unique_id=1353149384 groups=["flower_interface"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_efdvc")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1707753638]
+layout_mode = 1
+offset_right = 347.0
+offset_bottom = 214.0
+
+[node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("4_mvhdn")
+
+[node name="FlowerButton2" parent="HBoxContainer" unique_id=289216086 instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("4_rjigq")
+
+[node name="FlowerButton3" parent="HBoxContainer" unique_id=842116920 instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("5_qavux")
+
+[node name="FlowerArea" type="ColorRect" parent="." unique_id=476108949]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 353.0
+offset_right = 624.0
+offset_bottom = 543.0
+color = Color(0.2509804, 0.6039216, 0.78039217, 1)
+script = ExtResource("5_umdps")
+
+[node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
+position = Vector2(-1, 90)
+offset = Vector2(1, -90)

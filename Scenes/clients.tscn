@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://by84a87h0dg7t"]
+
+[ext_resource type="Script" uid="uid://ddsdtq6fcbia0" path="res://Scripts/clientDisplay.gd" id="1_sg7oy"]
+
+[node name="ClientDisplay" type="Node2D" unique_id=451460495]
+script = ExtResource("1_sg7oy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=304729940]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1663414359]
+offset_left = -21.0
+offset_top = 134.0
+offset_right = 1899.0
+offset_bottom = 1214.0
+scale = Vector2(0.28359374, 0.30004796)
+expand_mode = 2
+stretch_mode = 3

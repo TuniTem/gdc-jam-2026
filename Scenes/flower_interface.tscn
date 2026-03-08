@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cero17deafd3u" path="res://Scenes/flower_interface.gd" id="1_efdvc"]
 [ext_resource type="PackedScene" uid="uid://b6na3rf6infyf" path="res://Scenes/flower_button.tscn" id="2_efdvc"]
-[ext_resource type="Texture2D" uid="uid://bfpnjysqukf8a" path="res://sprites/test/test-flower-2.png" id="2_smpir"]
-[ext_resource type="Texture2D" uid="uid://bh5lqgfhim3u5" path="res://sprites/test/test-flower-3.png" id="3_efdvc"]
+[ext_resource type="Texture2D" uid="uid://df4ybo0h1bjm" path="res://sprites/test/test-hd-flower-1-sm.png" id="4_mvhdn"]
 [ext_resource type="Script" uid="uid://52gaifsxknen" path="res://Scenes/flower_area.gd" id="5_umdps"]
 
 [node name="FlowerInterface" type="Control" unique_id=1353149384]
@@ -17,21 +16,20 @@ script = ExtResource("1_efdvc")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1707753638]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 128.0
-grow_horizontal = 2
+offset_right = 347.0
+offset_bottom = 214.0
 
 [node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 instance=ExtResource("2_efdvc")]
 layout_mode = 2
+texture_normal = ExtResource("4_mvhdn")
 
 [node name="FlowerButton2" parent="HBoxContainer" unique_id=289216086 instance=ExtResource("2_efdvc")]
 layout_mode = 2
-texture_normal = ExtResource("2_smpir")
+texture_normal = ExtResource("4_mvhdn")
 
 [node name="FlowerButton3" parent="HBoxContainer" unique_id=842116920 instance=ExtResource("2_efdvc")]
 layout_mode = 2
-texture_normal = ExtResource("3_efdvc")
+texture_normal = ExtResource("4_mvhdn")
 
 [node name="FlowerArea" type="ColorRect" parent="." unique_id=476108949]
 layout_mode = 0
@@ -42,4 +40,6 @@ offset_bottom = 543.0
 color = Color(0.2509804, 0.6039216, 0.78039217, 1)
 script = ExtResource("5_umdps")
 
-[node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166]
+[node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
+position = Vector2(-1, 90)
+offset = Vector2(1, -90)

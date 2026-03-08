@@ -1,0 +1,11 @@
+[gd_resource type="Resource" format=3 uid="uid://dvgwdgjb7p0cv"]
+
+[ext_resource type="Texture2D" uid="uid://bhnp6u8i6afft" path="res://sprites/test/purple-flower-test.png" id="1_kjw8l"]
+[ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_n7kr8"]
+[ext_resource type="Texture2D" uid="uid://df4ybo0h1bjm" path="res://sprites/test/test-hd-flower-1-sm.png" id="3_tos27"]
+
+[resource]
+script = ExtResource("2_n7kr8")
+flower_name = "Purple"
+side_texture = ExtResource("3_tos27")
+flower_texture = ExtResource("1_kjw8l")

@@ -16,6 +16,9 @@ func _process(delta):
 	if Input.is_action_pressed("rotate_left"):
 		$SelectedFlower.rotate(-1.0 * delta)
 
+func reset_flower_rotation():
+	$SelectedFlower.rotation = 0
+
 func deselect_flower():
 	$SelectedFlower.texture = null
 	Globals.selected_flower = null

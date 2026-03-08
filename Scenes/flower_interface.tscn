@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://wtpsan6b8r5g"]
 
-[ext_resource type="Texture2D" uid="uid://c04ugrhxcjb5g" path="res://sprites/test/bad-placeholder-human.png" id="1_rbol4"]
+[ext_resource type="Script" uid="uid://cero17deafd3u" path="res://Scenes/flower_interface.gd" id="1_efdvc"]
+[ext_resource type="PackedScene" uid="uid://b6na3rf6infyf" path="res://Scenes/flower_button.tscn" id="2_efdvc"]
+[ext_resource type="Texture2D" uid="uid://bfpnjysqukf8a" path="res://sprites/test/test-flower-2.png" id="2_smpir"]
+[ext_resource type="Texture2D" uid="uid://bh5lqgfhim3u5" path="res://sprites/test/test-flower-3.png" id="3_efdvc"]
+[ext_resource type="Script" uid="uid://52gaifsxknen" path="res://Scenes/flower_area.gd" id="5_umdps"]
 
 [node name="FlowerInterface" type="Control" unique_id=1353149384]
 layout_mode = 3
@@ -9,8 +13,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_efdvc")
 
-[node name="BadPlaceholderHuman" type="Sprite2D" parent="." unique_id=1562824637]
-position = Vector2(666, 467)
-scale = Vector2(0.2222222, 0.22222222)
-texture = ExtResource("1_rbol4")
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1707753638]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 128.0
+grow_horizontal = 2
+
+[node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 instance=ExtResource("2_efdvc")]
+layout_mode = 2
+
+[node name="FlowerButton2" parent="HBoxContainer" unique_id=289216086 instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("2_smpir")
+
+[node name="FlowerButton3" parent="HBoxContainer" unique_id=842116920 instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("3_efdvc")
+
+[node name="FlowerArea" type="ColorRect" parent="." unique_id=476108949]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 353.0
+offset_right = 624.0
+offset_bottom = 543.0
+color = Color(0.2509804, 0.6039216, 0.78039217, 1)
+script = ExtResource("5_umdps")
+
+[node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166]

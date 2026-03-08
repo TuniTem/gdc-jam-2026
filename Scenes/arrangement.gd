@@ -1,8 +1,12 @@
 extends Node2D
 
-const PUSH_AMMOUNT = 200.0
-const CENTER_PULL = 4.0
-const DRAG = 40000.0
+const STEM_PULL_AMOUNT = 50.0
+const START_STEM_PULL_RADIUS = 40.0
+const STEM_LINE_WIDTH = 5.0
+
+const PUSH_AMMOUNT = 300.0
+const CENTER_PULL = 1.0
+const DRAG = 50000.0
 const FLOWER_SCENE = preload("uid://b3ikl4lshquqx")
 
 var placing_flower : Flower
@@ -15,9 +19,11 @@ var velocity : Dictionary[Flower, Vector2]
 		#velocity[key] = Vector2.ZERO
 
 func _process(delta: float) -> void:
+	queue_redraw()
 	sim_flowers(delta)
 	if placing_flower != null:
 		placing_flower.position = get_local_mouse_position()
+		placing_flower.stem_pos = placing_flower.position
 		
 		
 
@@ -45,9 +51,20 @@ func sim_flowers(delta):
 			if direction.length() > flower_affector.radius: continue
 			
 			accel += direction * PUSH_AMMOUNT
+			
 		var center_dir : Vector2 = -flower.position
-		accel += center_dir  * CENTER_PULL
-		#print(accel)
+		var stem_dir : Vector2 = flower.position - flower.stem_pos
+		
+		accel += center_dir * CENTER_PULL
+		
+		if stem_dir.length() > START_STEM_PULL_RADIUS:
+			accel += -stem_dir * STEM_PULL_AMOUNT
+		
 		velocity[flower] += accel * delta
 		velocity[flower] = lerp(velocity[flower], Vector2.ZERO, DRAG * delta * 0.001)
 		flower.move(velocity[flower] * delta, delta)
+
+func _draw() -> void:
+	for flower : Flower in flowers:
+		draw_circle(flower.stem_pos, STEM_LINE_WIDTH/2.0, Color(0.245, 0.51, 0.245, 1.0))
+		draw_line(flower.position, flower.stem_pos, Color(0.245, 0.51, 0.245, 1.0), STEM_LINE_WIDTH, true)

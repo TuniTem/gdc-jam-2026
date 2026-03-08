@@ -6,4 +6,3 @@
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_jjgbg")]
 position = Vector2(596, 305)
-scale = Vector2(0.61, 0.61)

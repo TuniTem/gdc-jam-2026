@@ -7,6 +7,8 @@
 script = ExtResource("1_s3cv5")
 
 [node name="PlaceholderFlower1" type="Sprite2D" parent="." unique_id=236899674]
-position = Vector2(64, 30)
-scale = Vector2(0.5185185, 0.5185185)
+position = Vector2(19, 9.999999)
+scale = Vector2(0.16111112, 0.16111112)
 texture = ExtResource("2_4r3j5")
+
+[node name="DrawRef" type="Node2D" parent="." unique_id=870776517]

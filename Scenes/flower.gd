@@ -7,3 +7,6 @@ var radius : float = 200.0
 func move(amount : Vector2, delta : float):
 	if amount.length() > MIN_MOVE * delta:
 		position += amount
+
+func set_texture(texture):
+	$PlaceholderFlower1.texture = texture

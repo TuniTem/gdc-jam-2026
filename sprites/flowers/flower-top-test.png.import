@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6rqsjbtrlmma"
-path="res://.godot/imported/flower-top-test.png-a85f2cfb57a875526343885d0aa6c0a3.ctex"
+uid="uid://c2l0jdkl40kvx"
+path="res://.godot/imported/flower-top-test.png-dd2e15c67fb486acf008df1c9d67cbaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/test/flower-top-test.png"
-dest_files=["res://.godot/imported/flower-top-test.png-a85f2cfb57a875526343885d0aa6c0a3.ctex"]
+source_file="res://sprites/flowers/flower-top-test.png"
+dest_files=["res://.godot/imported/flower-top-test.png-dd2e15c67fb486acf008df1c9d67cbaf.ctex"]
 
 [params]
 

@@ -1,12 +1,10 @@
-[gd_scene format=3 uid="uid://b3ikl4lshquqx"]
+[gd_scene format=3 uid="uid://02qdxs2412io"]
 
 [ext_resource type="Script" uid="uid://c4vklw7ljk0og" path="res://Scenes/flower.gd" id="1_s3cv5"]
-[ext_resource type="Texture2D" uid="uid://3hc2m75s3wom" path="res://Placeholder-flower-1.png" id="2_4r3j5"]
+[ext_resource type="Texture2D" uid="uid://c2l0jdkl40kvx" path="res://sprites/flowers/flower-top-test.png" id="2_4r3j5"]
 
 [node name="Flower" type="Node2D" unique_id=982848793]
 script = ExtResource("1_s3cv5")
 
 [node name="PlaceholderFlower1" type="Sprite2D" parent="." unique_id=236899674]
-position = Vector2(64, 30)
-scale = Vector2(0.5185185, 0.5185185)
 texture = ExtResource("2_4r3j5")

@@ -21,6 +21,13 @@ File="*uid://b0e8v2udjivdw"
 Util="*uid://dhqqejsdf4hqa"
 Global="*uid://cmr78knoo7vyy"
 
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/size/window_width_override=960
+window/size/window_height_override=540
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -28,3 +35,5 @@ Global="*uid://cmr78knoo7vyy"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

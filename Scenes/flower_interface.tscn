@@ -43,5 +43,4 @@ flower_res = ExtResource("8_qavux")
 
 [node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
 modulate = Color(1, 1, 1, 0.58431375)
-position = Vector2(-1, 90)
 offset = Vector2(1, -90)

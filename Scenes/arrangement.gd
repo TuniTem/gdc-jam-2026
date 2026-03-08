@@ -14,6 +14,7 @@ var placing_flower : Flower
 var flowers : Array[Flower]
 var velocity : Dictionary[Flower, Vector2]
 
+@export var use_placeholder_flower = false
 
 #func _ready() -> void:
 	#for key : Flower in flowers:
@@ -35,7 +36,8 @@ func is_hovering_over_flower_button():
 	return false
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("pick_flower") and Globals.selected_flower != null and !is_hovering_over_flower_button():
+	var can_place_flower = use_placeholder_flower or (Globals.selected_flower != null and !is_hovering_over_flower_button())
+	if event.is_action_pressed("pick_flower") and can_place_flower:
 		var inst : Flower = FLOWER_SCENE.instantiate()
 		inst.position = get_local_mouse_position()
 		placing_flower = inst
@@ -43,12 +45,14 @@ func _input(event: InputEvent) -> void:
 		velocity[inst] = Vector2.ZERO
 		flowers.append(inst)
 		add_child(inst)
-		inst.set_texture(Globals.selected_flower_res.flower_texture)
+		if not use_placeholder_flower:
+			inst.set_texture(Globals.selected_flower_res.flower_texture)
 	
-	if event.is_action_released("pick_flower") and Globals.selected_flower != null and !is_hovering_over_flower_button():
+	if event.is_action_released("pick_flower") and can_place_flower:
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
-		
+		if not use_placeholder_flower:
+			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
 
 func sim_flowers(delta):
 	for flower : Flower in flowers:

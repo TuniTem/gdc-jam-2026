@@ -6,10 +6,6 @@ func _process(delta):
 		$SelectedFlower.position = get_local_mouse_position()
 	if Input.is_action_just_pressed("mouse_right") and Globals.selected_flower != null:
 		deselect_flower()
-	if Input.is_action_just_pressed("mouse_left") and Globals.selected_flower != null:
-		pass
-		#if not $FlowerArea.mouse_inside_area():
-			#deselect_flower()
 	if Input.is_action_just_pressed("cancel") and Globals.selected_flower != null:
 		deselect_flower()
 	if Input.is_action_pressed("rotate_right"):

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://crbyo7nyt16dv"]
+
+[ext_resource type="Script" uid="uid://dkqx5wcjmas72" path="res://Scenes/side_bouquet.gd" id="1_nx1lt"]
+[ext_resource type="Texture2D" uid="uid://b8udq4oujino4" path="res://sprites/flowers/test-hd-flower-1-sm.png" id="2_gvg3v"]
+
+[node name="SideBouquet" type="Control" unique_id=381334461 groups=["side_bouquet"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1468.0
+offset_bottom = -926.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nx1lt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1351622514]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6848602, 0.6163695, 0.31834266, 1)
+
+[node name="Flowers" type="Node2D" parent="." unique_id=515002604]
+
+[node name="Pivot" type="Marker2D" parent="." unique_id=1851309414]
+position = Vector2(221, 241)
+
+[node name="RefImage" type="Sprite2D" parent="." unique_id=616298233]
+position = Vector2(1, 69)
+rotation = -0.3298672
+texture = ExtResource("2_gvg3v")
+offset = Vector2(-1, -69)

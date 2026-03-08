@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
+[ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -21,6 +22,14 @@ offset_bottom = 1031.0
 texture = ExtResource("2_cw6xy")
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_33o2s")]
+use_placeholder_flower = false
 
 [node name="FlowerInterface" parent="." unique_id=1353149384 instance=ExtResource("3_ay4m0")]
 layout_mode = 1
+
+[node name="SideBouquet" parent="." unique_id=381334461 instance=ExtResource("4_j13ie")]
+layout_mode = 1
+offset_left = 9.0
+offset_top = 919.0
+offset_right = -1423.0
+offset_bottom = -7.0

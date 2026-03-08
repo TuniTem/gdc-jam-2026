@@ -16,4 +16,6 @@ func move(amount : Vector2, delta : float):
 		position += amount
 		var stem_direction : Vector2 = position - stem_pos
 		position = stem_pos + (clamp(stem_direction.length(), 0.0, MAX_STEM_DIST) * stem_direction.normalized())
-		
+
+func set_texture(texture):
+	$PlaceholderFlower1.texture = texture

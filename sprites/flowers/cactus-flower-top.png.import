@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxlrnw58k2ev7"
-path="res://.godot/imported/test-hd-flower-3-sm.png-06ec82b6021acb26f0e45b49be0d4d57.ctex"
+uid="uid://4ehi0la7smdk"
+path="res://.godot/imported/cactus-flower-top.png-eac2c3ddf2a78165f642c11215f9f50d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/test/test-hd-flower-3-sm.png"
-dest_files=["res://.godot/imported/test-hd-flower-3-sm.png-06ec82b6021acb26f0e45b49be0d4d57.ctex"]
+source_file="res://sprites/flowers/cactus-flower-top.png"
+dest_files=["res://.godot/imported/cactus-flower-top.png-eac2c3ddf2a78165f642c11215f9f50d.ctex"]
 
 [params]
 

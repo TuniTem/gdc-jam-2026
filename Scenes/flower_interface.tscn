@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://cero17deafd3u" path="res://Scenes/flower_interface.gd" id="1_efdvc"]
 [ext_resource type="PackedScene" uid="uid://b6na3rf6infyf" path="res://Scenes/flower_button.tscn" id="2_efdvc"]
-[ext_resource type="Texture2D" uid="uid://df4ybo0h1bjm" path="res://sprites/test/test-hd-flower-1-sm.png" id="4_mvhdn"]
-[ext_resource type="Texture2D" uid="uid://bu1klplb2qg32" path="res://sprites/test/tset-hd-flower-2-sm.png" id="4_rjigq"]
-[ext_resource type="Texture2D" uid="uid://bxlrnw58k2ev7" path="res://sprites/test/test-hd-flower-3-sm.png" id="5_qavux"]
-[ext_resource type="Script" uid="uid://52gaifsxknen" path="res://Scenes/flower_area.gd" id="5_umdps"]
+[ext_resource type="Texture2D" uid="uid://b8udq4oujino4" path="res://sprites/flowers/test-hd-flower-1-sm.png" id="4_mvhdn"]
+[ext_resource type="Resource" uid="uid://dvgwdgjb7p0cv" path="res://resources/PurpleFlower.tres" id="4_qavux"]
+[ext_resource type="Texture2D" uid="uid://dwn38fhmf6gjw" path="res://sprites/flowers/tset-hd-flower-2-sm.png" id="4_rjigq"]
+[ext_resource type="Texture2D" uid="uid://c6ofnc7121kjl" path="res://sprites/flowers/test-hd-flower-3-sm.png" id="5_qavux"]
+[ext_resource type="Resource" uid="uid://wyt213g0waht" path="res://resources/AquaFlower.tres" id="6_rjigq"]
+[ext_resource type="Resource" uid="uid://dc3rfr2e3r84a" path="res://resources/CactusFlower.tres" id="8_qavux"]
 
 [node name="FlowerInterface" type="Control" unique_id=1353149384 groups=["flower_interface"]]
 layout_mode = 3
@@ -18,30 +20,28 @@ script = ExtResource("1_efdvc")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1707753638]
 layout_mode = 1
-offset_right = 347.0
-offset_bottom = 214.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 248.0
+grow_horizontal = 2
+alignment = 1
 
-[node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 instance=ExtResource("2_efdvc")]
+[node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("4_mvhdn")
+flower_res = ExtResource("4_qavux")
 
-[node name="FlowerButton2" parent="HBoxContainer" unique_id=289216086 instance=ExtResource("2_efdvc")]
+[node name="FlowerButton2" parent="HBoxContainer" unique_id=289216086 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("4_rjigq")
+flower_res = ExtResource("6_rjigq")
 
-[node name="FlowerButton3" parent="HBoxContainer" unique_id=842116920 instance=ExtResource("2_efdvc")]
+[node name="FlowerButton3" parent="HBoxContainer" unique_id=842116920 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("5_qavux")
-
-[node name="FlowerArea" type="ColorRect" parent="." unique_id=476108949]
-layout_mode = 0
-offset_left = 380.0
-offset_top = 353.0
-offset_right = 624.0
-offset_bottom = 543.0
-color = Color(0.2509804, 0.6039216, 0.78039217, 1)
-script = ExtResource("5_umdps")
+flower_res = ExtResource("8_qavux")
 
 [node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
+modulate = Color(1, 1, 1, 0.58431375)
 position = Vector2(-1, 90)
 offset = Vector2(1, -90)

@@ -5,4 +5,9 @@
 [node name="Main" type="Node2D" unique_id=1734753262]
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_jjgbg")]
+z_index = -1
 position = Vector2(636, 381)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1369886114]
+offset_right = 40.0
+offset_bottom = 40.0

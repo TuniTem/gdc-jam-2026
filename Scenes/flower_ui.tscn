@@ -2,8 +2,25 @@
 
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
-[ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
-[ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
+[ext_resource type="PackedScene" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
+[ext_resource type="PackedScene" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
+[ext_resource type="Shader" uid="uid://62xlkto7iux7" path="res://Scenes/squiggle.gdshader" id="5_ibd2s"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_fg743"]
+frequency = 0.0024
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_u4bsn"]
+width = 1024
+height = 1024
+noise = SubResource("FastNoiseLite_fg743")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g6g17"]
+shader = ExtResource("5_ibd2s")
+shader_parameter/scale = Vector2(4, 4)
+shader_parameter/strength = 0.3
+shader_parameter/fps = 2.0
+shader_parameter/noise = SubResource("NoiseTexture2D_u4bsn")
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -22,7 +39,6 @@ offset_bottom = 1031.0
 texture = ExtResource("2_cw6xy")
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_33o2s")]
-use_placeholder_flower = false
 
 [node name="FlowerInterface" parent="." unique_id=1353149384 instance=ExtResource("3_ay4m0")]
 layout_mode = 1
@@ -33,3 +49,12 @@ offset_left = 9.0
 offset_top = 919.0
 offset_right = -1423.0
 offset_bottom = -7.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=433500363]
+material = SubResource("ShaderMaterial_g6g17")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

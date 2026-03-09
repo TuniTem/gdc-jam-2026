@@ -3,5 +3,10 @@ extends Node
 enum FlowerType {
 	FOCAL,
 	FOLIAGE,
-	FILLTER
+	FILLTER,
+	UNUSED
+}
+
+enum SpecialType {
+	NONE,
 }

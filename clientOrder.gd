@@ -5,3 +5,4 @@ extends Resource
 @export var intro_line: String = ""
 @export var portrait: Texture2D = null
 @export var flowers: Dictionary[String, int] = {}
+@export var budget: int = 0

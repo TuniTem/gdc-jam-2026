@@ -18,6 +18,7 @@ func _process(delta: float) -> void:
 	bouquet = Globals.get_current_arrangement_flower_resources()
 	_set_bouquet_cost()
 	_set_total_value()
+	$CanvasLayer/BudgetAmt.text = "$" + str(Globals.characters[Globals.current_character].budget)
 	
 func _set_bouquet_cost() -> void:
 	var total = 0

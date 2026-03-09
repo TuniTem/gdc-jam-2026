@@ -5,3 +5,5 @@ func _on_give_button_pressed():
 	$ClientDisplay._display_current_client()
 	$FlowerUI/Arrangement.clear_flowers()
 	$FlowerUI/SideBouquet.clear_flowers()
+	# TODO: add money for boquet order amount + bonus
+	$FlowerUI.add_money(1)

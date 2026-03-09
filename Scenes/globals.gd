@@ -10,6 +10,10 @@ var flower_center_pos = Vector2(1329, 737)
 var unlocks : Array[Entry]
 var book : Control
 var money: int = 0
+var bouquet_cost: int = 0
+var customer_budjet: int = 0
+var total_value: int = 0
+var popularity: int = 0
 
 func unlock_entry(id : String):
 	for unlock in unlocks:

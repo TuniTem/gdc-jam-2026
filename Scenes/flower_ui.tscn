@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
-[ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="9_b0ouy"]
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -38,6 +37,3 @@ offset_bottom = -454.0
 
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
 position = Vector2(1329, 737)
-
-[node name="Book" parent="." unique_id=698370101 instance=ExtResource("9_b0ouy")]
-layout_mode = 1

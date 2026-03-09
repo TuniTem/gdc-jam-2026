@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b3yu8csaby48v"]
 
 [ext_resource type="Script" uid="uid://6kl1ncysxdnk" path="res://Scenes/main.gd" id="1_kry3j"]
+[ext_resource type="PackedScene" uid="uid://djqpks35m5hxi" path="res://Scenes/money.tscn" id="2_21xkr"]
 [ext_resource type="PackedScene" uid="uid://xq8e2gga6a3x" path="res://Scenes/clients.tscn" id="2_bo1nx"]
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
@@ -14,6 +15,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kry3j")
+
+[node name="Money" parent="." unique_id=513718061 instance=ExtResource("2_21xkr")]
 
 [node name="FlowerUI" parent="." unique_id=1189810247 instance=ExtResource("4_jjvhh")]
 custom_minimum_size = Vector2(1920, 1280)
@@ -35,7 +38,6 @@ theme_override_font_sizes/font_size = 48
 text = "Give Flowers"
 
 [node name="Book" parent="." unique_id=698370101 instance=ExtResource("5_kry3j")]
-visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]

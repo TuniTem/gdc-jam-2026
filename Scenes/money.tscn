@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://djqpks35m5hxi"]
 
+[ext_resource type="Script" uid="uid://b56vhndoinsqk" path="res://Scenes/money.gd" id="1_63yw1"]
 [ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="1_no3si"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_63yw1"]
@@ -23,8 +24,10 @@ font = ExtResource("1_no3si")
 font_size = 47
 
 [node name="Money" type="Node2D" unique_id=513718061]
+script = ExtResource("1_63yw1")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1214180943]
+layer = 2
 
 [node name="PopularityLabel" type="Label" parent="CanvasLayer" unique_id=1124719780]
 offset_left = 633.0
@@ -35,6 +38,7 @@ text = "Popularity:"
 label_settings = SubResource("LabelSettings_63yw1")
 
 [node name="MoneyLabel" type="Label" parent="CanvasLayer" unique_id=1901653256]
+unique_name_in_owner = true
 offset_left = 1581.0
 offset_top = 9.0
 offset_right = 1734.0

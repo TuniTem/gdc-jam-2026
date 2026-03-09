@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d68sg0l48obt"]
 
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
+[ext_resource type="Script" uid="uid://dn3c44lavn3tj" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ibd2s")
 
 [node name="BackgroundVase" type="TextureRect" parent="." unique_id=919709588]
 layout_mode = 0
@@ -22,7 +24,6 @@ offset_bottom = 1031.0
 texture = ExtResource("2_cw6xy")
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_33o2s")]
-use_placeholder_flower = false
 
 [node name="FlowerInterface" parent="." unique_id=1353149384 instance=ExtResource("3_ay4m0")]
 layout_mode = 1
@@ -33,3 +34,6 @@ offset_left = 9.0
 offset_top = 919.0
 offset_right = -1423.0
 offset_bottom = -7.0
+
+[node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
+position = Vector2(1329, 737)

@@ -30,6 +30,7 @@ script = ExtResource("1_63yw1")
 layer = 2
 
 [node name="PopularityLabel" type="Label" parent="CanvasLayer" unique_id=1124719780]
+visible = false
 offset_left = 633.0
 offset_top = 7.0
 offset_right = 877.0
@@ -39,15 +40,16 @@ label_settings = SubResource("LabelSettings_63yw1")
 
 [node name="MoneyLabel" type="Label" parent="CanvasLayer" unique_id=1901653256]
 unique_name_in_owner = true
-offset_left = 1581.0
-offset_top = 9.0
-offset_right = 1734.0
-offset_bottom = 62.0
+offset_left = 1209.0
+offset_top = 1193.0
+offset_right = 1362.0
+offset_bottom = 1246.0
 text = "Money:"
 label_settings = SubResource("LabelSettings_no3si")
 
 [node name="BouquetCostLabel" type="Label" parent="CanvasLayer" unique_id=2122728363]
 unique_name_in_owner = true
+visible = false
 offset_left = 1602.0
 offset_top = 70.0
 offset_right = 1860.0
@@ -57,6 +59,7 @@ label_settings = SubResource("LabelSettings_1mtjo")
 horizontal_alignment = 2
 
 [node name="CustomerBudjetLabel" type="Label" parent="CanvasLayer" unique_id=1873574679]
+visible = false
 offset_left = 17.0
 offset_top = 1215.0
 offset_right = 406.0
@@ -65,6 +68,7 @@ text = "Customer Budget:"
 label_settings = SubResource("LabelSettings_aapdx")
 
 [node name="BudgetAmt" type="Label" parent="CanvasLayer" unique_id=398034459]
+visible = false
 offset_left = 444.0
 offset_top = 1215.0
 offset_right = 494.0
@@ -74,6 +78,7 @@ label_settings = SubResource("LabelSettings_aapdx")
 
 [node name="TotalValueLabel" type="Label" parent="CanvasLayer" unique_id=1554644997]
 unique_name_in_owner = true
+visible = false
 offset_left = 1080.0
 offset_top = 1213.0
 offset_right = 1382.0

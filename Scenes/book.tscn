@@ -11,54 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="9_djh34"]
 [ext_resource type="Texture2D" uid="uid://bvx58elvr7fq7" path="res://Assets/Book_Border_And_Texture.png" id="10_77dt5"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_uu3s8"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_jx0ys"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_7p7k3"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_djh34"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_77dt5"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
@@ -72,6 +24,54 @@ shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k1bli"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ltm2x"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3jh8o"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dfyeo"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_33p6p"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -182,6 +182,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dgncb")
 
+[node name="Close" type="Button" parent="." unique_id=419999855]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
 [node name="Control" type="Control" parent="." unique_id=1521628650]
 layout_mode = 1
 anchors_preset = 8
@@ -233,7 +242,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1064202854 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_uu3s8")
+material = SubResource("ShaderMaterial_77dt5")
 layout_mode = 2
 unlock_id = "butter_lilly"
 
@@ -246,7 +255,7 @@ Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1037982163 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_jx0ys")
+material = SubResource("ShaderMaterial_k1bli")
 layout_mode = 2
 unlock_id = "devils_pitchfork"
 
@@ -264,7 +273,7 @@ A symbol of power and prestige, but too many may induce painful headaches
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=2066904684 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_7p7k3")
+material = SubResource("ShaderMaterial_ltm2x")
 layout_mode = 2
 unlock_id = "crystal_heart"
 
@@ -312,7 +321,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=811958972 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_djh34")
+material = SubResource("ShaderMaterial_3jh8o")
 layout_mode = 2
 unlock_id = "sky_bloom"
 
@@ -330,7 +339,8 @@ Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1814695313 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_77dt5")
+material = SubResource("ShaderMaterial_dfyeo")
+custom_minimum_size = Vector2(0, 256.82)
 layout_mode = 2
 unlock_id = "nectar"
 
@@ -349,7 +359,8 @@ text = "Type: Filler
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1475027700 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_k1bli")
+material = SubResource("ShaderMaterial_33p6p")
+custom_minimum_size = Vector2(0, 284.71)
 layout_mode = 2
 unlock_id = "filigree"
 
@@ -383,7 +394,8 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="TextureRect" type="TextureRect" parent="Control" unique_id=427990795]
-z_index = 2
+z_index = 260
+z_as_relative = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -398,10 +410,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.9986329, 1)
+mouse_filter = 2
 color = Color(0, 0, 0, 0.1882353)
 
 [node name="Page" type="AnimationPlayer" parent="." unique_id=1970370527]
 libraries/ = SubResource("AnimationLibrary_djh34")
+
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
 
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry"]
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2"]

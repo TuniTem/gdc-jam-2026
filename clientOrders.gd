@@ -13,7 +13,7 @@ func _populate():
 func _create_characters() -> Array[CharacterData]:
 	var policeman := CharacterData.new()
 	policeman.character_name = "Alan"
-	policeman.intro_line = "My grampa died, give me flowers"
+	policeman.intro_line = "I'm looking for an expedition bouquet."
 	policeman.portrait = load("res://sprites/characters/char-0.png")
 	policeman.flowers = {"tulip": 12, "rose": 8, "babybreath": 6, "thorn": 10}
 	policeman.budget = 50

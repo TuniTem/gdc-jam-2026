@@ -1,5 +1,8 @@
 extends Control
 
+func _ready():
+	pass
+
 func _process(delta):
 	if Globals.selected_flower != null:
 		$SelectedFlower.texture = Globals.selected_flower_res.flower_texture

@@ -8,7 +8,9 @@ func _ready():
 	$Cost.text = "$" + str(flower_res.flower_cost)
 
 func _process(delta):
-	$Count.text = str(Globals.flower_to_count_map[flower_res])
+	var flower_count = Globals.flower_to_count_map[flower_res]
+	$Count.text = str(flower_count)
+	disabled = flower_count <= 0
 
 func _on_pressed():
 	Globals.selected_flower = texture_normal

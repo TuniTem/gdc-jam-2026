@@ -5,3 +5,6 @@ class_name Entry
 
 @export var unlock_id : String
 @export var page : int
+
+func _ready() -> void:
+	Globals.unlocks.append(self)

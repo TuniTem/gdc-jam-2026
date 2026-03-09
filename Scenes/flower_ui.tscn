@@ -6,8 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
+[ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="6_u4bsn"]
 [ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
 [ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
+[ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -64,3 +66,21 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("8_g6g17")
 drawable_area = NodePath("../DrawableArea")
+
+[node name="BookButton" parent="." unique_id=218221572 instance=ExtResource("9_b0ouy")]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -145.0
+offset_top = -141.0
+offset_right = -45.0
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("6_u4bsn")
+
+[connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

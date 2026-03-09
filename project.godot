@@ -36,6 +36,7 @@ selected_flower=""
 flower_interface=""
 flower_button=""
 side_bouquet=""
+arrangement=""
 
 [input]
 

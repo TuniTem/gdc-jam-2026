@@ -53,17 +53,25 @@ func _input(event: InputEvent) -> void:
 		add_child(inst)
 		if not use_placeholder_flower:
 			inst.set_texture(Globals.selected_flower_res.flower_texture)
+			inst.flower_res = Globals.selected_flower_res
 	
 	if event.is_action_released("pick_flower") and can_place_flower:
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
 #		# TODO: spend money for cost of flower when placing flower
+		print("Selected flower: ", Globals.selected_flower)
 		Globals.money -= 1
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
 
 func clear_flowers():
 	queue_clear_flowers = true
+
+func get_list_of_flower_resources():
+	var res = []
+	for flower in flowers:
+		res.push_back(flower.flower_res)
+	return res
 
 func sim_flowers(delta):
 	for flower : Flower in flowers:

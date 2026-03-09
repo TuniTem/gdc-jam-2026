@@ -17,6 +17,10 @@ func unlock_entry(id : String):
 			await book.turn_to_page(unlock.page)
 			unlock.animation.play("paint_in")
 
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("debug") and DEBUG:
 		unlock_entry("test")
+
+func get_current_arrangement_flower_resources(): 
+	return get_tree().get_first_node_in_group("arrangement").get_list_of_flower_resources()

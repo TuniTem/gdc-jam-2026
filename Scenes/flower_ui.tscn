@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://5m2wy54en2ht" path="res://Scenes/notebook_button.gd" id="7_g6g17"]
 [ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="9_5rd6w"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="9_b0ouy"]
+[ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
+[ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
 font = ExtResource("9_5rd6w")

@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 func _on_give_button_pressed():
 	Globals.current_character += 1

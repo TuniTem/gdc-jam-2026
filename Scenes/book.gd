@@ -21,6 +21,7 @@ func show_book():
 func hide_book():
 	switch_page(0, false)
 	page_anims.play_backwards("pull_up")
+	await page_anims.animation_finished
 	hide()
 	shown = false
 
@@ -41,3 +42,7 @@ func switch_page(page : int, animate : bool = true):
 	current_page = page
 	if animate:
 		await page_anims.animation_finished
+
+
+func _on_close_pressed() -> void:
+	hide_book()

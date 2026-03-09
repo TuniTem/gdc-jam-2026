@@ -98,7 +98,7 @@ z_as_relative = false
 material = SubResource("ShaderMaterial_43seh")
 custom_minimum_size = Vector2(0, 250)
 offset_right = 291.0
-offset_bottom = 250.0
+offset_bottom = 287.0
 script = ExtResource("2_0k16b")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1961349098]

@@ -4,7 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://c2l0jdkl40kvx" path="res://sprites/flowers/flower-top-test.png" id="2_4r3j5"]
 
 [node name="Flower" type="Node2D" unique_id=982848793]
+z_index = 2
 script = ExtResource("1_s3cv5")
+radius = 80.0
 
 [node name="PlaceholderFlower1" type="Sprite2D" parent="." unique_id=236899674]
 texture = ExtResource("2_4r3j5")
+
+[node name="DrawRef" type="Node2D" parent="." unique_id=870776517]

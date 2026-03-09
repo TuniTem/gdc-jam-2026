@@ -3,4 +3,8 @@
 [ext_resource type="Script" uid="uid://d0iqusplj2m2b" path="res://Scenes/arrangement.gd" id="1_nk2up"]
 
 [node name="Arrangement" type="Node2D" unique_id=525398]
+z_index = 1
 script = ExtResource("1_nk2up")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=636861792]
+position = Vector2(1388, 685)

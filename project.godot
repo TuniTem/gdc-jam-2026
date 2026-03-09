@@ -20,14 +20,14 @@ config/icon="res://icon.svg"
 File="*uid://b0e8v2udjivdw"
 Util="*uid://dhqqejsdf4hqa"
 Global="*uid://cmr78knoo7vyy"
-Globals="*uid://bfsxkn5hr1s60"
+Globals="*uid://cntw8d7xcvgxw"
 
 [display]
 
 window/size/viewport_width=1920
-window/size/viewport_height=1360
+window/size/viewport_height=1280
 window/size/window_width_override=960
-window/size/window_height_override=680
+window/size/window_height_override=640
 window/stretch/mode="canvas_items"
 
 [global_group]
@@ -35,6 +35,7 @@ window/stretch/mode="canvas_items"
 selected_flower=""
 flower_interface=""
 flower_button=""
+side_bouquet=""
 
 [input]
 

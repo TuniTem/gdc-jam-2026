@@ -22,6 +22,8 @@ script = ExtResource("1_efdvc")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
+offset_left = -90.5
+offset_right = 90.5
 offset_bottom = 248.0
 grow_horizontal = 2
 alignment = 1
@@ -43,5 +45,7 @@ flower_res = ExtResource("8_qavux")
 
 [node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
 modulate = Color(1, 1, 1, 0.58431375)
-position = Vector2(-1, 90)
 offset = Vector2(1, -90)
+
+[node name="DrawableArea" type="Marker2D" parent="." unique_id=404466391]
+position = Vector2(1329, 737)

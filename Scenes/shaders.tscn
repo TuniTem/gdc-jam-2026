@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://br4i6pshh3gn"]
+
+[ext_resource type="Shader" uid="uid://62xlkto7iux7" path="res://Scenes/squiggle.gdshader" id="1_upaa7"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_yq4ew"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_62yas"]
+width = 1024
+height = 1024
+noise = SubResource("FastNoiseLite_yq4ew")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w34sh"]
+shader = ExtResource("1_upaa7")
+shader_parameter/scale = Vector2(5, 5)
+shader_parameter/strength = 0.2
+shader_parameter/fps = 2.0
+shader_parameter/noise = SubResource("NoiseTexture2D_62yas")
+
+[node name="Shaders" type="Control" unique_id=365466373]
+z_index = 3450
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1973140985]
+z_as_relative = false
+material = SubResource("ShaderMaterial_w34sh")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

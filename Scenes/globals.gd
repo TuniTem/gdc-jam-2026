@@ -14,8 +14,10 @@ var bouquet_cost: int = 0
 var customer_budjet: int = 0
 var total_value: int = 0
 var popularity: int = 0
-
 var day : int = 0
+
+@export var flower_to_count_map: Dictionary[Resource, int] = {}
+
 var day_end_stats : Dictionary = {
 	"people_helped": 0,
 	"flowers_used" : 0,
@@ -23,6 +25,17 @@ var day_end_stats : Dictionary = {
 	"start_popularity" : 0.0,
 	"current_popularity" : 0.0
 }
+
+func _ready():
+	flower_to_count_map[load("res://resources/PurpleFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/AquaFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/ButterFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/CactusFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/DevilsFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/FireworkFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/IceFlower.tres")] = 10
+	flower_to_count_map[load("res://resources/NectarFlower_1.tres")] = 10
+	flower_to_count_map[load("res://resources/SpikeFlower.tres")] = 10
 
 func unlock_entry(id : String):
 	print("b")
@@ -32,7 +45,6 @@ func unlock_entry(id : String):
 			print("d")
 			await book.turn_to_page(unlock.page)
 			unlock.animation.play("paint_in")
-
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("debug") and DEBUG:

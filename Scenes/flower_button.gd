@@ -6,7 +6,10 @@ extends TextureButton
 func _ready():
 	texture_normal = flower_res.side_texture
 	$Cost.text = "$" + str(flower_res.flower_cost)
-	
+
+func _process(delta):
+	$Count.text = str(Globals.flower_to_count_map[flower_res])
+
 func _on_pressed():
 	Globals.selected_flower = texture_normal
 	Globals.selected_flower_res = flower_res

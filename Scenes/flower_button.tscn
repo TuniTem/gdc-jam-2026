@@ -13,6 +13,23 @@ stretch_mode = 3
 script = ExtResource("2_5vhx8")
 
 [node name="Cost" type="Label" parent="." unique_id=1676292691]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -17.0
+offset_top = 7.0
+offset_right = 23.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 0
+label_settings = SubResource("LabelSettings_cvtxe")
+horizontal_alignment = 1
+
+[node name="Count" type="Label" parent="." unique_id=2030052736]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

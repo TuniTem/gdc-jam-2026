@@ -35,6 +35,7 @@ theme_override_font_sizes/font_size = 48
 text = "Give Flowers"
 
 [node name="Book" parent="." unique_id=698370101 instance=ExtResource("5_kry3j")]
+visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]

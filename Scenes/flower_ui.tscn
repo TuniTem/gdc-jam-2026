@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="9_b0ouy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
+[ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
+[ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
 font = ExtResource("9_5rd6w")
@@ -25,6 +27,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ibd2s")
 
+[node name="Wood" type="TextureRect" parent="." unique_id=1880802110]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 582.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_fg743")
+
 [node name="BackgroundVase" type="TextureRect" parent="." unique_id=919709588]
 layout_mode = 0
 offset_left = 1024.0
@@ -37,6 +49,7 @@ texture = ExtResource("2_cw6xy")
 
 [node name="FlowerInterface" parent="." unique_id=1353149384 instance=ExtResource("3_ay4m0")]
 layout_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="SideBouquet" parent="." unique_id=381334461 instance=ExtResource("4_j13ie")]
 layout_mode = 1

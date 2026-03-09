@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://b1tagb5wr20ph"]
+
+[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="1_640v5"]
+[ext_resource type="Script" uid="uid://bi5vfyg2xsdk" path="res://Scenes/new_day.gd" id="1_rmkb3"]
+[ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="3_1fu1n"]
+[ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="4_mm26e"]
+[ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="5_3smw6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f7a1a"]
+font = ExtResource("1_640v5")
+font_size = 147
+font_color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+outline_size = 48
+outline_color = Color(0.2078017, 0.18880731, 0.124712326, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rmkb3"]
+font = ExtResource("3_1fu1n")
+font_size = 55
+font_color = Color(0.20784314, 0.1882353, 0.1254902, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mm26e"]
+font = ExtResource("1_640v5")
+font_size = 84
+font_color = Color(0.20784314, 0.1882353, 0.1254902, 1)
+outline_size = 18
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_mm26e"]
+base_font = ExtResource("1_640v5")
+spacing_glyph = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_3smw6"]
+font = SubResource("FontVariation_mm26e")
+font_size = 62
+font_color = Color(0.20784314, 0.1882353, 0.1254902, 1)
+outline_size = 18
+outline_color = Color(0, 0, 0, 1)
+
+[node name="NewDay" type="Control" unique_id=1241479211]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rmkb3")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2059175203]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 77
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=183783104]
+layout_mode = 2
+text = "Day 1"
+label_settings = SubResource("LabelSettings_f7a1a")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1537954748]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect" unique_id=217726622]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -191.5
+offset_top = -305.0
+offset_right = 191.5
+offset_bottom = 491.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_constants/separation = 68
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=658109990]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer" unique_id=226640608]
+layout_mode = 2
+text = "People Helped"
+label_settings = SubResource("LabelSettings_rmkb3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PeopleHelpedNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer" unique_id=222463427]
+unique_name_in_owner = true
+layout_mode = 2
+text = "5"
+label_settings = SubResource("LabelSettings_mm26e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=1990307231]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer2" unique_id=1828824253]
+layout_mode = 2
+text = "Flowers Used"
+label_settings = SubResource("LabelSettings_rmkb3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FlowersUsedNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer2" unique_id=887573080]
+unique_name_in_owner = true
+layout_mode = 2
+text = "5"
+label_settings = SubResource("LabelSettings_mm26e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=2031856359]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer3" unique_id=1097487044]
+layout_mode = 2
+text = "Money Made"
+label_settings = SubResource("LabelSettings_rmkb3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MoneyMadeNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer3" unique_id=1067310921]
+unique_name_in_owner = true
+layout_mode = 2
+text = "5"
+label_settings = SubResource("LabelSettings_mm26e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=1688955930]
+layout_mode = 2
+
+[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer4" unique_id=801636470]
+layout_mode = 2
+text = "Popularity Change"
+label_settings = SubResource("LabelSettings_rmkb3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PopularityChangeNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer4" unique_id=409338033]
+unique_name_in_owner = true
+layout_mode = 2
+text = "2.3 ➜ 3.0"
+label_settings = SubResource("LabelSettings_3smw6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PopulaityDiffrenceNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer4" unique_id=758088788]
+unique_name_in_owner = true
+layout_mode = 2
+text = "(+ 0.7)"
+label_settings = SubResource("LabelSettings_3smw6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=604902756]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Next" parent="MarginContainer2" unique_id=218221572 instance=ExtResource("4_mm26e")]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("5_3smw6")
+
+[connection signal="pressed" from="MarginContainer2/Next" to="." method="_on_next_pressed"]

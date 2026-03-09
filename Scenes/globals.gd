@@ -15,6 +15,14 @@ var customer_budjet: int = 0
 var total_value: int = 0
 var popularity: int = 0
 
+var day_end_stats : Dictionary = {
+	"people_helped": 0,
+	"flowers_used" : 0,
+	"money_made" : 0,
+	"start_popularity" : 0.0,
+	"current_popularity" : 0.0
+}
+
 func unlock_entry(id : String):
 	for unlock in unlocks:
 		if unlock.unlock_id == id:

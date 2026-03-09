@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://csplckxhb273p"]
 
 [ext_resource type="Shader" uid="uid://ckbjrlpojkq7l" path="res://Shaders/book.gdshader" id="1_fc04u"]
+[ext_resource type="Script" uid="uid://c7imllkl0ss3y" path="res://Scenes/book_entry.gd" id="2_0k16b"]
 [ext_resource type="Material" uid="uid://ddk0gocbtpfam" path="res://resources/parchment.tres" id="2_5erdx"]
 [ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="3_0k16b"]
 [ext_resource type="FontFile" uid="uid://b8iepjx3qwhbu" path="res://Fonts/HFPoet.ttf" id="4_0sr8i"]
 [ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="5_cfv0i"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_43seh"]
+resource_local_to_scene = true
 shader = ExtResource("1_fc04u")
-shader_parameter/progress = 0.49
+shader_parameter/progress = 0.06
 shader_parameter/speed = 0.1
 shader_parameter/pixelation = Vector2(1, 1)
 shader_parameter/zoom = 2.0
@@ -95,6 +97,9 @@ z_index = 260
 z_as_relative = false
 material = SubResource("ShaderMaterial_43seh")
 custom_minimum_size = Vector2(0, 250)
+offset_right = 291.0
+offset_bottom = 250.0
+script = ExtResource("2_0k16b")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1961349098]
 show_behind_parent = true

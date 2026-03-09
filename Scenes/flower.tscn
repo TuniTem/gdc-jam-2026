@@ -6,7 +6,7 @@
 [node name="Flower" type="Node2D" unique_id=982848793]
 z_index = 2
 script = ExtResource("1_s3cv5")
-radius = 80.0
+radius = 110.0
 
 [node name="PlaceholderFlower1" type="Sprite2D" parent="." unique_id=236899674]
 texture = ExtResource("2_4r3j5")

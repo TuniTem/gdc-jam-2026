@@ -3,7 +3,85 @@
 [ext_resource type="Script" uid="uid://i3v1mik6ysiw" path="res://Scenes/book.gd" id="1_dgncb"]
 [ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="1_gr7b7"]
 [ext_resource type="PackedScene" uid="uid://csplckxhb273p" path="res://Scenes/book_entry.tscn" id="2_dgncb"]
-[ext_resource type="Script" uid="uid://c7imllkl0ss3y" path="res://Scenes/book_entry.gd" id="3_uu3s8"]
+[ext_resource type="Shader" uid="uid://ckbjrlpojkq7l" path="res://Shaders/book.gdshader" id="4_uu3s8"]
+[ext_resource type="Texture2D" uid="uid://6rfk3phx1q8x" path="res://sprites/flowers/Devils_Pitchfork_Full.png" id="5_jx0ys"]
+[ext_resource type="Texture2D" uid="uid://k1exgdmyb040" path="res://Assets/Crystal_Heart_Full.png" id="6_uu3s8"]
+[ext_resource type="Texture2D" uid="uid://drygkpeuxeafp" path="res://Assets/Sky_Blooms_Full.png" id="7_7p7k3"]
+[ext_resource type="Texture2D" uid="uid://dnkmycx88yogr" path="res://Assets/Necktars_Purple_Full.png" id="8_djh34"]
+[ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="9_djh34"]
+[ext_resource type="Texture2D" uid="uid://bvx58elvr7fq7" path="res://Assets/Book_Border_And_Texture.png" id="10_77dt5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uu3s8"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jx0ys"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7p7k3"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_djh34"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_77dt5"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k1bli"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
 
 [sub_resource type="Animation" id="Animation_uu3s8"]
 length = 0.001
@@ -114,7 +192,7 @@ anchor_bottom = 0.5
 offset_left = -744.0
 offset_top = -482.0
 offset_right = 744.0
-offset_bottom = 482.00317
+offset_bottom = 482.0033
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
@@ -145,39 +223,66 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 40
+theme_override_constants/margin_left = 80
 theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
+theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 40
 
 [node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1963795090]
 layout_mode = 2
+alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1064202854 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_uu3s8")
 layout_mode = 2
-script = ExtResource("3_uu3s8")
+unlock_id = "butter_lilly"
 
-[node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=775980166]
-layout_mode = 2
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1064202854, 757080868) index="0" unique_id=923409529]
+scale = Vector2(0.712085, 0.712085)
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=1963436676 instance=ExtResource("2_dgncb")]
-layout_mode = 2
-script = ExtResource("3_uu3s8")
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1064202854, 631509805) index="0" unique_id=1064711938]
+text = "Type: Core
+Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
+"
 
-[node name="2" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1468316321]
+[node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1037982163 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_jx0ys")
 layout_mode = 2
+unlock_id = "devils_pitchfork"
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/2" unique_id=224846573 instance=ExtResource("2_dgncb")]
-layout_mode = 2
-script = ExtResource("3_uu3s8")
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1037982163, 757080868) index="0" unique_id=923409529]
+position = Vector2(76.99999, 93.99999)
+scale = Vector2(0.8300003, 0.8300003)
+texture = ExtResource("5_jx0ys")
 
-[node name="3" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1347357857]
-layout_mode = 2
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1037982163, 745472749) index="0" unique_id=697499992]
+text = "Devils Pitchfork"
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/3" unique_id=913436025 instance=ExtResource("2_dgncb")]
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1037982163, 631509805) index="0" unique_id=1064711938]
+text = "Type: Filler
+A symbol of power and prestige, but too many may induce painful headaches
+"
+
+[node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=2066904684 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_7p7k3")
 layout_mode = 2
-script = ExtResource("3_uu3s8")
-page = 2
+unlock_id = "crystal_heart"
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2066904684, 757080868) index="0" unique_id=923409529]
+position = Vector2(76.99999, 93.99999)
+scale = Vector2(0.39069048, 0.39069048)
+texture = ExtResource("6_uu3s8")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(2066904684, 745472749) index="0" unique_id=697499992]
+text = "Crystal Heart"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2066904684, 631509805) index="0" unique_id=1064711938]
+text = "Type: Filler
+Slowly looses its shimmering glow and crumbles over time. Brings good fortune and rumored to wad off evil spirits.
+"
+
+[node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(2066904684, 1961349098) index="2" unique_id=1744207426]
+visible = false
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="Control/HBoxContainer" unique_id=746937437]
 layout_mode = 2
@@ -202,40 +307,87 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=1902362162]
+[node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=909329525]
 layout_mode = 2
+alignment = 1
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=74951006 instance=ExtResource("2_dgncb")]
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=811958972 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_djh34")
 layout_mode = 2
-script = ExtResource("3_uu3s8")
+unlock_id = "sky_bloom"
 
-[node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=374193019]
-layout_mode = 2
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(811958972, 757080868) index="0" unique_id=923409529]
+position = Vector2(68, 101)
+scale = Vector2(0.9144459, 0.9144459)
+texture = ExtResource("7_7p7k3")
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1007716420 instance=ExtResource("2_dgncb")]
-layout_mode = 2
-script = ExtResource("3_uu3s8")
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(811958972, 745472749) index="0" unique_id=697499992]
+text = "Sky Bloom"
 
-[node name="2" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=949437045]
-layout_mode = 2
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(811958972, 631509805) index="0" unique_id=1064711938]
+text = "Type: Core
+Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
+"
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/2" unique_id=2142593442 instance=ExtResource("2_dgncb")]
+[node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1814695313 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_77dt5")
 layout_mode = 2
-script = ExtResource("3_uu3s8")
+unlock_id = "nectar"
 
-[node name="3" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=854779852]
-layout_mode = 2
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1814695313, 757080868) index="0" unique_id=923409529]
+position = Vector2(73.00005, 121.999985)
+scale = Vector2(0.5160504, 0.5160504)
+texture = ExtResource("8_djh34")
 
-[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/3" unique_id=1449929256 instance=ExtResource("2_dgncb")]
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1814695313, 745472749) index="0" unique_id=697499992]
+text = "Nectar"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1814695313, 631509805) index="0" unique_id=1064711938]
+theme_override_font_sizes/normal_font_size = 27
+text = "Type: Filler
+ Releases a potent aromatic sticky glue when squeezed at the neck. These flowers are a gesture of great respect.  Purple symbolizes peace. Red symbolizes love. Green symbolizes sorrow.
+"
+
+[node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1475027700 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_k1bli")
 layout_mode = 2
-script = ExtResource("3_uu3s8")
-unlock_id = "test"
-page = 2
+unlock_id = "filigree"
+
+[node name="VBoxContainer2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3" index="0" unique_id=1961349098]
+offset_top = 52.0
+offset_bottom = 307.0
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1475027700, 757080868) index="0" unique_id=923409529]
+position = Vector2(76.99999, 103.99999)
+scale = Vector2(0.92517275, 0.92517275)
+texture = ExtResource("9_djh34")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1475027700, 745472749) index="0" unique_id=697499992]
+text = "Filigree"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1475027700, 631509805) index="0" unique_id=1064711938]
+text = "Type: Filler
+Slowly looses its shimmering glow and crumbles over time. Brings good fortune and rumored to wad off evil spirits.
+"
+
+[node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2" index="2" unique_id=1744207426]
+visible = false
+
+[node name="Control" type="Control" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1201701028]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=797295414]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=427990795]
+z_index = 2
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("10_77dt5")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=428673899]
 z_index = -1
@@ -245,16 +397,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.9986329, 1)
 color = Color(0, 0, 0, 0.1882353)
 
 [node name="Page" type="AnimationPlayer" parent="." unique_id=1970370527]
 libraries/ = SubResource("AnimationLibrary_djh34")
 
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry"]
-[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry"]
-[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/2/Entry"]
-[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/3/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3"]
 [editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry"]
-[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry"]
-[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/2/Entry"]
-[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/3/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3"]

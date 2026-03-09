@@ -6,7 +6,8 @@ const CLIENT_TEXTURE: Texture2D = preload("res://Assets/bad-placeholder-human.pn
 func _display_current_client():
 	var texture_rect_node = $CanvasLayer/TextureRect
 	texture_rect_node.texture = Globals.characters[Globals.current_character].portrait
-
+	$CanvasLayer/Label.text = Globals.characters[Globals.current_character].intro_line
+	texture_rect_node.flip_h = !texture_rect_node.flip_h
 
 func _ready():
 	$ClientOrders._populate()

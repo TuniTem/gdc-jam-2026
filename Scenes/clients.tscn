@@ -1,6 +1,22 @@
-[gd_scene format=3 uid="uid://by84a87h0dg7t"]
+[gd_scene format=3 uid="uid://xq8e2gga6a3x"]
 
 [ext_resource type="Script" uid="uid://ddsdtq6fcbia0" path="res://Scripts/clientDisplay.gd" id="1_sg7oy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sg7oy"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+expand_margin_left = 16.0
+expand_margin_top = 4.0
+expand_margin_right = 16.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_sg7oy"]
+font_size = 44
+font_color = Color(0, 0, 0, 1)
 
 [node name="ClientDisplay" type="Node2D" unique_id=451460495]
 script = ExtResource("1_sg7oy")
@@ -8,10 +24,20 @@ script = ExtResource("1_sg7oy")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=304729940]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1663414359]
-offset_left = -21.0
-offset_top = 134.0
-offset_right = 1899.0
-offset_bottom = 1214.0
+offset_left = 192.0
+offset_top = 171.0
+offset_right = 1272.0
+offset_bottom = 1251.0
 scale = Vector2(0.28359374, 0.30004796)
 expand_mode = 2
 stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=2107851323]
+offset_left = 56.0
+offset_top = 793.0
+offset_right = 650.0
+offset_bottom = 966.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_sg7oy")
+text = "abc 123"
+label_settings = SubResource("LabelSettings_sg7oy")
+autowrap_mode = 2

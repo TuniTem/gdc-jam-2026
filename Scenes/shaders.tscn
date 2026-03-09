@@ -17,21 +17,15 @@ shader_parameter/strength = 0.2
 shader_parameter/fps = 2.0
 shader_parameter/noise = SubResource("NoiseTexture2D_62yas")
 
-[node name="Shaders" type="Control" unique_id=365466373]
-z_index = 3450
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Shaders" type="CanvasLayer" unique_id=1887032283]
+layer = 10
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1973140985]
 z_as_relative = false
 material = SubResource("ShaderMaterial_w34sh")
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2

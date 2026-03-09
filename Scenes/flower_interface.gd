@@ -3,7 +3,7 @@ extends Control
 func _process(delta):
 	if Globals.selected_flower != null:
 		$SelectedFlower.texture = Globals.selected_flower_res.flower_texture
-		$SelectedFlower.position = get_local_mouse_position()
+		$SelectedFlower.position = get_global_mouse_position()
 	if Input.is_action_just_pressed("mouse_right") and Globals.selected_flower != null:
 		deselect_flower()
 	if Input.is_action_just_pressed("cancel") and Globals.selected_flower != null:

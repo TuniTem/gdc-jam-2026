@@ -9,6 +9,7 @@ var current_character = 0
 var flower_center_pos = Vector2(1329, 737)
 var unlocks : Array[Entry]
 var book : Control
+var money: int = 0
 
 func unlock_entry(id : String):
 	for unlock in unlocks:

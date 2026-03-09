@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://djqpks35m5hxi"]
+
+[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="1_no3si"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_63yw1"]
+font = ExtResource("1_no3si")
+font_size = 47
+
+[sub_resource type="LabelSettings" id="LabelSettings_no3si"]
+font = ExtResource("1_no3si")
+font_size = 47
+
+[sub_resource type="LabelSettings" id="LabelSettings_1mtjo"]
+font = ExtResource("1_no3si")
+font_size = 47
+
+[sub_resource type="LabelSettings" id="LabelSettings_aapdx"]
+font = ExtResource("1_no3si")
+font_size = 47
+
+[sub_resource type="LabelSettings" id="LabelSettings_62pdr"]
+font = ExtResource("1_no3si")
+font_size = 47
+
+[node name="Money" type="Node2D" unique_id=513718061]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1214180943]
+
+[node name="PopularityLabel" type="Label" parent="CanvasLayer" unique_id=1124719780]
+offset_left = 633.0
+offset_top = 7.0
+offset_right = 877.0
+offset_bottom = 60.0
+text = "Popularity:"
+label_settings = SubResource("LabelSettings_63yw1")
+
+[node name="MoneyLabel" type="Label" parent="CanvasLayer" unique_id=1901653256]
+offset_left = 1581.0
+offset_top = 9.0
+offset_right = 1734.0
+offset_bottom = 62.0
+text = "Money:"
+label_settings = SubResource("LabelSettings_no3si")
+
+[node name="BouquetCostLabel" type="Label" parent="CanvasLayer" unique_id=2122728363]
+offset_left = 1425.0
+offset_top = 73.0
+offset_right = 1734.0
+offset_bottom = 126.0
+text = "Bouquet Cost:"
+label_settings = SubResource("LabelSettings_1mtjo")
+
+[node name="CustomerBudjetLabel" type="Label" parent="CanvasLayer" unique_id=1873574679]
+offset_left = 17.0
+offset_top = 1215.0
+offset_right = 406.0
+offset_bottom = 1268.0
+text = "Customer Budjet:"
+label_settings = SubResource("LabelSettings_aapdx")
+
+[node name="TotalValueLabel" type="Label" parent="CanvasLayer" unique_id=1554644997]
+offset_left = 904.0
+offset_top = 1223.0
+offset_right = 1159.0
+offset_bottom = 1276.0
+text = "Total Value:"
+label_settings = SubResource("LabelSettings_62pdr")

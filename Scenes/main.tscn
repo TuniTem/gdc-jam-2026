@@ -1,25 +1,30 @@
 [gd_scene format=3 uid="uid://b3yu8csaby48v"]
 
-
-[ext_resource type="PackedScene" path="res://Scenes/arrangement.tscn" id="1_jjgbg"]
-[ext_resource type="PackedScene" uid="uid://by84a87h0dg7t" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+[ext_resource type="Script" uid="uid://6kl1ncysxdnk" path="res://Scenes/main.gd" id="1_kry3j"]
+[ext_resource type="PackedScene" uid="uid://xq8e2gga6a3x" path="res://Scenes/clients.tscn" id="2_bo1nx"]
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
-
+[ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 
 [node name="Main" type="Node2D" unique_id=1734753262]
-
-[node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_jjgbg")]
-position = Vector2(596, 305)
-scale = Vector2(0.61, 0.61)
+script = ExtResource("1_kry3j")
 
 [node name="ClientDisplay" parent="." unique_id=451460495 instance=ExtResource("2_bo1nx")]
 
 [node name="ClientOrders" type="Node" parent="ClientDisplay" unique_id=603382932]
 script = ExtResource("3_8gbba")
-z_index = -1
-position = Vector2(636, 381)
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1369886114]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="FlowerUI" parent="." unique_id=1189810247 instance=ExtResource("4_jjvhh")]
+custom_minimum_size = Vector2(1920, 1280)
+offset_right = 1920.0
+offset_bottom = 1280.0
 
+[node name="GiveButton" type="Button" parent="." unique_id=1070884650]
+offset_left = 158.0
+offset_top = 1120.0
+offset_right = 460.0
+offset_bottom = 1195.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 48
+text = "Give Flowers"
+
+[connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]

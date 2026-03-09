@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	$ColorRect.hide()
 	$RefImage.hide()
 
 func add_flower(flower_res):
@@ -14,3 +15,7 @@ func add_flower(flower_res):
 	else:
 		next_sprite.rotation = deg_to_rad(randf_range(10, 50))
 	next_sprite.z_index = randi() % 50
+
+func clear_flowers():
+	for flower in $Flowers.get_children():
+		flower.queue_free()

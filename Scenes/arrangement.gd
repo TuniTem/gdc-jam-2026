@@ -13,6 +13,7 @@ const FLOWER_SCENE = preload("res://Scenes/flower.tscn")
 var placing_flower : Flower
 var flowers : Array[Flower]
 var velocity : Dictionary[Flower, Vector2]
+var queue_clear_flowers = false
 
 @export var use_placeholder_flower = false
 
@@ -26,7 +27,12 @@ func _process(delta: float) -> void:
 	if placing_flower != null:
 		placing_flower.position = get_local_mouse_position()
 		placing_flower.stem_pos = placing_flower.position
-		
+	if queue_clear_flowers:
+		for child in get_children():
+			if child is Flower:
+				child.queue_free()
+		flowers.clear()
+		queue_clear_flowers = false
 
 func is_hovering_over_flower_button():
 	for fw_btn in get_tree().get_nodes_in_group("flower_button"):
@@ -53,6 +59,9 @@ func _input(event: InputEvent) -> void:
 		placing_flower = null
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
+
+func clear_flowers():
+	queue_clear_flowers = true
 
 func sim_flowers(delta):
 	for flower : Flower in flowers:

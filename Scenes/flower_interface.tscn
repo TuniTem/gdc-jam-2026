@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c6ofnc7121kjl" path="res://sprites/flowers/test-hd-flower-3-sm.png" id="5_qavux"]
 [ext_resource type="Resource" uid="uid://wyt213g0waht" path="res://resources/AquaFlower.tres" id="6_rjigq"]
 [ext_resource type="Resource" uid="uid://dc3rfr2e3r84a" path="res://resources/CactusFlower.tres" id="8_qavux"]
+[ext_resource type="Texture2D" uid="uid://c2l0jdkl40kvx" path="res://sprites/flowers/flower-top-test.png" id="9_d4lsf"]
 
 [node name="FlowerInterface" type="Control" unique_id=1353149384 groups=["flower_interface"]]
 layout_mode = 3
@@ -22,8 +23,8 @@ script = ExtResource("1_efdvc")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -90.5
-offset_right = 90.5
+offset_left = 760.0
+offset_right = -84.0
 offset_bottom = 248.0
 grow_horizontal = 2
 alignment = 1
@@ -45,7 +46,8 @@ flower_res = ExtResource("8_qavux")
 
 [node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
 modulate = Color(1, 1, 1, 0.58431375)
-offset = Vector2(1, -90)
+position = Vector2(-160, -125)
+texture = ExtResource("9_d4lsf")
 
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=404466391]
 position = Vector2(1329, 737)

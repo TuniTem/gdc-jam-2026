@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ddk0gocbtpfam"]
+
+[ext_resource type="Shader" uid="uid://cq8jmmds6wqee" path="res://Shaders/parchment.gdshader" id="1_f4c1f"]
+
+[resource]
+shader = ExtResource("1_f4c1f")
+shader_parameter/noise_scale = 4.049000144827501
+shader_parameter/vignette_strength = 0.10000000149012
+shader_parameter/sepia_strength = 1.0
+shader_parameter/contrast = 1.0270000250325
+shader_parameter/glow_range = 30.0
+shader_parameter/glow_strength = 0.0
+shader_parameter/glow_falloff = 1.962000069445
+shader_parameter/dirt_strength = 0.582000027645
+shader_parameter/dirt_scale = 6.91200028082

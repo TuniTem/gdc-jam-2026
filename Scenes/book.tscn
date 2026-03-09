@@ -1,0 +1,209 @@
+[gd_scene format=3 uid="uid://o6a1recw7j23"]
+
+[ext_resource type="Script" uid="uid://i3v1mik6ysiw" path="res://Scenes/book.gd" id="1_dgncb"]
+[ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="1_gr7b7"]
+[ext_resource type="PackedScene" uid="uid://csplckxhb273p" path="res://Scenes/book_entry.tscn" id="2_dgncb"]
+[ext_resource type="Script" uid="uid://c7imllkl0ss3y" path="res://Scenes/book_entry.gd" id="3_uu3s8"]
+
+[sub_resource type="Animation" id="Animation_uu3s8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(216, 158)]
+}
+
+[sub_resource type="Animation" id="Animation_jx0ys"]
+resource_name = "pull_up"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.50000006, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(216, 300), Vector2(216, 158)]
+}
+
+[sub_resource type="Animation" id="Animation_7p7k3"]
+resource_name = "turn"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.2),
+"transitions": PackedFloat32Array(1, 2.0000002, 1),
+"update": 0,
+"values": [0.0, -0.05235987755982989, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_djh34"]
+_data = {
+&"RESET": SubResource("Animation_uu3s8"),
+&"pull_up": SubResource("Animation_jx0ys"),
+&"turn": SubResource("Animation_7p7k3")
+}
+
+[node name="Book" type="Control" unique_id=698370101]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dgncb")
+
+[node name="Control" type="Control" parent="." unique_id=1521628650]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -744.0
+offset_top = -482.0
+offset_right = 744.0
+offset_bottom = 482.00317
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=1652606920]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control/HBoxContainer" unique_id=1644504189]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_gr7b7")
+patch_margin_left = 100
+patch_margin_top = 100
+patch_margin_right = 100
+patch_margin_bottom = 100
+axis_stretch_horizontal = 1
+
+[node name="PageLeft" type="MarginContainer" parent="Control/HBoxContainer/NinePatchRect" unique_id=1572172236]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1963795090]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1064202854 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="Control/HBoxContainer" unique_id=746937437]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_gr7b7")
+patch_margin_left = 100
+patch_margin_top = 100
+patch_margin_right = 100
+patch_margin_bottom = 100
+axis_stretch_horizontal = 1
+
+[node name="PageRight" type="MarginContainer" parent="Control/HBoxContainer/NinePatchRect3" unique_id=558472876]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=1902362162]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=74951006 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=797295414]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=428673899]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.1882353)
+
+[node name="Page" type="AnimationPlayer" parent="." unique_id=1970370527]
+libraries/ = SubResource("AnimationLibrary_djh34")
+
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry"]

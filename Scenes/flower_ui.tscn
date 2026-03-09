@@ -14,10 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
 [ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
-font = ExtResource("9_5rd6w")
-font_size = 47
-
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
 anchors_preset = 15
@@ -61,49 +57,8 @@ offset_bottom = -454.0
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
 position = Vector2(1329, 737)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=754902642]
-layer = 3
-
-[node name="Book" parent="CanvasLayer" unique_id=698370101 instance=ExtResource("9_b0ouy")]
-z_index = 180
-
-[node name="ImageButton" type="TextureRect" parent="CanvasLayer" unique_id=824350214]
-z_index = 388
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -150.0
-offset_top = -138.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = ExtResource("6_u4bsn")
-expand_mode = 1
-script = ExtResource("7_g6g17")
-metadata/_custom_type_script = "uid://bwrrq04w7y7x4"
-
-[node name="Button" type="Button" parent="CanvasLayer/ImageButton" unique_id=3414397]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-focus_mode = 0
-flat = true
-
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=979982957]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=169214454]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 30
-
-[node name="MoneyLabel" type="Label" parent="MarginContainer" unique_id=60156170]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Money:"
-label_settings = SubResource("LabelSettings_b0ouy")
-
-[connection signal="pressed" from="CanvasLayer/ImageButton" to="CanvasLayer/ImageButton" method="_on_pressed"]
+offset_right = 582.0
+offset_bottom = 889.0
+texture = ExtResource("7_u4bsn")

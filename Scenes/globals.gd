@@ -16,3 +16,6 @@ func unlock_entry(id : String):
 		if unlock.unlock_id == id:
 			await book.turn_to_page(unlock.page)
 			unlock.animation.play("paint_in")
+
+func get_current_arrangement_flower_resources(): 
+	return get_tree().get_first_node_in_group("arrangement").get_list_of_flower_resources()

@@ -9,3 +9,5 @@ script = ExtResource("2_p6gx1")
 flower_name = "Brown"
 side_texture = ExtResource("3_p6gx1")
 flower_texture = ExtResource("1_14eq5")
+flower_cost = 13
+flower_worth = 21

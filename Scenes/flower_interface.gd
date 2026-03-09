@@ -1,5 +1,10 @@
 extends Control
 
+func _ready():
+	for i in range(0, $HBoxContainer.get_child_count()):
+		var next_btn = $HBoxContainer.get_child(i)
+		next_btn.visible = i < Globals.flowers_unlocked
+
 func _process(delta):
 	if Globals.selected_flower != null:
 		$SelectedFlower.texture = Globals.selected_flower_res.flower_texture

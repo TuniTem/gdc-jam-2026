@@ -61,6 +61,8 @@ func _input(event: InputEvent) -> void:
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
 			Globals.flower_to_count_map[placing_flower.flower_res] -= 1
+			if Globals.flower_to_count_map[placing_flower.flower_res] == 0:
+				get_tree().get_first_node_in_group("flower_interface").deselect_flower()
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
 

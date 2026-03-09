@@ -22,6 +22,9 @@
 [ext_resource type="Texture2D" uid="uid://v3dq83ock32b" path="res://sprites/flowers/nectars/nectar-side-1.png" id="19_j5qct"]
 [ext_resource type="Resource" uid="uid://ddctvkpap61cf" path="res://resources/NectarFlower_1.tres" id="20_s1m2c"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_j5qct"]
+font_size = 40
+
 [node name="FlowerInterface" type="Control" unique_id=1353149384 groups=["flower_interface"]]
 layout_mode = 3
 anchors_preset = 15
@@ -31,62 +34,75 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_efdvc")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1707753638]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 681.0
-offset_top = 19.0
-offset_right = -52.0
-offset_bottom = 267.0
-grow_horizontal = 2
-theme_override_constants/separation = 16
-alignment = 1
+[node name="Focal" type="HBoxContainer" parent="." unique_id=621750109]
+layout_mode = 0
+offset_left = 647.0
+offset_top = 77.0
+offset_right = 1378.0
+offset_bottom = 303.0
+mouse_filter = 2
 
-[node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+[node name="FlowerButton" parent="Focal" unique_id=478105241 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("4_mvhdn")
 flower_res = ExtResource("4_qavux")
 
-[node name="FlowerButton2" parent="HBoxContainer" unique_id=289216086 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+[node name="FlowerButton2" parent="Focal" unique_id=289216086 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("4_rjigq")
 flower_res = ExtResource("6_rjigq")
 
-[node name="FlowerButton3" parent="HBoxContainer" unique_id=842116920 groups=["flower_button"] instance=ExtResource("2_efdvc")]
-layout_mode = 2
-texture_normal = ExtResource("5_qavux")
-flower_res = ExtResource("8_qavux")
-
-[node name="FlowerButton9" parent="HBoxContainer" unique_id=992282279 groups=["flower_button"] instance=ExtResource("2_efdvc")]
-layout_mode = 2
-texture_normal = ExtResource("19_j5qct")
-flower_res = ExtResource("20_s1m2c")
-
-[node name="FlowerButton5" parent="HBoxContainer" unique_id=1537376687 groups=["flower_button"] instance=ExtResource("2_efdvc")]
-layout_mode = 2
-texture_normal = ExtResource("11_u0w1q")
-flower_res = ExtResource("12_soyoc")
-
-[node name="FlowerButton4" parent="HBoxContainer" unique_id=593541399 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+[node name="FlowerButton4" parent="Focal" unique_id=593541399 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("9_36sho")
 flower_res = ExtResource("10_1db8e")
 
-[node name="FlowerButton8" parent="HBoxContainer" unique_id=882860068 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+[node name="FlowerButton7" parent="Focal" unique_id=390698795 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("15_8jo5i")
+flower_res = ExtResource("16_w8vdr")
+
+[node name="Foliage" type="HBoxContainer" parent="." unique_id=1591949613]
+layout_mode = 0
+offset_left = 1285.0
+offset_top = 74.0
+offset_right = 1890.0
+offset_bottom = 322.0
+mouse_filter = 2
+alignment = 2
+
+[node name="FlowerButton3" parent="Foliage" unique_id=842116920 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("5_qavux")
+flower_res = ExtResource("8_qavux")
+
+[node name="FlowerButton5" parent="Foliage" unique_id=1537376687 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("11_u0w1q")
+flower_res = ExtResource("12_soyoc")
+
+[node name="FlowerButton8" parent="Foliage" unique_id=882860068 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("17_mevr0")
 flower_res = ExtResource("18_m6mop")
 
-[node name="FlowerButton6" parent="HBoxContainer" unique_id=273296678 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+[node name="Filler" type="HBoxContainer" parent="." unique_id=1166440348]
+layout_mode = 0
+offset_left = 687.0
+offset_top = 1010.0
+offset_right = 1291.0
+offset_bottom = 1220.0
+mouse_filter = 2
+
+[node name="FlowerButton9" parent="Filler" unique_id=992282279 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("19_j5qct")
+flower_res = ExtResource("20_s1m2c")
+
+[node name="FlowerButton6" parent="Filler" unique_id=273296678 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2
 texture_normal = ExtResource("13_57b0n")
 flower_res = ExtResource("14_5olr0")
-
-[node name="FlowerButton7" parent="HBoxContainer" unique_id=390698795 groups=["flower_button"] instance=ExtResource("2_efdvc")]
-layout_mode = 2
-texture_normal = ExtResource("15_8jo5i")
-flower_res = ExtResource("16_w8vdr")
 
 [node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
 modulate = Color(1, 1, 1, 0.58431375)
@@ -95,3 +111,33 @@ texture = ExtResource("9_d4lsf")
 
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=404466391]
 position = Vector2(1329, 737)
+
+[node name="Label" type="Label" parent="." unique_id=656358452]
+layout_mode = 0
+offset_left = 836.0
+offset_top = 16.0
+offset_right = 956.0
+offset_bottom = 83.0
+text = "Focal"
+label_settings = SubResource("LabelSettings_j5qct")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=427112725]
+layout_mode = 0
+offset_left = 1647.0
+offset_top = 16.0
+offset_right = 1767.0
+offset_bottom = 83.0
+text = "Foliage"
+label_settings = SubResource("LabelSettings_j5qct")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1374551228]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 945.0
+offset_right = 882.0
+offset_bottom = 1012.0
+text = "Filler"
+label_settings = SubResource("LabelSettings_j5qct")
+horizontal_alignment = 1

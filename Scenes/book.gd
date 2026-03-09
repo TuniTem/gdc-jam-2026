@@ -8,6 +8,7 @@ var current_page : int = 0
 var shown : bool = false
 
 func _ready() -> void:
+	Globals.book = self
 	hide()
 
 func show_book():

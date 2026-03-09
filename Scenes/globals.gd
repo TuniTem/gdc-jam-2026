@@ -16,3 +16,7 @@ func unlock_entry(id : String):
 		if unlock.unlock_id == id:
 			await book.turn_to_page(unlock.page)
 			unlock.animation.play("paint_in")
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("debug") and DEBUG:
+		unlock_entry("test")

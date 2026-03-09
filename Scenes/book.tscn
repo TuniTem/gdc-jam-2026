@@ -157,6 +157,28 @@ layout_mode = 2
 layout_mode = 2
 script = ExtResource("3_uu3s8")
 
+[node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=775980166]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=1963436676 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+
+[node name="2" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1468316321]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/2" unique_id=224846573 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+
+[node name="3" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1347357857]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/3" unique_id=913436025 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+page = 2
+
 [node name="NinePatchRect3" type="NinePatchRect" parent="Control/HBoxContainer" unique_id=746937437]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -187,6 +209,29 @@ layout_mode = 2
 layout_mode = 2
 script = ExtResource("3_uu3s8")
 
+[node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=374193019]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1007716420 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+
+[node name="2" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=949437045]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/2" unique_id=2142593442 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+
+[node name="3" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=854779852]
+layout_mode = 2
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/3" unique_id=1449929256 instance=ExtResource("2_dgncb")]
+layout_mode = 2
+script = ExtResource("3_uu3s8")
+unlock_id = "test"
+page = 2
+
 [node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=797295414]
 layout_mode = 0
 offset_right = 40.0
@@ -206,4 +251,10 @@ color = Color(0, 0, 0, 0.1882353)
 libraries/ = SubResource("AnimationLibrary_djh34")
 
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/2/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/3/Entry"]
 [editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/2/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/3/Entry"]

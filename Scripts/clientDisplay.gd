@@ -6,7 +6,9 @@ const CLIENT_TEXTURE: Texture2D = preload("res://Assets/bad-placeholder-human.pn
 func _display_current_client():
 	var texture_rect_node = $TextureRect
 	texture_rect_node.texture = Globals.characters[Globals.current_character].portrait
-	$Backing/Label.text = Globals.characters[Globals.current_character].intro_line
+	$TextBox.add_text(Globals.characters[Globals.current_character].lines)
+	$TextBox.set_deferred("scroll_vertical", 1000)
+	# $Backing/Label.text = Globals.characters[Globals.current_character].intro_line
 	# texture_rect_node.flip_h = !texture_rect_node.flip_h
 
 func _ready():

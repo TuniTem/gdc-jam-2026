@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ddsdtq6fcbia0" path="res://Scripts/clientDisplay.gd" id="1_sg7oy"]
 [ext_resource type="Texture2D" uid="uid://c2i3vqopkttvt" path="res://sprites/ui/text-backing.png" id="2_7034k"]
+[ext_resource type="Texture2D" uid="uid://bsttu0kndpae" path="res://sprites/characters/char-0.png" id="2_xw3gm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_sg7oy"]
 font_size = 44
@@ -13,9 +14,11 @@ script = ExtResource("1_sg7oy")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1663414359]
 offset_left = 26.0
 offset_top = 179.0
-offset_right = 1919.5537
-offset_bottom = 1945.3843
-scale = Vector2(0.28359374, 0.30004796)
+offset_right = 586.0
+offset_bottom = 686.0
+texture = ExtResource("2_xw3gm")
+expand_mode = 2
+stretch_mode = 5
 
 [node name="Backing" type="NinePatchRect" parent="." unique_id=676893386]
 offset_left = 14.0

@@ -7,7 +7,7 @@ func _display_current_client():
 	var texture_rect_node = $TextureRect
 	texture_rect_node.texture = Globals.characters[Globals.current_character].portrait
 	$Backing/Label.text = Globals.characters[Globals.current_character].intro_line
-	texture_rect_node.flip_h = !texture_rect_node.flip_h
+	# texture_rect_node.flip_h = !texture_rect_node.flip_h
 
 func _ready():
 	$ClientOrders._populate()

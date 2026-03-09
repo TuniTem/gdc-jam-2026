@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://ddctvkpap61cf"]
+
+[ext_resource type="Texture2D" uid="uid://blskohjujy5tj" path="res://sprites/flowers/nectars/nectar-top-1.png" id="1_bjkhx"]
+[ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_xeoxq"]
+[ext_resource type="Texture2D" uid="uid://v3dq83ock32b" path="res://sprites/flowers/nectars/nectar-side-1.png" id="3_xeoxq"]
+
+[resource]
+script = ExtResource("2_xeoxq")
+flower_name = "Nectar_1"
+side_texture = ExtResource("3_xeoxq")
+flower_texture = ExtResource("1_bjkhx")
+flower_cost = 4
+flower_worth = 5

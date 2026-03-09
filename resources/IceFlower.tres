@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://c8dudicc8fyj5"]
+
+[ext_resource type="Texture2D" uid="uid://hy3xg8rm4ls1" path="res://sprites/flowers/ice-flower-top.png" id="1_1ig6y"]
+[ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_wd5xx"]
+[ext_resource type="Texture2D" uid="uid://dn2crwr376mev" path="res://sprites/flowers/ice-flower-side.png" id="3_wd5xx"]
+
+[resource]
+script = ExtResource("2_wd5xx")
+flower_name = "Ice"
+side_texture = ExtResource("3_wd5xx")
+flower_texture = ExtResource("1_1ig6y")
+flower_cost = 9
+flower_worth = 55

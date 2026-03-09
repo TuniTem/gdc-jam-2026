@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
 [ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
+[ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -56,3 +57,10 @@ offset_bottom = -454.0
 
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
 position = Vector2(1329, 737)
+
+[node name="ValidCircle" type="Control" parent="." unique_id=1785251082 node_paths=PackedStringArray("drawable_area")]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_g6g17")
+drawable_area = NodePath("../DrawableArea")

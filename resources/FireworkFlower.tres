@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://0bilfgl6raiy"]
+
+[ext_resource type="Texture2D" uid="uid://bnl31u3birnq6" path="res://sprites/flowers/firework-top.png" id="1_yivfm"]
+[ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_vkjcb"]
+[ext_resource type="Texture2D" uid="uid://cc6xagomygy6m" path="res://sprites/flowers/firework-side.png" id="3_vkjcb"]
+
+[resource]
+script = ExtResource("2_vkjcb")
+flower_name = "Firework"
+side_texture = ExtResource("3_vkjcb")
+flower_texture = ExtResource("1_yivfm")
+flower_cost = 8
+flower_worth = 34

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://by16fw4k53ibu"]
+
+[ext_resource type="Texture2D" uid="uid://bd3k76vsal5kb" path="res://sprites/flowers/spike-top.png" id="1_ubhr2"]
+[ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_ffjws"]
+[ext_resource type="Texture2D" uid="uid://beb3ghds3s0q3" path="res://sprites/flowers/spike-side.png" id="3_ffjws"]
+
+[resource]
+script = ExtResource("2_ffjws")
+flower_name = "Spike"
+side_texture = ExtResource("3_ffjws")
+flower_texture = ExtResource("1_ubhr2")
+flower_cost = 7
+flower_worth = 21

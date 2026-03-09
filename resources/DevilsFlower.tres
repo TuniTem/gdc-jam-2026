@@ -1,0 +1,13 @@
+[gd_resource type="Resource" format=3 uid="uid://opiqiovquw51"]
+
+[ext_resource type="Texture2D" uid="uid://daw2udof2igec" path="res://sprites/flowers/Devils_Pitchfork_Top.png" id="1_1c3ia"]
+[ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_8fkjo"]
+[ext_resource type="Texture2D" uid="uid://6rfk3phx1q8x" path="res://sprites/flowers/Devils_Pitchfork_Full.png" id="3_8fkjo"]
+
+[resource]
+script = ExtResource("2_8fkjo")
+flower_name = "Devil"
+side_texture = ExtResource("3_8fkjo")
+flower_texture = ExtResource("1_1c3ia")
+flower_cost = 5
+flower_worth = 8

@@ -3,10 +3,29 @@
 [ext_resource type="Texture2D" uid="uid://je6ec1wovran" path="res://sprites/test/test-flower-1.png" id="1_cvtxe"]
 [ext_resource type="Script" uid="uid://dfutjaq5qvu0u" path="res://Scenes/flower_button.gd" id="2_5vhx8"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_cvtxe"]
+font_size = 32
+
 [node name="FlowerButton" type="TextureButton" unique_id=478105241]
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_cvtxe")
 stretch_mode = 3
 script = ExtResource("2_5vhx8")
+
+[node name="Cost" type="Label" parent="." unique_id=1676292691]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -17.0
+offset_top = 7.0
+offset_right = 23.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 0
+label_settings = SubResource("LabelSettings_cvtxe")
+horizontal_alignment = 1
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

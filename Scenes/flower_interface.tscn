@@ -8,7 +8,19 @@
 [ext_resource type="Texture2D" uid="uid://c6ofnc7121kjl" path="res://sprites/flowers/test-hd-flower-3-sm.png" id="5_qavux"]
 [ext_resource type="Resource" uid="uid://wyt213g0waht" path="res://resources/AquaFlower.tres" id="6_rjigq"]
 [ext_resource type="Resource" uid="uid://dc3rfr2e3r84a" path="res://resources/CactusFlower.tres" id="8_qavux"]
+[ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="9_36sho"]
 [ext_resource type="Texture2D" uid="uid://c2l0jdkl40kvx" path="res://sprites/flowers/flower-top-test.png" id="9_d4lsf"]
+[ext_resource type="Resource" uid="uid://ct2bvnnk0annp" path="res://resources/ButterFlower.tres" id="10_1db8e"]
+[ext_resource type="Texture2D" uid="uid://6rfk3phx1q8x" path="res://sprites/flowers/Devils_Pitchfork_Full.png" id="11_u0w1q"]
+[ext_resource type="Resource" uid="uid://opiqiovquw51" path="res://resources/DevilsFlower.tres" id="12_soyoc"]
+[ext_resource type="Texture2D" uid="uid://cc6xagomygy6m" path="res://sprites/flowers/firework-side.png" id="13_57b0n"]
+[ext_resource type="Resource" uid="uid://0bilfgl6raiy" path="res://resources/FireworkFlower.tres" id="14_5olr0"]
+[ext_resource type="Texture2D" uid="uid://dn2crwr376mev" path="res://sprites/flowers/ice-flower-side.png" id="15_8jo5i"]
+[ext_resource type="Resource" uid="uid://c8dudicc8fyj5" path="res://resources/IceFlower.tres" id="16_w8vdr"]
+[ext_resource type="Texture2D" uid="uid://beb3ghds3s0q3" path="res://sprites/flowers/spike-side.png" id="17_mevr0"]
+[ext_resource type="Resource" uid="uid://by16fw4k53ibu" path="res://resources/SpikeFlower.tres" id="18_m6mop"]
+[ext_resource type="Texture2D" uid="uid://v3dq83ock32b" path="res://sprites/flowers/nectars/nectar-side-1.png" id="19_j5qct"]
+[ext_resource type="Resource" uid="uid://ddctvkpap61cf" path="res://resources/NectarFlower_1.tres" id="20_s1m2c"]
 
 [node name="FlowerInterface" type="Control" unique_id=1353149384 groups=["flower_interface"]]
 layout_mode = 3
@@ -23,10 +35,12 @@ script = ExtResource("1_efdvc")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 760.0
-offset_right = -84.0
-offset_bottom = 248.0
+offset_left = 681.0
+offset_top = 19.0
+offset_right = -52.0
+offset_bottom = 267.0
 grow_horizontal = 2
+theme_override_constants/separation = 16
 alignment = 1
 
 [node name="FlowerButton" parent="HBoxContainer" unique_id=478105241 groups=["flower_button"] instance=ExtResource("2_efdvc")]
@@ -43,6 +57,36 @@ flower_res = ExtResource("6_rjigq")
 layout_mode = 2
 texture_normal = ExtResource("5_qavux")
 flower_res = ExtResource("8_qavux")
+
+[node name="FlowerButton9" parent="HBoxContainer" unique_id=992282279 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("19_j5qct")
+flower_res = ExtResource("20_s1m2c")
+
+[node name="FlowerButton5" parent="HBoxContainer" unique_id=1537376687 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("11_u0w1q")
+flower_res = ExtResource("12_soyoc")
+
+[node name="FlowerButton4" parent="HBoxContainer" unique_id=593541399 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("9_36sho")
+flower_res = ExtResource("10_1db8e")
+
+[node name="FlowerButton8" parent="HBoxContainer" unique_id=882860068 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("17_mevr0")
+flower_res = ExtResource("18_m6mop")
+
+[node name="FlowerButton6" parent="HBoxContainer" unique_id=273296678 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("13_57b0n")
+flower_res = ExtResource("14_5olr0")
+
+[node name="FlowerButton7" parent="HBoxContainer" unique_id=390698795 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("15_8jo5i")
+flower_res = ExtResource("16_w8vdr")
 
 [node name="SelectedFlower" type="Sprite2D" parent="." unique_id=1731492166 groups=["selected_flower"]]
 modulate = Color(1, 1, 1, 0.58431375)

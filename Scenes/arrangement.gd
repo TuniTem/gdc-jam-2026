@@ -57,6 +57,8 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_released("pick_flower") and can_place_flower:
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
+#		# TODO: spend money for cost of flower when placing flower
+		Globals.money -= 1
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
 

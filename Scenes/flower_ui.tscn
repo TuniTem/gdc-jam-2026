@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d68sg0l48obt"]
 
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
-[ext_resource type="Script" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
+[ext_resource type="Script" uid="uid://dn3c44lavn3tj" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]

@@ -3,12 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
 [ext_resource type="Script" uid="uid://dn3c44lavn3tj" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
-[ext_resource type="PackedScene" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
-[ext_resource type="PackedScene" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
-[ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="6_u4bsn"]
-[ext_resource type="Script" uid="uid://5m2wy54en2ht" path="res://Scenes/notebook_button.gd" id="7_g6g17"]
-[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="9_5rd6w"]
-[ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="9_b0ouy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
@@ -41,6 +35,12 @@ offset_right = 1641.0
 offset_bottom = 1031.0
 texture = ExtResource("2_cw6xy")
 
+[node name="PurpleBg" type="TextureRect" parent="." unique_id=169214454]
+layout_mode = 0
+offset_right = 582.0
+offset_bottom = 889.0
+texture = ExtResource("7_u4bsn")
+
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_33o2s")]
 
 [node name="FlowerInterface" parent="." unique_id=1353149384 instance=ExtResource("3_ay4m0")]
@@ -56,9 +56,3 @@ offset_bottom = -454.0
 
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
 position = Vector2(1329, 737)
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=169214454]
-layout_mode = 0
-offset_right = 582.0
-offset_bottom = 889.0
-texture = ExtResource("7_u4bsn")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b3yu8csaby48v"]
 
 [ext_resource type="Script" uid="uid://6kl1ncysxdnk" path="res://Scenes/main.gd" id="1_kry3j"]
-[ext_resource type="PackedScene" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://xq8e2gga6a3x" path="res://Scenes/clients.tscn" id="2_bo1nx"]
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
@@ -15,14 +15,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kry3j")
 
+[node name="FlowerUI" parent="." unique_id=1189810247 instance=ExtResource("4_jjvhh")]
+custom_minimum_size = Vector2(1920, 1280)
+layout_mode = 1
+
 [node name="ClientDisplay" parent="." unique_id=451460495 instance=ExtResource("2_bo1nx")]
 
 [node name="ClientOrders" type="Node" parent="ClientDisplay" unique_id=603382932]
 script = ExtResource("3_8gbba")
-
-[node name="FlowerUI" parent="." unique_id=1189810247 instance=ExtResource("4_jjvhh")]
-custom_minimum_size = Vector2(1920, 1280)
-layout_mode = 1
 
 [node name="GiveButton" type="Button" parent="." unique_id=1070884650]
 layout_mode = 0

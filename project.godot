@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jam @ GDC 2026"
-run/main_scene="uid://d68sg0l48obt"
+run/main_scene="uid://b3yu8csaby48v"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

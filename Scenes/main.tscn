@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://b3yu8csaby48v"]
 
-[ext_resource type="PackedScene" uid="uid://dci43ja1bs20e" path="res://Scenes/arrangement.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" path="res://Scenes/arrangement.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://by84a87h0dg7t" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+[ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 
 [node name="Main" type="Node2D" unique_id=1734753262]
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_jjgbg")]
 position = Vector2(596, 305)
 scale = Vector2(0.61, 0.61)
+
+[node name="ClientDisplay" parent="." unique_id=451460495 instance=ExtResource("2_bo1nx")]
+
+[node name="ClientOrders" type="Node" parent="ClientDisplay" unique_id=603382932]
+script = ExtResource("3_8gbba")

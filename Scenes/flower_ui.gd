@@ -4,7 +4,7 @@ extends Control
 
 func _process(delta):
 	queue_redraw()
-	money_label.text = str("Money: $", Globals.money)
+	# money_label.text = str("Money: $", Globals.money)
 
 func _draw():
 	if Globals.selected_flower != null:

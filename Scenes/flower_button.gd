@@ -6,7 +6,6 @@ extends TextureButton
 func _ready():
 	texture_normal = flower_res.side_texture
 	
-
 func _on_pressed():
 	Globals.selected_flower = texture_normal
 	Globals.selected_flower_res = flower_res

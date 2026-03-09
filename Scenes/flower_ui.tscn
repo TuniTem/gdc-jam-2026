@@ -1,14 +1,10 @@
 [gd_scene format=3 uid="uid://d68sg0l48obt"]
 
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
-[ext_resource type="Script" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
+[ext_resource type="Script" uid="uid://dn3c44lavn3tj" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
-[ext_resource type="PackedScene" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
-
-[ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="6_u4bsn"]
-[ext_resource type="Script" uid="uid://5m2wy54en2ht" path="res://Scenes/notebook_button.gd" id="7_g6g17"]
-[ext_resource type="Script" uid="uid://bwrrq04w7y7x4" path="res://GodotUtils/Nodes/image_button.gd" id="8_5rd6w"]
+[ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="9_b0ouy"]
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
@@ -43,39 +39,5 @@ offset_bottom = -454.0
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
 position = Vector2(1329, 737)
 
-<<<<<<< HEAD
-[node name="ImageButton" type="TextureRect" parent="." unique_id=877197974]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -150.0
-offset_top = -138.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = ExtResource("6_u4bsn")
-expand_mode = 1
-script = ExtResource("7_g6g17")
-metadata/_custom_type_script = "uid://bwrrq04w7y7x4"
-
-[node name="ImageButton2" type="TextureRect" parent="." unique_id=92542121]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("8_5rd6w")
-metadata/_custom_type_script = "uid://bwrrq04w7y7x4"
-
 [node name="Book" parent="." unique_id=698370101 instance=ExtResource("9_b0ouy")]
 layout_mode = 1
-
-[connection signal="pressed" from="ImageButton" to="ImageButton" method="_on_pressed"]
-=======
-[node name="MoneyLabel" type="Label" parent="." unique_id=28306829]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Money: $0"
-label_settings = SubResource("LabelSettings_ibd2s")
->>>>>>> refs/remotes/origin/main

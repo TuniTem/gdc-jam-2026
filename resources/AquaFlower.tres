@@ -1,8 +1,8 @@
 [gd_resource type="Resource" format=3 uid="uid://wyt213g0waht"]
 
-[ext_resource type="Texture2D" uid="uid://d3621ec488alc" path="res://Assets/Butter_Lilly_Top.png" id="1_5ybvw"]
+[ext_resource type="Texture2D" uid="uid://c1b8qe7gjt1r3" path="res://sprites/flowers/Butter_Lilly_Top.png" id="1_5ybvw"]
 [ext_resource type="Script" uid="uid://ctn4b8jk30bek" path="res://resources/flower.gd" id="2_wtwep"]
-[ext_resource type="Texture2D" uid="uid://cuk12gckmxo7p" path="res://Assets/Butter_Lilly_Full.png" id="3_5ybvw"]
+[ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="3_5ybvw"]
 
 [resource]
 script = ExtResource("2_wtwep")

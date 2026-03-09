@@ -56,12 +56,13 @@ func _input(event: InputEvent) -> void:
 			inst.flower_res = Globals.selected_flower_res
 	
 	if event.is_action_released("pick_flower") and can_place_flower:
-		placing_flower.modulate.a = 1.0
-		placing_flower = null
 #		# TODO: spend money for cost of flower when placing flower
 		# print("Selected flower: ", Globals.selected_flower)
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
+			Globals.flower_to_count_map[placing_flower.flower_res] -= 1
+		placing_flower.modulate.a = 1.0
+		placing_flower = null
 
 func clear_flowers():
 	queue_clear_flowers = true

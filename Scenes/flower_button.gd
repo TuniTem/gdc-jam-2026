@@ -6,6 +6,10 @@ extends TextureButton
 func _ready():
 	texture_normal = flower_res.side_texture
 	$Cost.text = "$" + str(flower_res.flower_cost)
+	tooltip_text = flower_res.flower_name
+	
+	if Globals.use_jon_short_version:
+		$Count.hide()
 
 func _process(delta):
 	var flower_count = Globals.flower_to_count_map[flower_res]

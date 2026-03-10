@@ -41,9 +41,9 @@ label_settings = SubResource("LabelSettings_63yw1")
 [node name="MoneyLabel" type="Label" parent="CanvasLayer" unique_id=1901653256]
 unique_name_in_owner = true
 offset_left = 1315.0
-offset_top = 1136.0
+offset_top = 1075.0
 offset_right = 1468.0
-offset_bottom = 1189.0
+offset_bottom = 1128.0
 text = "Money:"
 label_settings = SubResource("LabelSettings_no3si")
 

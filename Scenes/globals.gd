@@ -24,6 +24,7 @@ var money_a_day: int = 0
 var money_days_past: int = 0
 var starting_money: int = 0
 
+var use_jon_short_version = false
 @export var flower_to_count_map: Dictionary[Resource, int] = {}
 var flowers_unlocked = 3
 
@@ -38,18 +39,18 @@ var day_end_stats : Dictionary = {
 func _ready():
 	# flower_to_count_map[load("res://resources/PurpleFlower.tres")] = 30
 	# flower_to_count_map[load("res://resources/AquaFlower.tres")] = 30
-	flower_to_count_map[load("res://resources/ButterFlower.tres")] = 15
+	flower_to_count_map[load("res://resources/ButterFlower.tres")] = 99
 	# flower_to_count_map[load("res://resources/CactusFlower.tres")] = 30
-	flower_to_count_map[load("res://resources/DevilsFlower.tres")] = 0
-	flower_to_count_map[load("res://resources/IceFlower.tres")] = 0
+	flower_to_count_map[load("res://resources/DevilsFlower.tres")] = 99
+	flower_to_count_map[load("res://resources/IceFlower.tres")] = 99
 	
-	flower_to_count_map[load("res://resources/FireworkFlower.tres")] = 0
-	flower_to_count_map[load("res://resources/SilkweedFlower.tres")] = 15
+	flower_to_count_map[load("res://resources/FireworkFlower.tres")] = 99
+	flower_to_count_map[load("res://resources/SilkweedFlower.tres")] = 99
 	
-	flower_to_count_map[load("res://resources/NectarFlower_1.tres")] = 15
-	flower_to_count_map[load("res://resources/NectarFlower_2.tres")] = 0
-	flower_to_count_map[load("res://resources/NectarFlower_3.tres")] = 0
-	flower_to_count_map[load("res://resources/SpikeFlower.tres")] = 0
+	flower_to_count_map[load("res://resources/NectarFlower_1.tres")] = 99
+	flower_to_count_map[load("res://resources/NectarFlower_2.tres")] = 99
+	flower_to_count_map[load("res://resources/NectarFlower_3.tres")] = 99
+	flower_to_count_map[load("res://resources/SpikeFlower.tres")] = 99
 
 func unlock_entry(id : String):
 	for unlock in unlocks:

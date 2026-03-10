@@ -7,12 +7,14 @@
 [ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
 [ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="6_u4bsn"]
-[ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
 [ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="11_l58pg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_l58pg"]
 font_size = 32
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
@@ -41,6 +43,18 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_fg743")
 
+[node name="Wood2" type="TextureRect" parent="." unique_id=872444818]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 459.0
+offset_right = -1334.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_fg743")
+
 [node name="BackgroundVase" type="TextureRect" parent="." unique_id=919709588]
 layout_mode = 0
 offset_left = 1024.0
@@ -48,12 +62,6 @@ offset_top = 418.0
 offset_right = 1641.0
 offset_bottom = 1031.0
 texture = ExtResource("2_cw6xy")
-
-[node name="PurpleBg" type="TextureRect" parent="." unique_id=169214454]
-layout_mode = 0
-offset_right = 582.0
-offset_bottom = 889.0
-texture = ExtResource("7_u4bsn")
 
 [node name="Arrangement" parent="." unique_id=525398 instance=ExtResource("1_33o2s")]
 
@@ -97,6 +105,7 @@ texture = ExtResource("6_u4bsn")
 [node name="NewDay" parent="." unique_id=1241479211 instance=ExtResource("11_l58pg")]
 visible = false
 layout_mode = 1
+
 [node name="BouquetType" type="Label" parent="." unique_id=660679541]
 layout_mode = 0
 offset_left = 36.0
@@ -106,5 +115,14 @@ offset_bottom = 1262.0
 text = "Bouquet type: None"
 label_settings = SubResource("LabelSettings_b0ouy")
 horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=708359583]
+layout_mode = 0
+offset_left = 1729.0
+offset_top = 1077.0
+offset_right = 1906.0
+offset_bottom = 1128.0
+text = "Guide book"
+label_settings = SubResource("LabelSettings_l58pg")
 
 [connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

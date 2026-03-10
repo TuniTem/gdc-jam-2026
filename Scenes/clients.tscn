@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ddsdtq6fcbia0" path="res://Scripts/clientDisplay.gd" id="1_sg7oy"]
 [ext_resource type="Texture2D" uid="uid://c2i3vqopkttvt" path="res://sprites/ui/text-backing.png" id="2_7034k"]
+[ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="2_bcg28"]
 [ext_resource type="Texture2D" uid="uid://bsttu0kndpae" path="res://sprites/characters/char-0.png" id="2_xw3gm"]
 [ext_resource type="PackedScene" uid="uid://u21al3777ufi" path="res://Scripts/text_box.tscn" id="4_r3x2u"]
 
@@ -12,11 +13,16 @@ font_color = Color(0, 0, 0, 1)
 [node name="ClientDisplay" type="Node2D" unique_id=451460495]
 script = ExtResource("1_sg7oy")
 
+[node name="PurpleBg" type="TextureRect" parent="." unique_id=1772760203]
+offset_right = 582.0
+offset_bottom = 630.0
+texture = ExtResource("2_bcg28")
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1663414359]
 offset_left = 26.0
-offset_top = 128.0
+offset_top = 123.0
 offset_right = 586.0
-offset_bottom = 635.0
+offset_bottom = 630.0
 texture = ExtResource("2_xw3gm")
 expand_mode = 2
 stretch_mode = 5
@@ -45,7 +51,7 @@ label_settings = SubResource("LabelSettings_sg7oy")
 autowrap_mode = 2
 
 [node name="TextBox" parent="." unique_id=695939280 instance=ExtResource("4_r3x2u")]
-offset_left = 101.0
-offset_top = 618.0
-offset_right = 528.0
-offset_bottom = 971.0
+offset_left = 84.0
+offset_top = 693.0
+offset_right = 520.0
+offset_bottom = 1100.0

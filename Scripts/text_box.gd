@@ -16,6 +16,6 @@ func _on_text_timer_timeout():
 	for child in $MarginContainer/VBoxContainer.get_children():
 		if !child.visible:
 			child.show()
-			set_deferred("scroll_vertical", 1000)
+			# set_deferred("scroll_vertical", 1000)
 			return
 	$TextTimer.stop()

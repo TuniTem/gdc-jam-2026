@@ -6,8 +6,7 @@ func _process(delta):
 	if bouquet_type == Enums.BouquetType.NONE:
 		$BouquetType.text = ""
 	else:
-		$BouquetType.text = "Bouquet Type: " + BouquetHelpers.get_bouquet_name(bouquet_type)
-
+		$BouquetType.text = "(" + BouquetHelpers.get_bouquet_name(bouquet_type) + ")"
 
 func _on_book_button_pressed() -> void:
 	if Globals.day_controller.visible: return

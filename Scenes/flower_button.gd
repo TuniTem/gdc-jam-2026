@@ -11,6 +11,8 @@ func _process(delta):
 	var flower_count = Globals.flower_to_count_map[flower_res]
 	$Count.text = str(flower_count)
 	disabled = flower_count <= 0
+	if flower_count == 0:
+		modulate = Color.BLACK
 
 func _on_pressed():
 	Globals.selected_flower = texture_normal

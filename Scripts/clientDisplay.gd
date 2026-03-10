@@ -20,6 +20,7 @@ func _display_current_client():
 
 func load_new_client():
 	if not Globals.generate_new_character(): return
+	Globals.flower_ui.animations.play("new_vase")
 	texture_rect_node.texture = Globals.random_selected_character["picture"]
 	dialog.text = Globals.random_selected_character["dialog"]
 	name_label.text = Globals.random_selected_character["name"]
@@ -33,10 +34,12 @@ func run_response(text : String, response : String):
 	match response:
 		"good":
 			texture_rect_node.modulate = Color.GREEN
+			Globals.flower_ui.animations.play("sell")
 		"bad":
 			texture_rect_node.modulate = Color.RED
 		"meh":
 			texture_rect_node.modulate = Color.YELLOW
+			Globals.flower_ui.animations.play("sell")
 	
 	Util.tween(texture_rect_node, "modulate", Color.WHITE, 0.5, Tween.EASE_OUT, Tween.TRANS_CUBIC)
 	intro.play("text_only")

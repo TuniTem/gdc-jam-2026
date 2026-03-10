@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
 [ext_resource type="PackedScene" uid="uid://ci1ehmhfc568t" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
+[ext_resource type="Texture2D" uid="uid://bncg45vg6nwts" path="res://Assets/Flower_Vase_Standing_sideview.png" id="7_ar7t0"]
 [ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
 [ext_resource type="Texture2D" uid="uid://mog6qt32xl3l" path="res://Assets/IMG_0361.png" id="10_ar7t0"]
@@ -21,6 +22,167 @@ outline_color = Color(0, 0, 0, 0.9098039)
 
 [sub_resource type="LabelSettings" id="LabelSettings_l58pg"]
 font_size = 32
+
+[sub_resource type="Animation" id="Animation_plv88"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SideBouquet:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.0126325, 1.0126325)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SideBouquet:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(284, 190)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BackgroundVase:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1024, 418)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Arrangement:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ar7t0"]
+resource_name = "new_vase"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SideBouquet:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.29999998, 1.4333333),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1.0126325, 1.0126325)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SideBouquet:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.26666668, 0.8666667, 1.4333333),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector2(271.00003, 65.00001), Vector2(273.6, 0), Vector2(284, 190)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BackgroundVase:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.100000024, 1.7666667),
+"transitions": PackedFloat32Array(0.46651655, 0.26794338),
+"update": 0,
+"values": [Vector2(1024, 1432), Vector2(1024, 418)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Arrangement:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.100000024, 1.7333331),
+"transitions": PackedFloat32Array(0.46651655, 0.26794338),
+"update": 0,
+"values": [Vector2(0, 1850), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jp4op"]
+resource_name = "sell"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SideBouquet:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.0126325, 1.0126325), Vector2(1e-05, 1e-05)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SideBouquet:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(284, 190), Vector2(273.6, 0), Vector2(271.00003, 65.00001)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BackgroundVase:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.06666666, 0.8666667),
+"transitions": PackedFloat32Array(0.26794338, 1),
+"update": 0,
+"values": [Vector2(1024, 418), Vector2(1024, -682)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Arrangement:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.06666666, 0.8666667),
+"transitions": PackedFloat32Array(0.26794338, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -1100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ouj43"]
+_data = {
+&"RESET": SubResource("Animation_plv88"),
+&"new_vase": SubResource("Animation_ar7t0"),
+&"sell": SubResource("Animation_jp4op")
+}
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -76,10 +238,18 @@ metadata/_edit_lock_ = true
 
 [node name="SideBouquet" parent="." unique_id=381334461 instance=ExtResource("4_j13ie")]
 layout_mode = 1
-offset_left = 367.0
-offset_top = 472.0
-offset_right = -1065.0
-offset_bottom = -454.0
+offset_left = 284.0
+offset_top = 190.0
+offset_right = -1148.0375
+offset_bottom = -736.0067
+scale = Vector2(1.0126325, 1.0126325)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="SideBouquet" unique_id=335201139]
+z_index = 758
+position = Vector2(206.47382, 300.44058)
+scale = Vector2(0.35582006, 0.35582006)
+texture = ExtResource("7_ar7t0")
 
 [node name="DrawableArea" type="Marker2D" parent="." unique_id=261392592]
 position = Vector2(1329, 737)
@@ -131,5 +301,9 @@ offset_right = 1906.0
 offset_bottom = 1128.0
 text = "Guide book"
 label_settings = SubResource("LabelSettings_l58pg")
+
+[node name="animations" type="AnimationPlayer" parent="." unique_id=292808138]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_ouj43")
 
 [connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

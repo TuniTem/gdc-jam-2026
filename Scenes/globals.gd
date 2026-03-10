@@ -14,6 +14,7 @@ var current_character = 0
 var random_selected_character : Dictionary
 var clients : Node
 var arrangement 
+var flower_ui : Control
 
 var flower_center_pos = Vector2(1329, 737)
 var unlocks : Array[Entry]
@@ -58,7 +59,6 @@ func _ready():
 	for flower in FLOWERS.keys():
 		if FLOWERS[flower].flower_type != Enums.FlowerType.UNUSED:
 			base_price[FLOWERS[flower].flower_type] = min(base_price[FLOWERS[flower].flower_type], FLOWERS[flower].flower_cost)
-		
 
 func unlock_entry(id : String):
 	for unlock in unlocks:

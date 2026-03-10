@@ -67,10 +67,7 @@ func unlock_entry(id : String):
 
 func end_day():
 	print("end day")
-	money_a_day = money - money_days_past
-	if day == 0:
-		money_a_day -= starting_money
-	money_days_past = money
+	money_a_day = money - starting_money
 	#day_end_stats["people_helped"] = clients_a_day
 	day_end_stats["flowers_used"] = flowers_a_day
 	flowers_a_day = 0

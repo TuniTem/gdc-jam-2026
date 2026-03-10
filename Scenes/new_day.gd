@@ -59,6 +59,7 @@ func next_stage():
 			stage = Stage.END
 			animations.play("finish")
 			await animations.animation_finished
+			Globals.starting_money = Globals.money
 			Globals.clients.load_new_client()
 			hide()
 			

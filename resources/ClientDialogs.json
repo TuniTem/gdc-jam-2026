@@ -1,0 +1,50 @@
+{
+  "greetings": [
+	"heyaaaa",
+    "hi!"
+  ],
+  "intro_comments" : [
+	"Nice shop!",
+    "Wicked cool place dude."
+  ],
+  "ending_commnets" : [
+	"Thanks!",
+    "Erm, i hate you!"
+  ],
+  "successful_response" : [
+	"Awesome! ty!!!",
+    "erm, this is wickedsauce"
+  ],
+  "failiure_response" : [
+	"I hate you!!",
+    "uh, you suck"
+  ],
+  
+  "scenarios": {
+	"wedding (or your story name)" : {
+	  "prompt" : [
+		"yoyoyo, id love a [bouquet] for my wedding!", 
+        "my wedding needs aaaa [boquet]"
+	  ],
+	  "event_specific_flower_requests": {
+		"nectar": [
+		  "My groom's been [color=#ffff66]very sick[/color] lately...", 
+          "[color=#ffff66]im so sickkkk...[/color]"
+		],
+		"devils_trident": [
+          "the wedding venue is in a graveyard."
+		]
+	  }
+	},
+	"straightforward" : {
+		  "prompt" : [
+			"One [boquet] pls!", 
+            "pls [boquet]"
+		  ],
+		  "flower_requests": {
+			"devils_whatever": ["I'm so [color=#ffff66]angry[/color]!!"],
+			"other_flower"  : ["i [color=#ffff66]hate[/color] flowers...."]
+		  }
+	}
+  }
+}

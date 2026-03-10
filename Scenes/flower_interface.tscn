@@ -75,37 +75,37 @@ horizontal_alignment = 1
 
 [node name="PinkCount4" type="Label" parent="." unique_id=1315999065]
 layout_mode = 0
-offset_left = 717.0
-offset_top = 959.0
-offset_right = 718.0
-offset_bottom = 1004.0
+offset_left = 844.0
+offset_top = 1007.0
+offset_right = 845.0
+offset_bottom = 1075.0
 label_settings = SubResource("LabelSettings_s1m2c")
 horizontal_alignment = 1
 
 [node name="PinkCount5" type="Label" parent="." unique_id=1498117892]
 layout_mode = 0
-offset_left = 854.0
-offset_top = 864.0
-offset_right = 855.0
-offset_bottom = 909.0
+offset_left = 955.0
+offset_top = 888.0
+offset_right = 956.0
+offset_bottom = 956.0
 label_settings = SubResource("LabelSettings_s1m2c")
 horizontal_alignment = 1
 
 [node name="PinkCount6" type="Label" parent="." unique_id=510144691]
 layout_mode = 0
-offset_left = 992.0
-offset_top = 1051.0
-offset_right = 993.0
-offset_bottom = 1096.0
+offset_left = 1086.0
+offset_top = 1064.0
+offset_right = 1087.0
+offset_bottom = 1132.0
 label_settings = SubResource("LabelSettings_s1m2c")
 horizontal_alignment = 1
 
 [node name="PinkCount7" type="Label" parent="." unique_id=755497197]
 layout_mode = 0
-offset_left = 1160.0
-offset_top = 1142.0
-offset_right = 1192.0
-offset_bottom = 1210.0
+offset_left = 1199.0
+offset_top = 1186.0
+offset_right = 1231.0
+offset_bottom = 1254.0
 text = "7"
 label_settings = SubResource("LabelSettings_s1m2c")
 horizontal_alignment = 1
@@ -216,10 +216,10 @@ count = NodePath("../../../PinkCount8")
 
 [node name="Filler" type="HBoxContainer" parent="." unique_id=1166440348]
 layout_mode = 0
-offset_left = 687.0
-offset_top = 1010.0
-offset_right = 1291.0
-offset_bottom = 1220.0
+offset_left = 787.0
+offset_top = 1020.0
+offset_right = 1391.0
+offset_bottom = 1230.0
 mouse_filter = 2
 
 [node name="Node2D" type="Node2D" parent="Filler" unique_id=1820000690]
@@ -271,7 +271,7 @@ flower_res = ExtResource("16_mevr0")
 count = NodePath("../../../PinkCount6")
 
 [node name="Node2D4" type="Node2D" parent="Filler" unique_id=2044065032]
-position = Vector2(284.00003, -100)
+position = Vector2(289.00003, -73)
 rotation = 1.4601467
 scale = Vector2(1.1060354, 1.1853769)
 

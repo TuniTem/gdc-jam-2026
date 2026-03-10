@@ -8,7 +8,14 @@
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
 [ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="6_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="7_6bp64"]
-[ext_resource type="Script" path="res://Scenes/cursor_node.gd" id="8_344ge"]
+[ext_resource type="Script" uid="uid://ddkh64yjnh08" path="res://Scenes/cursor_node.gd" id="8_344ge"]
+[ext_resource type="Texture2D" uid="uid://4bllx6btc5xk" path="res://Assets/Devils_Pitchfork_Top.png" id="10_k12tt"]
+[ext_resource type="Texture2D" uid="uid://cnyowpvkww48p" path="res://Assets/Necktars_Purple_Top.png" id="11_h1bgf"]
+[ext_resource type="Texture2D" uid="uid://cbdobmew74i2m" path="res://Assets/Sky_Blooms_Top.png" id="12_b3802"]
+[ext_resource type="Texture2D" uid="uid://c1b8qe7gjt1r3" path="res://sprites/flowers/Butter_Lilly_Top.png" id="13_fevyy"]
+[ext_resource type="Texture2D" uid="uid://daw2udof2igec" path="res://sprites/flowers/Devils_Pitchfork_Top.png" id="14_hibaj"]
+[ext_resource type="Texture2D" uid="uid://hy3xg8rm4ls1" path="res://sprites/flowers/ice-flower-top.png" id="15_pdsj5"]
+[ext_resource type="Texture2D" uid="uid://corbjnh5dd3sm" path="res://sprites/flowers/silkweed-top.png" id="16_ee4r6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
 content_margin_left = 16.0
@@ -168,6 +175,10 @@ corner_detail = 4
 [sub_resource type="LabelSettings" id="LabelSettings_jkdf5"]
 font_size = 64
 
+[sub_resource type="Curve" id="Curve_gt3je"]
+_data = [Vector2(0.0016501695, 0.008075714), 0.0, 0.0, 0, 0, Vector2(0.509901, 1), 0.0, 0.0, 0, 0, Vector2(0.9636964, 0.7411585), 0.0, 0.0, 0, 0, Vector2(1, 0.0008354187), 0.0, 0.0, 0, 0]
+point_count = 4
+
 [node name="Main" type="Control" unique_id=272740684]
 layout_mode = 3
 anchors_preset = 15
@@ -271,6 +282,189 @@ vertical_alignment = 1
 script = ExtResource("8_344ge")
 
 [node name="Deco" type="Node2D" parent="." unique_id=206572207]
+modulate = Color(0.69, 0.69, 0.69, 1)
+position = Vector2(248, 730)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Deco" unique_id=1926215555]
+position = Vector2(73, 0)
+amount = 3
+texture = ExtResource("10_k12tt")
+lifetime = 3.38
+emission_shape = 3
+emission_rect_extents = Vector2(200, 1)
+gravity = Vector2(0, 163.334)
+angular_velocity_min = -164.05
+angular_velocity_max = 223.29
+tangential_accel_min = 39.88
+tangential_accel_max = 67.09
+scale_amount_min = 0.2
+scale_amount_max = 0.4
+scale_amount_curve = SubResource("Curve_gt3je")
+hue_variation_min = -0.49
+hue_variation_max = 1.0
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="Deco" unique_id=317458274]
+position = Vector2(73, 0)
+amount = 3
+texture = ExtResource("11_h1bgf")
+lifetime = 3.38
+emission_shape = 3
+emission_rect_extents = Vector2(200, 1)
+gravity = Vector2(0, 163.334)
+angular_velocity_min = -164.05
+angular_velocity_max = 223.29
+tangential_accel_min = 39.88
+tangential_accel_max = 67.09
+scale_amount_min = 0.2
+scale_amount_max = 0.4
+scale_amount_curve = SubResource("Curve_gt3je")
+hue_variation_min = -0.49
+hue_variation_max = 1.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="Deco" unique_id=1389305095]
+position = Vector2(73, 0)
+amount = 3
+texture = ExtResource("12_b3802")
+lifetime = 3.38
+emission_shape = 3
+emission_rect_extents = Vector2(200, 1)
+gravity = Vector2(0, 163.334)
+angular_velocity_min = -164.05
+angular_velocity_max = 223.29
+tangential_accel_min = 39.88
+tangential_accel_max = 67.09
+scale_amount_min = 0.2
+scale_amount_max = 0.4
+scale_amount_curve = SubResource("Curve_gt3je")
+hue_variation_min = -0.47
+hue_variation_max = 0.44
+
+[node name="SilkweedTop2" type="Sprite2D" parent="Deco" unique_id=4797116]
+position = Vector2(298, 251)
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop3" type="Sprite2D" parent="Deco" unique_id=1858734335]
+position = Vector2(318, 329)
+rotation = -1.6284877
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop6" type="Sprite2D" parent="Deco" unique_id=1724886776]
+position = Vector2(-247, -250)
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop7" type="Sprite2D" parent="Deco" unique_id=1348034920]
+position = Vector2(-227, -172)
+rotation = -1.6284877
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop8" type="Sprite2D" parent="Deco" unique_id=951483338]
+position = Vector2(-247, -250)
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop9" type="Sprite2D" parent="Deco" unique_id=594746235]
+position = Vector2(-227, -172)
+rotation = -1.6284877
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop10" type="Sprite2D" parent="Deco" unique_id=1817178470]
+position = Vector2(-257, -426)
+rotation = 2.5929334
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop11" type="Sprite2D" parent="Deco" unique_id=1842216879]
+position = Vector2(-237, -348)
+rotation = 0.9644457
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop12" type="Sprite2D" parent="Deco" unique_id=505320886]
+position = Vector2(-279.52316, -594.5232)
+rotation = 2.5929334
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop13" type="Sprite2D" parent="Deco" unique_id=376440426]
+position = Vector2(-259.52316, -516.5232)
+rotation = 0.9644457
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop4" type="Sprite2D" parent="Deco" unique_id=948947154]
+position = Vector2(-243, 289)
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop14" type="Sprite2D" parent="Deco" unique_id=1040514583]
+position = Vector2(-137.00002, -745.0001)
+rotation = -3.0730574
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop15" type="Sprite2D" parent="Deco" unique_id=1290362132]
+position = Vector2(202.00002, -742)
+rotation = 1.1483637
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop16" type="Sprite2D" parent="Deco" unique_id=697085110]
+position = Vector2(131.99998, -736)
+rotation = -0.480124
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop17" type="Sprite2D" parent="Deco" unique_id=956749280]
+position = Vector2(8.000023, -718)
+rotation = 1.1483637
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop18" type="Sprite2D" parent="Deco" unique_id=1710686173]
+position = Vector2(-34.792526, -865.79254)
+rotation = -0.480124
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop19" type="Sprite2D" parent="Deco" unique_id=655349393]
+position = Vector2(-18.269363, -60.269318)
+rotation = -1.4445697
+texture = ExtResource("16_ee4r6")
+
+[node name="SilkweedTop5" type="Sprite2D" parent="Deco" unique_id=130477063]
+position = Vector2(-223, 367)
+rotation = -1.6284877
+texture = ExtResource("16_ee4r6")
+
+[node name="ButterLillyTop" type="Sprite2D" parent="Deco" unique_id=970488000]
+position = Vector2(320, 523)
+texture = ExtResource("13_fevyy")
+
+[node name="ButterLillyTop2" type="Sprite2D" parent="Deco" unique_id=1887144937]
+position = Vector2(-237, 216)
+rotation = 2.9525485
+texture = ExtResource("13_fevyy")
+
+[node name="DevilsPitchforkTop" type="Sprite2D" parent="Deco" unique_id=469951958]
+position = Vector2(309, 446)
+rotation = 0.1322465
+scale = Vector2(0.43358207, 0.43358207)
+texture = ExtResource("14_hibaj")
+
+[node name="IceFlowerTop" type="Sprite2D" parent="Deco" unique_id=1706628883]
+position = Vector2(353, 430)
+scale = Vector2(0.6926534, 0.6926534)
+texture = ExtResource("15_pdsj5")
+
+[node name="SilkweedTop" type="Sprite2D" parent="Deco" unique_id=1422040285]
+position = Vector2(-215.00003, -697.00006)
+rotation = 2.5718596
+texture = ExtResource("16_ee4r6")
+
+[node name="IceFlowerTop2" type="Sprite2D" parent="Deco" unique_id=1370493859]
+position = Vector2(307, 131)
+texture = ExtResource("15_pdsj5")
+
+[node name="IceFlowerTop4" type="Sprite2D" parent="Deco" unique_id=382888936]
+position = Vector2(324, -721)
+texture = ExtResource("15_pdsj5")
+
+[node name="IceFlowerTop5" type="Sprite2D" parent="Deco" unique_id=1945219080]
+position = Vector2(-235, -725)
+texture = ExtResource("15_pdsj5")
+
+[node name="IceFlowerTop3" type="Sprite2D" parent="Deco" unique_id=547517637]
+position = Vector2(-235, 534)
+texture = ExtResource("15_pdsj5")
 
 [connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]
 [connection signal="pressed" from="ResetFlowers" to="." method="_on_reset_flowers_pressed"]

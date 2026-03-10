@@ -339,10 +339,10 @@ horizontal_alignment = 1
 
 [node name="Label4" type="Label" parent="." unique_id=1395037143]
 layout_mode = 0
-offset_left = 817.0
-offset_top = 1167.0
-offset_right = 949.0
-offset_bottom = 1225.0
+offset_left = 908.99994
+offset_top = 1180.0
+offset_right = 1041.0
+offset_bottom = 1238.0
 rotation = 0.2617994
 text = "Filler"
 label_settings = SubResource("LabelSettings_ar7t0")

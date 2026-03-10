@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://dmdgv0gk7778u"]
+
+[ext_resource type="Script" uid="uid://hw57ai4nup1n" path="res://Scenes/catalog_entry.gd" id="1_rjfbc"]
+[ext_resource type="Material" uid="uid://ddk0gocbtpfam" path="res://resources/parchment.tres" id="2_clcqe"]
+[ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="3_d3uoj"]
+[ext_resource type="FontFile" uid="uid://b8iepjx3qwhbu" path="res://Fonts/HFPoet.ttf" id="4_e7160"]
+[ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="5_tdiuw"]
+[ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="6_8lb06"]
+[ext_resource type="Texture2D" uid="uid://bh0swurl8qkl5" path="res://Assets/Plus.png" id="7_tj0a4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_irgj5"]
+font = ExtResource("4_e7160")
+font_size = 54
+font_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1mvn"]
+bg_color = Color(0.48, 0.46208, 0.41279998, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_uhypf"]
+font = ExtResource("5_tdiuw")
+font_size = 56
+font_color = Color(0.627451, 0.54509807, 0.47058824, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bx7vw"]
+font = ExtResource("5_tdiuw")
+font_size = 71
+font_color = Color(0.48774385, 0.43618628, 0.31824225, 1)
+
+[node name="CatalogEntry" type="Control" unique_id=2036527070]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_rjfbc")
+flower = "butter_lilly"
+price = 3
+type = "focal"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=230176611]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 29
+
+[node name="Control" type="Control" parent="VBoxContainer2" unique_id=2107170879]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2" unique_id=1130654083]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="VBoxContainer2/HBoxContainer" unique_id=1052660984]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer2/HBoxContainer/Control" unique_id=1428303788]
+material = ExtResource("2_clcqe")
+position = Vector2(76, 99)
+scale = Vector2(0.712085, 0.712085)
+texture = ExtResource("3_d3uoj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer" unique_id=1850948216]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=758542087]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Butter Lilly"
+label_settings = SubResource("LabelSettings_irgj5")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=1067817606]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 10
+
+[node name="Description" type="RichTextLabel" parent="VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" unique_id=1530279397]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("5_tdiuw")
+theme_override_fonts/bold_font = ExtResource("5_tdiuw")
+theme_override_font_sizes/normal_font_size = 29
+bbcode_enabled = true
+text = "Type: Core
+Price: $ 3"
+fit_content = true
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2" unique_id=1177044838]
+layout_mode = 2
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_right = 150
+
+[node name="Panel" type="Panel" parent="VBoxContainer2/MarginContainer" unique_id=1049858540]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_e1mvn")
+
+[node name="Inventory" type="Label" parent="." unique_id=463245913]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -20.0
+offset_right = 43.0
+offset_bottom = 31.0
+grow_vertical = 0
+text = "23"
+label_settings = SubResource("LabelSettings_uhypf")
+
+[node name="ImageButton" parent="." unique_id=218221572 instance=ExtResource("6_8lb06")]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -187.0
+offset_top = -22.0
+offset_right = -8.782166
+offset_bottom = 78.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("7_tj0a4")
+stretch_mode = 3
+
+[node name="Cart" type="Label" parent="ImageButton" unique_id=120243543]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 48.891113
+offset_top = -27.0
+offset_right = 91.89111
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "5"
+label_settings = SubResource("LabelSettings_bx7vw")
+
+[connection signal="pressed" from="ImageButton" to="." method="_on_add_pressed"]

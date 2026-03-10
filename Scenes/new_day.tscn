@@ -4,78 +4,16 @@
 [ext_resource type="Script" uid="uid://bi5vfyg2xsdk" path="res://Scenes/new_day.gd" id="1_rmkb3"]
 [ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="3_1fu1n"]
 [ext_resource type="Texture2D" uid="uid://bc24gpoglewt8" path="res://Assets/Book_Border_Half.png" id="3_3smw6"]
-[ext_resource type="Script" uid="uid://hw57ai4nup1n" path="res://Scenes/catalog_entry.gd" id="3_c1m1c"]
+[ext_resource type="PackedScene" uid="uid://dmdgv0gk7778u" path="res://Scenes/catalog_entry.tscn" id="3_l0g8d"]
+[ext_resource type="Texture2D" uid="uid://bnuxn42qeuxyf" path="res://Assets/Devils_Pitchfork_Full.png" id="4_j620g"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="4_mm26e"]
 [ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="5_3smw6"]
+[ext_resource type="Texture2D" uid="uid://k1exgdmyb040" path="res://Assets/Crystal_Heart_Full.png" id="5_t3i60"]
 [ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="7_bx7vw"]
-[ext_resource type="Material" uid="uid://ddk0gocbtpfam" path="res://resources/parchment.tres" id="8_c1m1c"]
-[ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="9_ljgp5"]
-[ext_resource type="FontFile" uid="uid://b8iepjx3qwhbu" path="res://Fonts/HFPoet.ttf" id="10_jd4hq"]
-[ext_resource type="Texture2D" uid="uid://bh0swurl8qkl5" path="res://Assets/Plus.png" id="11_1gmc5"]
-[ext_resource type="PackedScene" uid="uid://csplckxhb273p" path="res://Scenes/book_entry.tscn" id="12_5qobf"]
-[ext_resource type="Shader" uid="uid://ckbjrlpojkq7l" path="res://Shaders/book.gdshader" id="13_fow2x"]
+[ext_resource type="Texture2D" uid="uid://cglst50867iry" path="res://Assets/Necktars_Green_Full.png" id="7_t3i60"]
 [ext_resource type="Texture2D" uid="uid://drygkpeuxeafp" path="res://Assets/Sky_Blooms_Full.png" id="14_5v5t5"]
-[ext_resource type="Texture2D" uid="uid://dnkmycx88yogr" path="res://Assets/Necktars_Purple_Full.png" id="15_kiiin"]
 [ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="16_6dxfq"]
 [ext_resource type="Texture2D" uid="uid://bvx58elvr7fq7" path="res://Assets/Book_Border_And_Texture.png" id="17_yvqa5"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_irgj5"]
-font = ExtResource("10_jd4hq")
-font_size = 54
-font_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1mvn"]
-bg_color = Color(0.48, 0.46208, 0.41279998, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="LabelSettings" id="LabelSettings_uhypf"]
-font = ExtResource("3_1fu1n")
-font_size = 56
-font_color = Color(0.627451, 0.54509807, 0.47058824, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_bx7vw"]
-font = ExtResource("3_1fu1n")
-font_size = 71
-font_color = Color(0.48774385, 0.43618628, 0.31824225, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_blig7"]
-resource_local_to_scene = true
-shader = ExtResource("13_fow2x")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_q32vf"]
-resource_local_to_scene = true
-shader = ExtResource("13_fow2x")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rgimb"]
-resource_local_to_scene = true
-shader = ExtResource("13_fow2x")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_f7a1a"]
 font = ExtResource("1_640v5")
@@ -145,7 +83,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("TextureRect:modulate")
+tracks/3/path = NodePath("Stats:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -157,7 +95,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("TextureRect/VBoxContainer/VBoxContainer/PeopleHelpedNumber:modulate")
+tracks/4/path = NodePath("Stats/VBoxContainer/VBoxContainer/PeopleHelpedNumber:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -169,7 +107,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("TextureRect/VBoxContainer/VBoxContainer2/FlowersUsedNumber:modulate")
+tracks/5/path = NodePath("Stats/VBoxContainer/VBoxContainer2/FlowersUsedNumber:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -181,7 +119,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("TextureRect/VBoxContainer/VBoxContainer3/MoneyMadeNumber:modulate")
+tracks/6/path = NodePath("Stats/VBoxContainer/VBoxContainer3/MoneyMadeNumber:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -193,7 +131,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("TextureRect/VBoxContainer/VBoxContainer4/PopularityChangeNumber:modulate")
+tracks/7/path = NodePath("Stats/VBoxContainer/VBoxContainer4/PopularityChangeNumber:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -205,7 +143,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("TextureRect/VBoxContainer/VBoxContainer4/PopulaityDiffrenceNumber:modulate")
+tracks/8/path = NodePath("Stats/VBoxContainer/VBoxContainer4/PopulaityDiffrenceNumber:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -229,7 +167,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("TextureRect:position")
+tracks/10/path = NodePath("Stats:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -269,7 +207,7 @@ length = 4.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:position")
+tracks/0/path = NodePath("Stats:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -297,10 +235,10 @@ tracks/2/path = NodePath("MarginContainer:theme_override_constants/margin_top")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0.33333337, 1.3333334),
-"transitions": PackedFloat32Array(-2, 1),
+"times": PackedFloat32Array(0.33333337, 1.3333334, 1.9666667, 2.0666666, 2.3666666),
+"transitions": PackedFloat32Array(-2, 1, 1, 0.43527523, 1),
 "update": 0,
-"values": [48, 555]
+"values": [48, 555, 555, 532, 555]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -313,6 +251,32 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.9666665),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"add_day_count"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(3.0000002, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_3smw6"]
@@ -357,7 +321,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("TextureRect:modulate")
+tracks/3/path = NodePath("Stats:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -369,7 +333,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("TextureRect/VBoxContainer/VBoxContainer/PeopleHelpedNumber:modulate")
+tracks/4/path = NodePath("Stats/VBoxContainer/VBoxContainer/PeopleHelpedNumber:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -381,7 +345,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("TextureRect/VBoxContainer/VBoxContainer2/FlowersUsedNumber:modulate")
+tracks/5/path = NodePath("Stats/VBoxContainer/VBoxContainer2/FlowersUsedNumber:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -393,7 +357,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("TextureRect/VBoxContainer/VBoxContainer3/MoneyMadeNumber:modulate")
+tracks/6/path = NodePath("Stats/VBoxContainer/VBoxContainer3/MoneyMadeNumber:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -405,7 +369,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("TextureRect/VBoxContainer/VBoxContainer4/PopularityChangeNumber:modulate")
+tracks/7/path = NodePath("Stats/VBoxContainer/VBoxContainer4/PopularityChangeNumber:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -417,7 +381,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("TextureRect/VBoxContainer/VBoxContainer4/PopulaityDiffrenceNumber:modulate")
+tracks/8/path = NodePath("Stats/VBoxContainer/VBoxContainer4/PopulaityDiffrenceNumber:modulate")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -438,13 +402,25 @@ tracks/9/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Stats:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(465, 275)]
+}
 
 [sub_resource type="Animation" id="Animation_c1m1c"]
 resource_name = "switch_to_catalog"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/path = NodePath("Stats:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -468,7 +444,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect:position")
+tracks/2/path = NodePath("Stats:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -517,9 +493,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_rmkb3")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=627676009]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.17, 0.14892, 0.1292, 0.627451)
+
 [node name="Catalog" type="Control" parent="." unique_id=853622235]
+z_index = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -533,6 +521,7 @@ offset_bottom = 482.0033
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Catalog" unique_id=1167828175]
 layout_mode = 1
@@ -541,6 +530,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Catalog/HBoxContainer" unique_id=1822298241]
 layout_mode = 2
@@ -562,6 +552,7 @@ offset_top = -1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 80
 theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 20
@@ -569,124 +560,54 @@ theme_override_constants/margin_bottom = 40
 
 [node name="0" type="VBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft" unique_id=450712923]
 layout_mode = 2
+mouse_filter = 2
 alignment = 1
 
-[node name="CatalogEntry" type="Control" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=76116807]
-custom_minimum_size = Vector2(0, 200)
+[node name="CatalogEntry" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=2036527070 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
-script = ExtResource("3_c1m1c")
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "Butter Lilly"
+flower_id = "butter_lilly"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry" unique_id=1961349098]
-show_behind_parent = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 29
-
-[node name="Control" type="Control" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2" unique_id=1781101528]
+[node name="CatalogEntry2" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1635237684 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "Devils Pitchfork"
+flower_id = "devils_pitchfork"
+type = "filler"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2" unique_id=411667644]
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1635237684, 1052660984) index="0" unique_id=1428303788]
+position = Vector2(79.99999, 94.500015)
+scale = Vector2(0.3328911, 0.3328911)
+texture = ExtResource("4_j620g")
+
+[node name="CatalogEntry4" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=982860902 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "crystal_heart"
+flower_id = "Crystal Heart"
+type = "filler"
 
-[node name="Control" type="Control" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/HBoxContainer" unique_id=757080868]
-custom_minimum_size = Vector2(170, 0)
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry4/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(982860902, 1052660984) index="0" unique_id=1428303788]
+scale = Vector2(0.38624784, 0.38624784)
+texture = ExtResource("5_t3i60")
+
+[node name="CatalogEntry3" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1531977188 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "sky_bloom"
+flower_id = "Sky Bloom"
 
-[node name="Sprite2D" type="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/HBoxContainer/Control" unique_id=923409529]
-material = ExtResource("8_c1m1c")
-position = Vector2(76, 99)
-scale = Vector2(0.712085, 0.712085)
-texture = ExtResource("9_ljgp5")
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1531977188, 1052660984) index="0" unique_id=1428303788]
+scale = Vector2(0.9040573, 0.9040573)
+texture = ExtResource("14_5v5t5")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/HBoxContainer" unique_id=745472749]
-layout_mode = 2
-
-[node name="Title" type="Label" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=697499992]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Butter Lilly"
-label_settings = SubResource("LabelSettings_irgj5")
-
-[node name="MarginContainer" type="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/HBoxContainer/VBoxContainer" unique_id=631509805]
-layout_mode = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 10
-
-[node name="Description" type="RichTextLabel" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" unique_id=1064711938]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(400, 0)
-layout_mode = 2
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_constants/line_separation = 6
-theme_override_fonts/normal_font = ExtResource("3_1fu1n")
-theme_override_fonts/bold_font = ExtResource("3_1fu1n")
-theme_override_font_sizes/normal_font_size = 29
-bbcode_enabled = true
-text = "Type: Core
-Price: $ 3"
-fit_content = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2" unique_id=1744207426]
-layout_mode = 2
-theme_override_constants/margin_left = 150
-theme_override_constants/margin_right = 150
-
-[node name="Panel" type="Panel" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/VBoxContainer2/MarginContainer" unique_id=149115897]
-custom_minimum_size = Vector2(0, 2)
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1mvn")
-
-[node name="Inventory" type="Label" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry" unique_id=432549467]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -20.0
-offset_right = 43.0
-offset_bottom = 31.0
-grow_vertical = 0
-text = "23"
-label_settings = SubResource("LabelSettings_uhypf")
-
-[node name="ImageButton" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry" unique_id=793651723 instance=ExtResource("4_mm26e")]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -187.0
-offset_top = -22.0
-offset_right = -8.782166
-offset_bottom = 78.0
-grow_horizontal = 0
-grow_vertical = 2
-texture = ExtResource("11_1gmc5")
-stretch_mode = 3
-
-[node name="Cart" type="Label" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/ImageButton" unique_id=390336675]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 48.891113
-offset_top = -27.0
-offset_right = 91.89111
-offset_bottom = 38.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "5"
-label_settings = SubResource("LabelSettings_bx7vw")
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry3/VBoxContainer2" parent_id_path=PackedInt32Array(1531977188, 230176611) index="2" unique_id=1177044838]
+visible = false
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="Catalog/HBoxContainer" unique_id=2116030434]
 layout_mode = 2
@@ -706,82 +627,67 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 40
 theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="0" type="VBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight" unique_id=1986216568]
+[node name="1" type="VBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight" unique_id=1829377573]
 layout_mode = 2
+mouse_filter = 2
 alignment = 1
 
-[node name="Entry" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1064202854 instance=ExtResource("12_5qobf")]
-material = SubResource("ShaderMaterial_blig7")
+[node name="CatalogEntry2" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1515368373 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
-unlock_id = "sky_bloom"
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "Nectar"
+flower_id = "nectar"
+type = "filler"
 
-[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1064202854, 757080868) index="0" unique_id=923409529]
-position = Vector2(68, 101)
-scale = Vector2(0.9144459, 0.9144459)
-texture = ExtResource("14_5v5t5")
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1515368373, 1052660984) index="0" unique_id=1428303788]
+position = Vector2(79.99999, 94.500015)
+scale = Vector2(0.5102255, 0.5102255)
+texture = ExtResource("7_t3i60")
 
-[node name="Label" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1064202854, 745472749) index="0" unique_id=697499992]
-text = "Sky Bloom"
-
-[node name="RichTextLabel" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1064202854, 631509805) index="0" unique_id=1064711938]
-text = "Type: Core
-Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
-"
-
-[node name="Entry2" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1618295589 instance=ExtResource("12_5qobf")]
-material = SubResource("ShaderMaterial_q32vf")
-custom_minimum_size = Vector2(0, 256.82)
+[node name="CatalogEntry" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1928572418 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
-unlock_id = "nectar"
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "Filigree"
+flower_id = "filigree"
+type = "filler"
 
-[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1618295589, 757080868) index="0" unique_id=923409529]
-position = Vector2(73.00005, 121.999985)
-scale = Vector2(0.5160504, 0.5160504)
-texture = ExtResource("15_kiiin")
-
-[node name="Label" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1618295589, 745472749) index="0" unique_id=697499992]
-text = "Nectar"
-
-[node name="RichTextLabel" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1618295589, 631509805) index="0" unique_id=1064711938]
-theme_override_font_sizes/normal_font_size = 27
-text = "Type: Filler
- Releases a potent aromatic sticky glue when squeezed at the neck. These flowers are a gesture of great respect.  Purple symbolizes peace. Red symbolizes love. Green symbolizes sorrow.
-"
-
-[node name="Entry3" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=2138701255 instance=ExtResource("12_5qobf")]
-material = SubResource("ShaderMaterial_rgimb")
-custom_minimum_size = Vector2(0, 284.71)
-layout_mode = 2
-unlock_id = "filigree"
-
-[node name="VBoxContainer2" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry3" index="0" unique_id=1961349098]
-offset_top = 52.0
-offset_bottom = 307.0
-
-[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2138701255, 757080868) index="0" unique_id=923409529]
-position = Vector2(76.99999, 103.99999)
-scale = Vector2(0.92517275, 0.92517275)
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1928572418, 1052660984) index="0" unique_id=1428303788]
+scale = Vector2(0.97730607, 0.97730607)
 texture = ExtResource("16_6dxfq")
 
-[node name="Label" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(2138701255, 745472749) index="0" unique_id=697499992]
-text = "Filigree"
-
-[node name="RichTextLabel" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2138701255, 631509805) index="0" unique_id=1064711938]
-text = "Type: Filler
-Slowly looses its shimmering glow and crumbles over time. Brings good fortune and rumored to wad off evil spirits.
-"
-
-[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2" index="2" unique_id=1744207426]
-visible = false
-
-[node name="Control" type="Control" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1381262468]
-custom_minimum_size = Vector2(0, 30)
+[node name="CatalogEntry4" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1587496563 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "crystal_heart"
+flower_id = "Crystal Heart"
+type = "filler"
+
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry4/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1587496563, 1052660984) index="0" unique_id=1428303788]
+scale = Vector2(0.38624784, 0.38624784)
+texture = ExtResource("5_t3i60")
+
+[node name="CatalogEntry3" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=690930237 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
+layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "sky_bloom"
+flower_id = "Sky Bloom"
+
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(690930237, 1052660984) index="0" unique_id=1428303788]
+scale = Vector2(0.9040573, 0.9040573)
+texture = ExtResource("14_5v5t5")
+
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry3/VBoxContainer2" parent_id_path=PackedInt32Array(690930237, 230176611) index="2" unique_id=1177044838]
+visible = false
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Catalog" unique_id=537073261]
 layout_mode = 0
@@ -794,6 +700,7 @@ z_as_relative = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = ExtResource("17_yvqa5")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=2059175203]
@@ -805,6 +712,7 @@ offset_left = -20.0
 offset_right = 20.0
 offset_bottom = 40.0
 grow_horizontal = 2
+mouse_filter = 2
 theme_override_constants/margin_top = 77
 
 [node name="DayLabel" type="Label" parent="MarginContainer" unique_id=183783104]
@@ -814,7 +722,7 @@ layout_mode = 2
 text = "Day 1"
 label_settings = SubResource("LabelSettings_f7a1a")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1537954748]
+[node name="Stats" type="TextureRect" parent="." unique_id=1537954748]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -827,11 +735,12 @@ offset_right = 495.0
 offset_bottom = 552.00024
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("3_3smw6")
 expand_mode = 2
 stretch_mode = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect" unique_id=217726622]
+[node name="VBoxContainer" type="VBoxContainer" parent="Stats" unique_id=217726622]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -845,20 +754,22 @@ offset_bottom = 414.5
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
 theme_override_constants/separation = 29
 alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=658109990]
+[node name="VBoxContainer" type="VBoxContainer" parent="Stats/VBoxContainer" unique_id=658109990]
 layout_mode = 2
+mouse_filter = 2
 
-[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer" unique_id=226640608]
+[node name="Header" type="Label" parent="Stats/VBoxContainer/VBoxContainer" unique_id=226640608]
 layout_mode = 2
 text = "People Helped"
 label_settings = SubResource("LabelSettings_rmkb3")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PeopleHelpedNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer" unique_id=222463427]
+[node name="PeopleHelpedNumber" type="Label" parent="Stats/VBoxContainer/VBoxContainer" unique_id=222463427]
 unique_name_in_owner = true
 layout_mode = 2
 text = "5"
@@ -866,17 +777,18 @@ label_settings = SubResource("LabelSettings_mm26e")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=1990307231]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Stats/VBoxContainer" unique_id=1990307231]
 layout_mode = 2
+mouse_filter = 2
 
-[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer2" unique_id=1828824253]
+[node name="Header" type="Label" parent="Stats/VBoxContainer/VBoxContainer2" unique_id=1828824253]
 layout_mode = 2
 text = "Flowers Used"
 label_settings = SubResource("LabelSettings_rmkb3")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="FlowersUsedNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer2" unique_id=887573080]
+[node name="FlowersUsedNumber" type="Label" parent="Stats/VBoxContainer/VBoxContainer2" unique_id=887573080]
 unique_name_in_owner = true
 layout_mode = 2
 text = "5"
@@ -884,17 +796,18 @@ label_settings = SubResource("LabelSettings_mm26e")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=2031856359]
+[node name="VBoxContainer3" type="VBoxContainer" parent="Stats/VBoxContainer" unique_id=2031856359]
 layout_mode = 2
+mouse_filter = 2
 
-[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer3" unique_id=1097487044]
+[node name="Header" type="Label" parent="Stats/VBoxContainer/VBoxContainer3" unique_id=1097487044]
 layout_mode = 2
 text = "Money Made"
 label_settings = SubResource("LabelSettings_rmkb3")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MoneyMadeNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer3" unique_id=1067310921]
+[node name="MoneyMadeNumber" type="Label" parent="Stats/VBoxContainer/VBoxContainer3" unique_id=1067310921]
 unique_name_in_owner = true
 layout_mode = 2
 text = "5"
@@ -902,17 +815,18 @@ label_settings = SubResource("LabelSettings_mm26e")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer4" type="VBoxContainer" parent="TextureRect/VBoxContainer" unique_id=1688955930]
+[node name="VBoxContainer4" type="VBoxContainer" parent="Stats/VBoxContainer" unique_id=1688955930]
 layout_mode = 2
+mouse_filter = 2
 
-[node name="Header" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer4" unique_id=801636470]
+[node name="Header" type="Label" parent="Stats/VBoxContainer/VBoxContainer4" unique_id=801636470]
 layout_mode = 2
 text = "Popularity Change"
 label_settings = SubResource("LabelSettings_rmkb3")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PopularityChangeNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer4" unique_id=409338033]
+[node name="PopularityChangeNumber" type="Label" parent="Stats/VBoxContainer/VBoxContainer4" unique_id=409338033]
 unique_name_in_owner = true
 layout_mode = 2
 text = "2.3 ➜ 3.0"
@@ -920,7 +834,7 @@ label_settings = SubResource("LabelSettings_3smw6")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PopulaityDiffrenceNumber" type="Label" parent="TextureRect/VBoxContainer/VBoxContainer4" unique_id=758088788]
+[node name="PopulaityDiffrenceNumber" type="Label" parent="Stats/VBoxContainer/VBoxContainer4" unique_id=758088788]
 unique_name_in_owner = true
 layout_mode = 2
 text = "(+ 0.7)"
@@ -937,30 +851,27 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 0
 grow_vertical = 0
+mouse_filter = 2
 theme_override_constants/margin_right = 25
 theme_override_constants/margin_bottom = 25
 
 [node name="Next" parent="MarginContainer2" unique_id=436819916 instance=ExtResource("4_mm26e")]
-custom_minimum_size = Vector2(200, 200)
+custom_minimum_size = Vector2(85, 85)
 layout_mode = 2
+mouse_filter = 2
 texture = ExtResource("5_3smw6")
 
 [node name="Animations" type="AnimationPlayer" parent="." unique_id=1190505065]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_acooa")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=627676009]
-z_index = -2
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 0.13725491)
-
-[connection signal="pressed" from="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry/ImageButton" to="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry" method="_on_add_pressed"]
 [connection signal="pressed" from="MarginContainer2/Next" to="." method="_on_next_pressed"]
 
-[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry"]
-[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry2"]
-[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/0/Entry3"]
+[editable path="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry"]
+[editable path="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry2"]
+[editable path="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry4"]
+[editable path="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry3"]
+[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2"]
+[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry"]
+[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry4"]
+[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry3"]

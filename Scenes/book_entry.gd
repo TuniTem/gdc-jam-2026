@@ -8,3 +8,6 @@ class_name Entry
 
 func _ready() -> void:
 	Globals.unlocks.append(self)
+
+	if Globals.DEBUG:
+		animation.play("paint_in")

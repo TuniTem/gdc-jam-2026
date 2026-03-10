@@ -2,10 +2,15 @@
 
 [ext_resource type="Script" uid="uid://6kl1ncysxdnk" path="res://Scenes/main.gd" id="1_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dkgygmk7t2m2p" path="res://Scenes/money.tscn" id="2_21xkr"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+=======
 [ext_resource type="PackedScene" uid="uid://xq8e2gga6a3x" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+>>>>>>> refs/remotes/origin/main
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
+[ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="7_6bp64"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
 content_margin_left = 16.0
@@ -72,6 +77,9 @@ text = "Give Flowers"
 
 [node name="Book" parent="." unique_id=698370101 instance=ExtResource("5_kry3j")]
 visible = false
+layout_mode = 1
+
+[node name="NewDay" parent="." unique_id=1241479211 instance=ExtResource("7_6bp64")]
 layout_mode = 1
 
 [connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]

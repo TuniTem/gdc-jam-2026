@@ -7,6 +7,8 @@ func _process(delta):
 
 
 func _on_book_button_pressed() -> void:
+	if Globals.day_controller.visible: return
+	
 	if Globals.book.shown:
 		Globals.book.hide_book()
 	else:

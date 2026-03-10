@@ -3,14 +3,17 @@
 [ext_resource type="PackedScene" uid="uid://d3ygmkbwijssl" path="res://Scenes/arrangement.tscn" id="1_33o2s"]
 [ext_resource type="Script" uid="uid://dn3c44lavn3tj" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
-[ext_resource type="PackedScene" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
-[ext_resource type="PackedScene" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
+[ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
+[ext_resource type="PackedScene" uid="uid://crbyo7nyt16dv" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
 [ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="6_u4bsn"]
 [ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
-[ext_resource type="Script" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
+[ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="11_l58pg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
+font_size = 32
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -20,6 +23,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ibd2s")
+
+[node name="OtherBg" type="ColorRect" parent="." unique_id=2015511810]
+layout_mode = 0
+offset_top = 830.0
+offset_right = 599.0
+offset_bottom = 1280.0
+color = Color(0.7031039, 0.36497587, 0.4969427, 1)
 
 [node name="Wood" type="TextureRect" parent="." unique_id=1880802110]
 layout_mode = 1
@@ -87,5 +97,14 @@ texture = ExtResource("6_u4bsn")
 [node name="NewDay" parent="." unique_id=1241479211 instance=ExtResource("11_l58pg")]
 visible = false
 layout_mode = 1
+[node name="BouquetType" type="Label" parent="." unique_id=660679541]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1217.0
+offset_right = 535.0
+offset_bottom = 1262.0
+text = "Bouquet type: None"
+label_settings = SubResource("LabelSettings_b0ouy")
+horizontal_alignment = 1
 
 [connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

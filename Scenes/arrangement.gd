@@ -33,6 +33,8 @@ func _process(delta: float) -> void:
 				child.queue_free()
 		flowers.clear()
 		queue_clear_flowers = false
+	if _flower_out_of_range():
+		get_tree().get_first_node_in_group("flower_interface").deselect_flower()
 
 func is_hovering_over_flower_button():
 	for fw_btn in get_tree().get_nodes_in_group("flower_button"):
@@ -43,6 +45,7 @@ func is_hovering_over_flower_button():
 
 func _input(event: InputEvent) -> void:
 	var can_place_flower = use_placeholder_flower or (Globals.selected_flower != null and !is_hovering_over_flower_button() and get_global_mouse_position().distance_to(Globals.flower_center_pos) <= 500)
+	
 	if event.is_action_pressed("pick_flower") and can_place_flower:
 		var inst : Flower = FLOWER_SCENE.instantiate()
 		inst.position = get_local_mouse_position()
@@ -56,11 +59,11 @@ func _input(event: InputEvent) -> void:
 			inst.flower_res = Globals.selected_flower_res
 	
 	if event.is_action_released("pick_flower") and can_place_flower:
-#		# TODO: spend money for cost of flower when placing flower
-		# print("Selected flower: ", Globals.selected_flower)
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
 			Globals.flower_to_count_map[placing_flower.flower_res] -= 1
+			if Globals.flower_to_count_map[placing_flower.flower_res] == 0:
+				get_tree().get_first_node_in_group("flower_interface").deselect_flower()
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
 
@@ -99,3 +102,6 @@ func _draw() -> void:
 	for flower : Flower in flowers:
 		draw_circle(flower.stem_pos, STEM_LINE_WIDTH/2.0, Color(0.245, 0.51, 0.245, 1.0))
 		draw_line(flower.position, flower.stem_pos, Color(0.245, 0.51, 0.245, 1.0), STEM_LINE_WIDTH, true)
+
+func _flower_out_of_range() -> bool:
+	return get_local_mouse_position().x < 580

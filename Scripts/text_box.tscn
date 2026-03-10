@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://u21al3777ufi"]
+
+[ext_resource type="Script" uid="uid://j6ddc35k57y0" path="res://Scripts/text_box.gd" id="1_rclgu"]
+
+[node name="TextBox" type="ScrollContainer" unique_id=695939280]
+offset_right = 434.0
+offset_bottom = 172.0
+follow_focus = true
+script = ExtResource("1_rclgu")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1935897812]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=293246338]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+theme_override_constants/separation = 16

@@ -11,3 +11,4 @@ side_texture = ExtResource("3_p6gx1")
 flower_texture = ExtResource("1_14eq5")
 flower_cost = 3
 flower_worth = 3
+flower_type = 3

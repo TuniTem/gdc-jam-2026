@@ -2,11 +2,44 @@
 
 [ext_resource type="Script" uid="uid://6kl1ncysxdnk" path="res://Scenes/main.gd" id="1_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dkgygmk7t2m2p" path="res://Scenes/money.tscn" id="2_21xkr"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+=======
+[ext_resource type="PackedScene" uid="uid://xq8e2gga6a3x" path="res://Scenes/clients.tscn" id="2_bo1nx"]
+>>>>>>> refs/remotes/origin/main
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="7_6bp64"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_344ge"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.27022174, 0.27022195, 0.2702219, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bp64"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.44291073, 0.4429108, 0.4429106, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
 
 [node name="Main" type="Control" unique_id=272740684]
 layout_mode = 3
@@ -30,15 +63,19 @@ script = ExtResource("3_8gbba")
 
 [node name="GiveButton" type="Button" parent="." unique_id=1070884650]
 layout_mode = 0
-offset_left = 158.0
+offset_left = 119.0
 offset_top = 1120.0
-offset_right = 460.0
+offset_right = 445.0
 offset_bottom = 1195.0
 mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_21xkr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_344ge")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6bp64")
 text = "Give Flowers"
 
 [node name="Book" parent="." unique_id=698370101 instance=ExtResource("5_kry3j")]
+visible = false
 layout_mode = 1
 
 [node name="NewDay" parent="." unique_id=1241479211 instance=ExtResource("7_6bp64")]

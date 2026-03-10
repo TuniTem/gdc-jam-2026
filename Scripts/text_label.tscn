@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bmqe63vl221ob"]
+
+[ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="1_2e8b3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rclgu"]
+texture = ExtResource("1_2e8b3")
+expand_margin_left = 8.0
+expand_margin_top = 4.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_cn1bv"]
+font_size = 32
+font_color = Color(0.096204735, 0.09620475, 0.096204735, 1)
+
+[node name="TextLabel" type="Label" unique_id=957355905]
+visible = false
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxTexture_rclgu")
+text = "Placeholder text"
+label_settings = SubResource("LabelSettings_cn1bv")
+autowrap_mode = 2

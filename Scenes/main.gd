@@ -71,6 +71,7 @@ func _on_give_button_pressed():
 				Globals.money += (Globals.random_selected_character["price"] * 0.5) if has_bouquet else 0.0
 			
 			print("money8r", Globals.money, " ", Globals.random_selected_character["price"] * 0.5 * (float(has_flowers) / float(required_flowers)))
+			$GiveButton.disabled = true
 			match response:
 				"good":
 					await client_display.run_response(Globals.random_selected_character["success_response"], response)
@@ -90,6 +91,7 @@ func _on_give_button_pressed():
 	$ClientDisplay._display_current_client()
 	$FlowerUI/Arrangement.clear_flowers()
 	$FlowerUI/SideBouquet.clear_flowers()
+	$GiveButton.disabled = false
 
 func handle_day_end():
 	# Spend money for flowers and get money for bouquet

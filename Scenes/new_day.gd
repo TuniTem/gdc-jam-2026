@@ -28,7 +28,7 @@ func start_new_day():
 	stage = Stage.START
 	people_helped_number.text = str(Globals.day_end_stats["people_helped"])
 	flowers_used_number.text = str(Globals.day_end_stats["flowers_used"])
-	money_made_number.text = str(Globals.day_end_stats["money_made"])
+	money_made_number.text = "$" + str(Globals.day_end_stats["money_made"])
 	popularity_change_number.text = str(snapped(Globals.day_end_stats["start_popularity"], 0.1)) + " ➜ " + str(snapped(Globals.day_end_stats["current_popularity"], 0.1))
 	populaity_diffrence_number.text = str(snapped(Globals.day_end_stats["current_popularity"] - Globals.day_end_stats["start_popularity"], 0.1))
 	day_label.text = "Day " + str(Globals.day)

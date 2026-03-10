@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://mog6qt32xl3l" path="res://Assets/IMG_0361.png" id="10_ar7t0"]
 [ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="11_ar7t0"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="11_l58pg"]
+[ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="13_plv88"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
 font = ExtResource("11_ar7t0")
@@ -184,6 +185,11 @@ _data = {
 &"sell": SubResource("Animation_jp4op")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_ar7t0"]
+font = ExtResource("13_plv88")
+font_size = 56
+font_color = Color(0.42352942, 0.23529412, 0.16078432, 0.5176471)
+
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
 anchors_preset = 15
@@ -244,6 +250,7 @@ offset_right = -1148.0375
 offset_bottom = -736.0067
 scale = Vector2(1.0126325, 1.0126325)
 pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="SideBouquet" unique_id=335201139]
 z_index = 758
@@ -305,5 +312,38 @@ label_settings = SubResource("LabelSettings_l58pg")
 [node name="animations" type="AnimationPlayer" parent="." unique_id=292808138]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_ouj43")
+
+[node name="Label2" type="Label" parent="." unique_id=1526343354]
+layout_mode = 0
+offset_left = 748.99994
+offset_top = 94.0
+offset_right = 880.99994
+offset_bottom = 152.0
+rotation = -0.27576202
+text = "Focal"
+label_settings = SubResource("LabelSettings_ar7t0")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=873760606]
+layout_mode = 0
+offset_left = 1635.9999
+offset_top = 133.0
+offset_right = 1767.9999
+offset_bottom = 190.99998
+rotation = 0.2617994
+text = "Foliage"
+label_settings = SubResource("LabelSettings_ar7t0")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1395037143]
+layout_mode = 0
+offset_left = 817.0
+offset_top = 1167.0
+offset_right = 949.0
+offset_bottom = 1225.0
+rotation = 0.2617994
+text = "Filler"
+label_settings = SubResource("LabelSettings_ar7t0")
+horizontal_alignment = 1
 
 [connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

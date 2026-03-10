@@ -84,9 +84,9 @@ func get_current_arrangement_flower_resources():
 
 
 var base_price : Dictionary[Enums.FlowerType, int] = {
-	Enums.FlowerType.FOCAL : INF,
-	Enums.FlowerType.FOLIAGE : INF,
-	Enums.FlowerType.FILLER : INF
+	Enums.FlowerType.FOCAL : 5,
+	Enums.FlowerType.FOLIAGE : 2,
+	Enums.FlowerType.FILLER : 4
 }
 
 const COMPLIMENT_CHANCE = 5 # /10
@@ -234,14 +234,12 @@ func create_custom_chracter(day : float) -> Dictionary:
 	print("flower_requests", flower_requests)
 	for type : Enums.FlowerType in [Enums.FlowerType.FOCAL, Enums.FlowerType.FOLIAGE, Enums.FlowerType.FILLER]:
 		materials_cost += base_price[type] * temp_boquet_validation[type]
-	
 	var final_dialog : String = greeting + (" " if compliment != "" else "") + "\n\n" + compliment + " " + prompt + (" " if flower_request_prompt != "" else "") + flower_request_prompt + " \n\n" + ending_commnet
 	
 	var character_name : String = NAMES[gender].pick_random()
 	var character_pic : Texture = PICS[gender].pick_random()
 	
 	var comission_amount : int = materials_cost * Util.randf_array(COMMISSION_BASE_MULT)
-	
 	for flower_request in flower_requests:
 		comission_amount *= Util.randf_array(COMMISSION_REQUEST_MULT)
 	print("commission amnt", comission_amount)

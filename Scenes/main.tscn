@@ -6,13 +6,14 @@
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
+[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="6_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="7_6bp64"]
-[ext_resource type="Script" path="res://Scenes/cursor_node.gd" id="8_344ge"]
+[ext_resource type="Script" uid="uid://ddkh64yjnh08" path="res://Scenes/cursor_node.gd" id="8_344ge"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
 content_margin_left = 16.0
 content_margin_right = 16.0
-bg_color = Color(0.37651306, 0.55443543, 0.69911253, 1)
+bg_color = Color(0.5740083, 0.5266984, 0.43693584, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -22,7 +23,7 @@ corner_detail = 16
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_344ge"]
 content_margin_left = 16.0
 content_margin_right = 16.0
-bg_color = Color(0.21977097, 0.2596702, 0.41900924, 1)
+bg_color = Color(0.35648802, 0.32485884, 0.22094479, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -32,7 +33,17 @@ corner_detail = 16
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bp64"]
 content_margin_left = 16.0
 content_margin_right = 16.0
-bg_color = Color(0.3815655, 0.44264323, 0.5752777, 1)
+bg_color = Color(0.46939027, 0.43933412, 0.39469266, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkdf5"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.39607844, 0.38431373, 0.3647059, 0.53333336)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -42,7 +53,7 @@ corner_detail = 16
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynf5e"]
 content_margin_left = 16.0
 content_margin_right = 16.0
-bg_color = Color(0.75578314, 0.42065844, 0.42657351, 1)
+bg_color = Color(0.684849, 0.36639795, 0.35908136, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -52,7 +63,7 @@ corner_detail = 16
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hptm8"]
 content_margin_left = 16.0
 content_margin_right = 16.0
-bg_color = Color(0.42690885, 0.17416912, 0.2365225, 1)
+bg_color = Color(0.5487861, 0.20061362, 0.20563108, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -62,7 +73,7 @@ corner_detail = 16
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d1ilt"]
 content_margin_left = 16.0
 content_margin_right = 16.0
-bg_color = Color(0.65189284, 0.32709968, 0.39259344, 1)
+bg_color = Color(0.74327725, 0.32774675, 0.3304204, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -75,8 +86,11 @@ corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_6bp64"]
+font = ExtResource("6_ynf5e")
 font_size = 32
 
 [sub_resource type="Animation" id="Animation_6bp64"]
@@ -179,14 +193,16 @@ script = ExtResource("3_8gbba")
 z_index = 406
 layout_mode = 0
 offset_left = 119.0
-offset_top = 1084.0
+offset_top = 1125.0
 offset_right = 445.0
-offset_bottom = 1159.0
+offset_bottom = 1200.0
 mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("6_ynf5e")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_21xkr")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_344ge")
 theme_override_styles/hover = SubResource("StyleBoxFlat_6bp64")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jkdf5")
 text = "Finish Design"
 
 [node name="ResetFlowers" type="Button" parent="." unique_id=1457568996]
@@ -196,6 +212,7 @@ offset_top = 1174.0
 offset_right = 1682.0
 offset_bottom = 1234.0
 mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("6_ynf5e")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_ynf5e")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_hptm8")
@@ -214,9 +231,9 @@ visible = false
 [node name="IncorrectOrder" type="Label" parent="." unique_id=425418576]
 layout_mode = 0
 offset_left = 92.0
-offset_top = 992.0
+offset_top = 1030.0
 offset_right = 473.0
-offset_bottom = 1043.0
+offset_bottom = 1066.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_6iyac")
 text = "Incorrect order!"
 label_settings = SubResource("LabelSettings_6bp64")

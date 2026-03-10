@@ -7,7 +7,9 @@
 [resource]
 script = ExtResource("2_wd5xx")
 flower_name = "Sky Bloom"
+flower_id = "sky_bloom"
 side_texture = ExtResource("3_wd5xx")
 flower_texture = ExtResource("1_1ig6y")
 flower_cost = 9
 flower_worth = 55
+flower_type = null

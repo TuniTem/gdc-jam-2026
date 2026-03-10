@@ -1,50 +1,247 @@
 {
   "greetings": [
-	"heyaaaa",
-    "hi!"
+	"Greetings youngling.",
+	"Hi!",
+	"Hey! So you're the new florist in Salt Creek everyone's been talking about.",
+	"Aaoui!",
+	"Aaoui little one.",
+	"Heyy!",
+	"...",
+	"Hmm...",
+	"Hmm... You remind me of someone.",
+	"Bro,",
+	"I recognize everyone in Salt Creek, but not you... ",
+	"Oo... You're new to Salt Creek aren't you?",
+	"*avoiding eye contact",
+	"*blushing*",
+	"Hey there young lass,",
+	"Hey hey there,",
+	"*staring straight into your soul*",
+	"Hello.",
+	"Hello!",
+	"Uhh...",
+	"How you doing?",
+    "Hey hey mon."
   ],
-  "intro_comments" : [
-	"Nice shop!",
-    "Wicked cool place dude."
+  "intro_comments": [
+	"Woa! It's been forever since I've stepped in here",
+	"*Their eyes explore your dusty old shop*",
+	"*cough cough*",
+	"Damn, I wasn't expecting to run into a florist in Salt Creek.",
+	"...",
+	"*judging you intensly*",
+	"Hmmm...",
+	"I never thought I'd walk into this store again.",
+	"*snorts*",
+	"Salt Creeks' got a florist now? waaat?",
+	"What a cool lil shop!",
+	"Oooh! What a cool outfit you're in... Okay so,",
+	"Okay so,",
+	"Uhhhh...",
+	"Eeep! Was that a rat!? You better deal with that before it makes a nest. Anyway,",
+	"Welp...",
+	"You better make this quick.",
+	"Oh, why am I not suprised? Eh, anyway...",
+	"Boy-o-boy, what a wonderful little shop this is.",
+    "Ew, did I just see a dead cockroach? Anyway..."
   ],
-  "ending_comments" : [
+  "end_comments": [
 	"Thanks!",
-    "Erm, i hate you!"
+	"Don't keep me waiting too long.",
+	"Hmmfph...",
+	"Stat!",
+	"Thank you!",
+	"Take your time.",
+	"Don't keep me waiting.",
+	"I'll be waiting.",
+	"Make it quick.",
+	"On the double!",
+	"I look forward to witnessing what you can do little one.",
+	"...",
+	"*snorts*",
+	"*their beady eyes watch you as you work*",
+	"*Sighs*",
+	"*Sighs* I can't wait for this day to be over so that I can hit my bed.",
+	"*fingertapping impatiently*",
+	"I think that's about it.",
+	"I don't have alot of time.",
+	"*smiles softly*",
+	"*coughs*",
+	"You got all of that right?",
+    "Thanks. *starts humming a familiar song*"
   ],
-  "successful_response" : [
-	"Awesome! ty!!!",
-    "erm, this is wickedsauce"
+  "successful_response": [
+	"This is perfect!",
+	"Oh you... you wonderful person. Thank you!",
+	"Excellent!",
+	"Excellent.",
+	"Perfect!",
+	"Perfecto!",
+	"This is my new favorite shop in all of Salt Creek!",
+	"Woah",
+	"!!!!!!!!!!",
+	"Oh my, this is absolutely gorgeous!",
+	"Oh wow! Perfect!",
+	"I never doubted you. This is amazing!",
+	"Such pwetty liddle flowerss!",
+	"Ahbinga-boinga this is wonderful! I don't even know what to say.",
+	"I don't even know what to say, it's perfect.",
+	"Erm... This is totally wickedsauce.",
+	"You've just raised my standards, impressive.",
+	"Oh you're so much more better than Randy and his dingy lil flower shop.",
+	"*eyebrows raised*",
+	"*jaw dropped* I... uhhh.. yea wow, thank you!",
+	"These are great! Thank you so much!",
+	"You're an amazing person!",
+	"You're definetly going to see me again.",
+	"Oh you're going places, this is perfect!",
+	"This turned out better than I could've imagined.",
+	"*inhales deeply* Woah, just woah.",
+	"Oh my gosh! I love these",
+    "I love these!"
   ],
-  "failiure_response" : [
-	"I hate you!!",
-    "uh, you suck"
+  "bare_minimum_response": [
+	"Great, thanks.",
+	"Thanks.",
+	"These should do.",
+	"These will do.",
+	"I can work with this.",
+	"Cool, thanks!",
+	"Ehhhh.. Thanks.",
+    "*smiles softly*"
   ],
-  
+  "failure_response": [
+	"Was it that hard to follow simple instructions?",
+	"Yea, this is just not it buddy.",
+	"Damn... This was not what I was expecting.",
+	"You've got to be kidding me.",
+	"I don't think this is what I asked of you.",
+	"I was right to be skeptical about you.",
+	"Did you like, not hear me at all?",
+	"??? What's this?",
+	"*side-eying-Chloe*",
+	"(╯°□°)╯︵ ┻━┻",
+	"Yea nah...",
+	"Dissapointing.",
+	"You had just one job.",
+	"What do you want me to do with this?",
+	"*nods dismissively*",
+	"Aww... This isn't what I asked for.",
+	"Sorry, this is not what I wanted.",
+	"*sighs in disbelief*",
+	"Did you not hear me?",
+	"Umm... this is not what I requested.",
+	"Incorrect!",
+	"*slams fist on table* this is not what I wanted!",
+    "What's the point of opening a flower shop if you're gonna be such a bad florist?"
+  ],
   "scenarios": {
-	"wedding (or your story name)" : {
-	  "prompt" : [
-		"yoyoyo, id love a [bouquet] for my wedding!", 
-        "my wedding needs aaaa [boquet]"
+	"event_type_Wedding": {
+	  "prompt": [
+		"My older sister is getting married tonight, can you believe it? Cause I can't... well, I was wondering if you could uhh... make me a [color=#4169E1][bouquet][/color] bouquet?",
+		"I can't believe my little brother is getting married and here I am doing these damned fetch quests, still single and alone. Anyway, could you make me a [color=#4169E1][bouquet][/color] bouquet please?",
+		"Do you know how to make a [color=#4169E1][bouquet][/color]? I'm getting married tommorow and I need everything to be nothing short of purr-fect, capiche?",
+		"Did you know it's marriage season in Salt Creek? Wanna guess who's the lucky lass? It's obviously meeeeee! And it's only customary that I celebrate my significant other by gifting them a [color=#4169E1][bouquet][/color] bouquet and a dazzling new fit.",
+        "My best friend is getting married in the next hour. Could you do me a [color=#4169E1][bouquet][/color] please?"
 	  ],
-	  "event_specific_flower_requests": {
-		"nectar": [
-		  "My groom's been [color=#ffff66]very sick[/color] lately...", 
-          "[color=#ffff66]im so sickkkk...[/color]"
+	  "event_specific_flower_hints": {
+		"nectar_red": [
+		  "... I hope they know that I [color=#8435c4]love[/color] them despite abandoning me in the middle of the woods.",
+		  "... Oof, words can't fully express how much in [color=#8435c4]love[/color] i'm in with the groom, I even have their name tattooed onto me, wanna see? Oh, wait I forgot it's uhh... in a rather risky area.",
+          "... I absolutely [color=#8435c4]adore[/color] them."
 		],
-		"devils_trident": [
-          "the wedding venue is in a graveyard."
+		"nectar_green": [
+          "... Hmm... I wonder if they know that I know that they cheated. I hope they feel [color=#8435c4]ashamed[/color] of themselves."
+		],
+		"nectar_purple": [
+          "... Ahh, they've done so much for me, I [color=#8435c4]respect[/color] them for advising me not to get into a fight with that bear. "
+		],
+		"devils_pitchfork": [
+          "... Oh I wish I could leave a [color=#8435c4]powerful[/color] impression on them."
+		],
+		"crystal_heart": [
+          "... Y'know a lil birdie told me that the wedding location might be [color=#8435c4]haunted[/color], apparantly several people were hanged nearby, that's so cool right?"
+		],
+		"butter_lilly": [
+          "... Oh shoot, I totally forgot that it's pollen season, my [color=#8435c4]nose[/color] is going to drive me insane."
+		],
+		"filigree": [
+          "... Ugh, I hate that Brock will also be attending the wedding. That man is the [color=#8435c4]stinkiest[/color] buffoon in all of Salt Creek."
+		],
+		"sky_bloom": [
+          "... [color=#8435c4]Sky blooms[/color] are my favorite, wait why am I telling you this?"
+		],
+		"silkweed": [
+		  "... Geez, is it normal to feel so scared and [color=#8435c4]anxious[/color]? I don't know what to do.",
+          "... God, if you can hear me, I hope there are some pudgy lil [color=#8435c4]cats[/color] around to play with at the wedding."
 		]
-	  }
-	},
-	"straightforward" : {
-		  "prompt" : [
-			"One [boquet] pls!", 
-            "pls [boquet]"
+	  },
+	  "event_type_Funeral": {
+		"prompt": [
+		  "Did ya notice the entire towns hung up wreaths round their doors. Poor [name] got his head bashed in by an eagle earlier today! I don't really wanna attend but, I mean, free snacks ya know? Could you be a dear and make me a [color=#4169E1][bouquet][/color] bouquet to leave behind at their memorial please?",
+		  "I'm uhh... headed to the cemetery to pay my respects to my old boss... but it kinda feels wrong to arrive empty-handed. Could you quickly prepare me a [color=#4169E1][bouquet][/color] bouquet?",
+          "Could I please get one [color=#4169E1][bouquet][/color] for ma lil buddy... burried six feet under."
+		],
+		"event_specific_flower_hints": {
+		  "nectar_red": [
+            "... Truth be told, I [color=#8435c4]loved[/color] them but I never could bring myself to say it out loud."
 		  ],
-		  "flower_requests": {
-			"devils_whatever": ["I'm so [color=#ffff66]angry[/color]!!"],
-			"other_flower"  : ["i [color=#ffff66]hate[/color] flowers...."]
-		  }
+		  "nectar_green": [
+            "... I'm the reason they're dead, geez I hope they know how [color=#8435c4]sorry[/color] I am."
+		  ],
+		  "nectar_purple": [
+            "... They were a disturbed soul. I hope they get to rest in [color=#8435c4]peace[/color] now."
+		  ],
+		  "devils_pitchfork": [
+            "... They really loved those creepy [color=#8435c4]devil[/color] lookin flowers."
+		  ],
+		  "crystal_heart": [
+			
+            "... I pray no [color=#8435c4]spirit[/color] attacks me while I'm there."
+		  ],
+		  "butter_lilly": [
+            "... Ugh, between all the crying and cold dry air my [color=#8435c4]nose[/color] just won't quit running."
+		  ],
+		  "filigree": [
+            "... You ever notice how [color=#8435c4]stinky[/color] those damn cemeteries are?"
+		  ],
+		  "sky_bloom": [
+            "...  I guess [color=#8435c4]life[/color] really does come full circle huh."
+		  ],
+		  "silkweed": [
+			"... Ugh, why do graveyards gotta be so spooky? I get so [color=#8435c4]scared[/color].",
+            "... Y'know there's this one pitch black cemetery [color=#8435c4]cat[/color] that likes to nap between the gravestones. I really hope to run into it today."
+		  ]
+		}
+	  },
+	  "event_type_name": {
+		"prompt": [
+		  "One [boquet] pls!",
+          "pls [boquet]"
+		],
+		"flower_requests": {
+		  "devils_whatever": [
+            "I'm so [color=#ffff66]angry[/color]!!"
+		  ],
+		  "other_flower": [
+            "i [color=#ffff66]hate[/color] flowers...."
+		  ]
+		}
+	  },
+	  "event_3_name": {
+		"prompt": [
+		  "One [boquet] pls!",
+          "pls [boquet]"
+		],
+		"flower_requests": {
+		  "devils_whatever": [
+            "I'm so [color=#ffff66]angry[/color]!!"
+		  ],
+		  "other_flower": [
+            "i [color=#ffff66]hate[/color] flowers...."
+		  ]
+		}
+	  }
 	}
   }
 }

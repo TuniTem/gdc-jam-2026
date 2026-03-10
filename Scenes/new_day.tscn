@@ -5,14 +5,22 @@
 [ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="3_1fu1n"]
 [ext_resource type="Texture2D" uid="uid://bc24gpoglewt8" path="res://Assets/Book_Border_Half.png" id="3_3smw6"]
 [ext_resource type="PackedScene" uid="uid://dmdgv0gk7778u" path="res://Scenes/catalog_entry.tscn" id="3_l0g8d"]
+[ext_resource type="Resource" uid="uid://ct2bvnnk0annp" path="res://resources/ButterFlower.tres" id="4_5qobf"]
 [ext_resource type="Texture2D" uid="uid://bnuxn42qeuxyf" path="res://Assets/Devils_Pitchfork_Full.png" id="4_j620g"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="4_mm26e"]
 [ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="5_3smw6"]
+[ext_resource type="Resource" uid="uid://opiqiovquw51" path="res://resources/DevilsFlower.tres" id="5_fow2x"]
 [ext_resource type="Texture2D" uid="uid://k1exgdmyb040" path="res://Assets/Crystal_Heart_Full.png" id="5_t3i60"]
+[ext_resource type="Resource" uid="uid://by16fw4k53ibu" path="res://resources/SpikeFlower.tres" id="7_5v5t5"]
 [ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="7_bx7vw"]
 [ext_resource type="Texture2D" uid="uid://cglst50867iry" path="res://Assets/Necktars_Green_Full.png" id="7_t3i60"]
+[ext_resource type="Resource" uid="uid://c8dudicc8fyj5" path="res://resources/IceFlower.tres" id="9_kiiin"]
+[ext_resource type="Resource" uid="uid://b7eujf8wf6t1w" path="res://resources/NectarFlower_3.tres" id="11_6dxfq"]
+[ext_resource type="Resource" uid="uid://0bilfgl6raiy" path="res://resources/FireworkFlower.tres" id="13_yvqa5"]
 [ext_resource type="Texture2D" uid="uid://drygkpeuxeafp" path="res://Assets/Sky_Blooms_Full.png" id="14_5v5t5"]
+[ext_resource type="Resource" uid="uid://cdi6ml7ktfc00" path="res://resources/SilkweedFlower.tres" id="15_uhypf"]
 [ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="16_6dxfq"]
+[ext_resource type="Texture2D" uid="uid://d2007pxcovgg4" path="res://sprites/flowers/silkweed-side.png" id="16_blig7"]
 [ext_resource type="Texture2D" uid="uid://bvx58elvr7fq7" path="res://Assets/Book_Border_And_Texture.png" id="17_yvqa5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_f7a1a"]
@@ -397,7 +405,7 @@ tracks/9/path = NodePath("MarginContainer2/Next:modulate")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(3.9, 4.6666665),
+"times": PackedFloat32Array(3.2333333, 3.9999998),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -569,6 +577,7 @@ mouse_filter = 2
 controller = NodePath("../../../../../..")
 flower = "Butter Lilly"
 flower_id = "butter_lilly"
+resource = ExtResource("4_5qobf")
 
 [node name="CatalogEntry2" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1635237684 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
@@ -577,6 +586,7 @@ controller = NodePath("../../../../../..")
 flower = "Devils Pitchfork"
 flower_id = "devils_pitchfork"
 type = "filler"
+resource = ExtResource("5_fow2x")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1635237684, 1052660984) index="0" unique_id=1428303788]
 position = Vector2(79.99999, 94.500015)
@@ -587,9 +597,10 @@ texture = ExtResource("4_j620g")
 layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")
-flower = "crystal_heart"
-flower_id = "Crystal Heart"
+flower = "Crystal Heart"
+flower_id = "crystal_heart"
 type = "filler"
+resource = ExtResource("7_5v5t5")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry4/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(982860902, 1052660984) index="0" unique_id=1428303788]
 scale = Vector2(0.38624784, 0.38624784)
@@ -599,8 +610,9 @@ texture = ExtResource("5_t3i60")
 layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")
-flower = "sky_bloom"
-flower_id = "Sky Bloom"
+flower = "Sky Bloom"
+flower_id = "sky_bloom"
+resource = ExtResource("9_kiiin")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1531977188, 1052660984) index="0" unique_id=1428303788]
 scale = Vector2(0.9040573, 0.9040573)
@@ -643,8 +655,9 @@ layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")
 flower = "Nectar"
-flower_id = "nectar"
+flower_id = "nectar_purple"
 type = "filler"
+resource = ExtResource("11_6dxfq")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1515368373, 1052660984) index="0" unique_id=1428303788]
 position = Vector2(79.99999, 94.500015)
@@ -658,6 +671,7 @@ controller = NodePath("../../../../../..")
 flower = "Filigree"
 flower_id = "filigree"
 type = "filler"
+resource = ExtResource("13_yvqa5")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1928572418, 1052660984) index="0" unique_id=1428303788]
 scale = Vector2(0.97730607, 0.97730607)
@@ -667,20 +681,22 @@ texture = ExtResource("16_6dxfq")
 layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")
-flower = "crystal_heart"
-flower_id = "Crystal Heart"
-type = "filler"
+flower = "Silkweed"
+flower_id = "silkweed"
+type = "foliage"
+resource = ExtResource("15_uhypf")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry4/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1587496563, 1052660984) index="0" unique_id=1428303788]
-scale = Vector2(0.38624784, 0.38624784)
-texture = ExtResource("5_t3i60")
+scale = Vector2(0.9577134, 0.9577134)
+texture = ExtResource("16_blig7")
 
 [node name="CatalogEntry3" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=690930237 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")
-flower = "sky_bloom"
-flower_id = "Sky Bloom"
+flower = "Sky Bloom"
+flower_id = "sky_bloom"
+resource = ExtResource("9_kiiin")
 
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(690930237, 1052660984) index="0" unique_id=1428303788]
 scale = Vector2(0.9040573, 0.9040573)
@@ -816,6 +832,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="Stats/VBoxContainer" unique_id=1688955930]
+visible = false
 layout_mode = 2
 mouse_filter = 2
 

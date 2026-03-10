@@ -3,7 +3,7 @@ extends Node
 enum FlowerType {
 	FOCAL,
 	FOLIAGE,
-	FILLTER,
+	FILLER,
 	UNUSED
 }
 

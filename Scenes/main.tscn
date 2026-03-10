@@ -169,11 +169,13 @@ custom_minimum_size = Vector2(1920, 1280)
 layout_mode = 1
 
 [node name="ClientDisplay" parent="." unique_id=451460495 instance=ExtResource("2_bo1nx")]
+unique_name_in_owner = true
 
 [node name="ClientOrders" type="Node" parent="ClientDisplay" unique_id=603382932]
 script = ExtResource("3_8gbba")
 
 [node name="GiveButton" type="Button" parent="." unique_id=1070884650]
+z_index = 406
 layout_mode = 0
 offset_left = 119.0
 offset_top = 1084.0
@@ -184,7 +186,7 @@ theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_21xkr")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_344ge")
 theme_override_styles/hover = SubResource("StyleBoxFlat_6bp64")
-text = "Give Flowers"
+text = "Finish Design"
 
 [node name="ResetFlowers" type="Button" parent="." unique_id=1457568996]
 layout_mode = 0

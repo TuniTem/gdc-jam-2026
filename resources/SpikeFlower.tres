@@ -7,6 +7,7 @@
 [resource]
 script = ExtResource("2_ffjws")
 flower_name = "Crystal Heart"
+flower_id = "crystal_heart"
 side_texture = ExtResource("3_ffjws")
 flower_texture = ExtResource("1_ubhr2")
 flower_cost = 7

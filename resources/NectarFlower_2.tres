@@ -7,6 +7,7 @@
 [resource]
 script = ExtResource("2_8ntpr")
 flower_name = "Nectar (2)"
+flower_id = "nectar_green"
 side_texture = ExtResource("3_8ntpr")
 flower_texture = ExtResource("1_jawga")
 flower_cost = 4

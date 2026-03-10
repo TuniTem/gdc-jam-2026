@@ -6,6 +6,7 @@ class_name CatalogEntry
 @export var flower_id : String
 @export var price : int
 @export var type : String
+@export var resource : Resource
 
 
 @onready var description: RichTextLabel = %Description
@@ -20,11 +21,12 @@ var cart_amount : int = 0:
 		cart_amount = val
 
 func _ready() -> void:
+	price = resource.flower_cost
 	controller.catalog_entries.append(self)
 	title.text = flower
 	cart.text = "0"
 	description.text = "Type: " + type + " \nPrice: $" + str(price)
-	inventory.text = "?" # TODO set inventroy ammount
+	inventory.text = str(Globals.flower_to_count_map[flower_id])
 	
 
 	

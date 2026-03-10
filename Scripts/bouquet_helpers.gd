@@ -3,20 +3,27 @@ extends Node
 func get_bouquet_name(bouquet_type):
 	match bouquet_type:
 		Enums.BouquetType.NONE:
-			return "None"
+			return "none"
 		Enums.BouquetType.Barthemelo:
-			return "Barthemelo"
+			return "barthemelo"
 		Enums.BouquetType.LazyEye:
-			return "Lazy Eye"
+			return "lazy_eye"
 		Enums.BouquetType.Expedition:
-			return "Expedition"
+			return "expedition"
 		Enums.BouquetType.SixPin:
-			return "Six Pin"
+			return "six_pin"
 		Enums.BouquetType.Grasshopper:
-			return "Grasshopper"
+			return "grasshopper"
 		Enums.BouquetType.FourPence:
-			return "Four Pence"
+			return "four_pence"
 	return "None"
+
+func has_flower(flower : String, flowers) -> bool:
+	for flower_test in flowers:
+		if flower_test.flower_id == flower:
+			return true
+	
+	return false
 
 func get_bouquet_type(flowers):
 	var focal_count = 0
@@ -27,7 +34,7 @@ func get_bouquet_type(flowers):
 			focal_count += 1
 		elif flower.flower_type == Enums.FlowerType.FOLIAGE:
 			foliage_count += 1
-		elif flower.flower_type == Enums.FlowerType.FILLTER:
+		elif flower.flower_type == Enums.FlowerType.FILLER:
 			filler_count += 1
 	
 	if focal_count == 3 and filler_count == 2 and foliage_count == 6:

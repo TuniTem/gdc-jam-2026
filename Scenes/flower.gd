@@ -6,6 +6,7 @@ const MIN_MOVE = 5.0
 const MAX_STEM_DIST = 400.0
 
 var flower_res = null
+var id : String = ""
 
 @export var radius : float = 60.0
 var stem_pos : Vector2

@@ -29,20 +29,20 @@ grow_vertical = 0
 label_settings = SubResource("LabelSettings_cvtxe")
 horizontal_alignment = 1
 
-[node name="Count" type="Label" parent="." unique_id=2030052736]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -17.0
-offset_top = 7.0
-offset_right = 23.0
-offset_bottom = 30.0
-grow_horizontal = 2
-grow_vertical = 0
-label_settings = SubResource("LabelSettings_cvtxe")
-horizontal_alignment = 1
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2033224348]
+z_index = -1
+layout_mode = 0
+offset_left = 40.0
+offset_top = 37.0
+offset_right = 80.0
+offset_bottom = 77.0
+rotation = 0.41676503
+scale = Vector2(0.6399486, 0.6399486)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1768660977]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+rotation = -0.41517875
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

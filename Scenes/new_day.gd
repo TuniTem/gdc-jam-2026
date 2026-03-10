@@ -36,7 +36,9 @@ func start_new_day():
 	for entry : CatalogEntry in catalog_entries:
 		entry.cart_amount = 0
 	
+	
 	next_stage()
+	
 
 func next_stage():
 	match stage:
@@ -51,9 +53,13 @@ func next_stage():
 			animations.play("switch_to_catalog")
 			
 		Stage.CATALOG: 
+			for entry : CatalogEntry in catalog_entries:
+				Globals.flower_to_count_map[entry.flower_id] += entry.cart_amount
+				
 			stage = Stage.END
 			animations.play("finish")
 			await animations.animation_finished
+			Globals.clients.load_new_client()
 			hide()
 			
 

@@ -7,7 +7,9 @@
 [resource]
 script = ExtResource("2_8fkjo")
 flower_name = "Devil's Pitchfork"
+flower_id = "devils_pitchfork"
 side_texture = ExtResource("3_8fkjo")
 flower_texture = ExtResource("1_1c3ia")
 flower_cost = 5
 flower_worth = 8
+flower_type = null

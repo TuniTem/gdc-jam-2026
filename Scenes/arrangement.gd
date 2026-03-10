@@ -14,6 +14,7 @@ var placing_flower : Flower
 var flowers : Array[Flower]
 var velocity : Dictionary[Flower, Vector2]
 var queue_clear_flowers = false
+var return_flower : bool = false
 
 @export var use_placeholder_flower = false
 
@@ -30,6 +31,7 @@ func _process(delta: float) -> void:
 	if queue_clear_flowers:
 		for child in get_children():
 			if child is Flower:
+				if return_flower: Globals.flower_to_count_map[child.id] += 1
 				child.queue_free()
 		flowers.clear()
 		queue_clear_flowers = false
@@ -44,7 +46,7 @@ func is_hovering_over_flower_button():
 	return false
 
 func _input(event: InputEvent) -> void:
-	var can_place_flower = use_placeholder_flower or (Globals.selected_flower != null and !is_hovering_over_flower_button() and get_global_mouse_position().distance_to(Globals.flower_center_pos) <= 500)
+	var can_place_flower = use_placeholder_flower or (Globals.selected_flower != null and !is_hovering_over_flower_button() and get_global_mouse_position().distance_to(Globals.flower_center_pos) <= Globals.PLACEABLE_DIST)
 	
 	if event.is_action_pressed("pick_flower") and can_place_flower:
 		var inst : Flower = FLOWER_SCENE.instantiate()
@@ -56,19 +58,25 @@ func _input(event: InputEvent) -> void:
 		add_child(inst)
 		if not use_placeholder_flower:
 			inst.set_texture(Globals.selected_flower_res.flower_texture)
+			inst.id = Globals.selected_flower_res.flower_id
 			inst.flower_res = Globals.selected_flower_res
 	
 	if event.is_action_released("pick_flower") and can_place_flower:
 		if not use_placeholder_flower:
 			get_tree().get_first_node_in_group("side_bouquet").add_flower(Globals.selected_flower_res)
-			Globals.flower_to_count_map[placing_flower.flower_res] -= 1
-			if Globals.flower_to_count_map[placing_flower.flower_res] == 0:
+			Globals.flower_to_count_map[placing_flower.flower_res.flower_id] -= 1
+			if Globals.flower_to_count_map[placing_flower.flower_res.flower_id] == 0:
 				get_tree().get_first_node_in_group("flower_interface").deselect_flower()
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
 
+func return_flowers():
+	queue_clear_flowers = true
+	return_flower = true
+
 func clear_flowers():
 	queue_clear_flowers = true
+	return_flower = false
 
 func get_list_of_flower_resources():
 	var res = []

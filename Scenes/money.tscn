@@ -38,12 +38,22 @@ offset_bottom = 60.0
 text = "Popularity:"
 label_settings = SubResource("LabelSettings_63yw1")
 
-[node name="MoneyLabel" type="Label" parent="CanvasLayer" unique_id=1901653256]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=275116491]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -149.0
+offset_right = 251.0
+offset_bottom = 2.0
+grow_vertical = 0
+theme_override_constants/margin_left = 49
+theme_override_constants/margin_top = 49
+theme_override_constants/margin_right = 49
+theme_override_constants/margin_bottom = 49
+
+[node name="MoneyLabel" type="Label" parent="CanvasLayer/MarginContainer" unique_id=1901653256]
 unique_name_in_owner = true
-offset_left = 1315.0
-offset_top = 1075.0
-offset_right = 1468.0
-offset_bottom = 1128.0
+layout_mode = 2
 text = "Money:"
 label_settings = SubResource("LabelSettings_no3si")
 

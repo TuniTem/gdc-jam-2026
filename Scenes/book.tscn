@@ -321,6 +321,7 @@ theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 40
 
 [node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1963795090]
+visible = false
 layout_mode = 2
 alignment = 1
 
@@ -333,8 +334,8 @@ unlock_id = "butter_lilly"
 scale = Vector2(0.712085, 0.712085)
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1064202854, 631509805) index="0" unique_id=1064711938]
-text = "Type: Core
-Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
+text = "Type: Focal
+Smells like candy floss. Its scent is a natural remedy for a stuffy nose and itchy skin.
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1037982163 instance=ExtResource("2_dgncb")]
@@ -351,12 +352,13 @@ texture = ExtResource("5_jx0ys")
 text = "Devils Pitchfork"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1037982163, 631509805) index="0" unique_id=1064711938]
-text = "Type: Filler
+text = "Type: Focal
 A symbol of power and prestige, but too many may induce painful headaches
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=2066904684 instance=ExtResource("2_dgncb")]
 material = SubResource("ShaderMaterial_j2dwy")
+custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
 unlock_id = "crystal_heart"
 
@@ -370,13 +372,14 @@ text = "Crystal Heart"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2066904684, 631509805) index="0" unique_id=1064711938]
 text = "Type: Filler
-Slowly looses its shimmering glow and crumbles over time. Brings good fortune and rumored to wad off evil spirits.
+A glamorous flower that absorbs negative energy slowly loses its shimmering glow and crumbles over time. Brings good fortune and is rumored to ward off evil spirits.
 "
 
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(2066904684, 1961349098) index="2" unique_id=1744207426]
 visible = false
 
 [node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1674284482]
+visible = false
 layout_mode = 2
 alignment = 1
 
@@ -461,6 +464,7 @@ theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
 [node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=909329525]
+visible = false
 layout_mode = 2
 alignment = 1
 
@@ -478,14 +482,14 @@ texture = ExtResource("7_7p7k3")
 text = "Sky Bloom"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(811958972, 631509805) index="0" unique_id=1064711938]
-text = "Type: Core
-Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
-"
+text = "Type: Focal
+The emblem flower of the town of Salt Creek. Commonly used in various celebrations, this flower is a symbol of birth and death."
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1814695313 instance=ExtResource("2_dgncb")]
 material = SubResource("ShaderMaterial_tfgky")
 custom_minimum_size = Vector2(0, 256.82)
 layout_mode = 2
+color = Color(1, 1, 1, 0)
 unlock_id = "nectar"
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1814695313, 757080868) index="0" unique_id=923409529]
@@ -499,8 +503,7 @@ text = "Nectar"
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1814695313, 631509805) index="0" unique_id=1064711938]
 theme_override_font_sizes/normal_font_size = 27
 text = "Type: Filler
- Releases a potent aromatic sticky glue when squeezed at the neck. These flowers are a gesture of great respect.  Purple symbolizes peace. Red symbolizes love. Green symbolizes sorrow.
-"
+This flower releases a sticky aromatic glue when squeezed at the neck. Purple Necktars symbolize peace and respect. Red symbolizes love. Green symbolizes sorrow or regret."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1475027700 instance=ExtResource("2_dgncb")]
 material = SubResource("ShaderMaterial_nstcm")
@@ -522,7 +525,7 @@ text = "Filigree"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1475027700, 631509805) index="0" unique_id=1064711938]
 text = "Type: Filler
-Slowly looses its shimmering glow and crumbles over time. Brings good fortune and rumored to wad off evil spirits.
+Found near coastal shores, these refreshing bramble bushes soak up smelly air but six too many may induce a high
 "
 
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2" index="2" unique_id=1744207426]
@@ -533,6 +536,7 @@ custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 
 [node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=758683401]
+visible = false
 layout_mode = 2
 alignment = 1
 

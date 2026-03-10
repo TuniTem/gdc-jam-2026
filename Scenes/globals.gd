@@ -36,7 +36,7 @@ var hand_closed: bool = false
 @export var flower_to_count_map: Dictionary[String, int] = {}
 var flowers_unlocked = 3
 
-var clients_left : int = 2
+var clients_left : int = 4
 const CLIENTS_PER_DAY = [4, 6]
 
 

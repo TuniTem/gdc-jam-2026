@@ -4,12 +4,17 @@ extends Node2D
 @onready var boquetLabel: Label = %BouquetCostLabel
 @onready var totalValueLabel: Label = %TotalValueLabel
 
+@export var starting_money: int = 100
+
 var bouquet: Array = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# start game with money
-	Globals.money = 100
+	print(Globals.starting_money)
+	Globals.starting_money = starting_money
+	Globals.money = Globals.starting_money
+	print("starting money: ", Globals.starting_money)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

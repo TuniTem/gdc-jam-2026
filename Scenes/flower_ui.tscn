@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
 [ext_resource type="Script" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
+[ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="11_l58pg"]
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -82,5 +83,9 @@ offset_bottom = -41.0
 grow_horizontal = 0
 grow_vertical = 0
 texture = ExtResource("6_u4bsn")
+
+[node name="NewDay" parent="." unique_id=1241479211 instance=ExtResource("11_l58pg")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

@@ -7,9 +7,16 @@
 [ext_resource type="Texture2D" uid="uid://6rfk3phx1q8x" path="res://sprites/flowers/Devils_Pitchfork_Full.png" id="5_jx0ys"]
 [ext_resource type="Texture2D" uid="uid://k1exgdmyb040" path="res://Assets/Crystal_Heart_Full.png" id="6_uu3s8"]
 [ext_resource type="Texture2D" uid="uid://drygkpeuxeafp" path="res://Assets/Sky_Blooms_Full.png" id="7_7p7k3"]
+[ext_resource type="Texture2D" uid="uid://du05hme4shhoa" path="res://sprites/flowers/Barthemelo_Bouquet.png" id="7_33p6p"]
 [ext_resource type="Texture2D" uid="uid://dnkmycx88yogr" path="res://Assets/Necktars_Purple_Full.png" id="8_djh34"]
+[ext_resource type="Texture2D" uid="uid://dw0rdosgibgka" path="res://sprites/flowers/LazyEye_Bouquet.png" id="8_lebdj"]
+[ext_resource type="Texture2D" uid="uid://rfgu532qld24" path="res://sprites/flowers/Expedition_Bouquet.png" id="9_87l1f"]
 [ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="9_djh34"]
 [ext_resource type="Texture2D" uid="uid://bvx58elvr7fq7" path="res://Assets/Book_Border_And_Texture.png" id="10_77dt5"]
+[ext_resource type="Texture2D" uid="uid://d0r2iulqrrxek" path="res://sprites/flowers/SixPence_Bouquet.png" id="13_w070k"]
+[ext_resource type="Texture2D" uid="uid://8n51v522y2ff" path="res://sprites/flowers/FourPence_Bouquet.png" id="14_j2dwy"]
+[ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="16_87l1f"]
+[ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="17_w070k"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_77dt5"]
 resource_local_to_scene = true
@@ -59,7 +66,7 @@ shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_dfyeo"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jy4s3"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -71,7 +78,79 @@ shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_33p6p"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_me3cj"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lebdj"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_87l1f"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w070k"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u1a33"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ya6h1"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfgky"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -180,16 +259,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_dgncb")
 
-[node name="Close" type="Button" parent="." unique_id=419999855]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=428673899]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-flat = true
+scale = Vector2(0.9986329, 1)
+mouse_filter = 2
+color = Color(0, 0, 0, 0.1882353)
 
 [node name="Control" type="Control" parent="." unique_id=1521628650]
 layout_mode = 1
@@ -293,6 +375,64 @@ Slowly looses its shimmering glow and crumbles over time. Brings good fortune an
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(2066904684, 1961349098) index="2" unique_id=1744207426]
 visible = false
 
+[node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1674284482]
+layout_mode = 2
+alignment = 1
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=1185869832 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_3jh8o")
+layout_mode = 2
+unlock_id = "barthemelo"
+page = 1
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1185869832, 757080868) index="0" unique_id=923409529]
+position = Vector2(87.70509, 77)
+scale = Vector2(0.96297884, 0.96297884)
+texture = ExtResource("7_33p6p")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1185869832, 745472749) index="0" unique_id=697499992]
+text = "Barthemelo"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1185869832, 631509805) index="0" unique_id=1064711938]
+text = "3 Focal flowers placed at the center surrounded by 2 Fillers and 6 Foliage. "
+
+[node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=2110141434 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_jy4s3")
+layout_mode = 2
+unlock_id = "lazy_eye"
+page = 1
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2110141434, 757080868) index="0" unique_id=923409529]
+position = Vector2(87.70509, 77)
+scale = Vector2(0.96297884, 0.96297884)
+texture = ExtResource("8_lebdj")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(2110141434, 745472749) index="0" unique_id=697499992]
+text = "The Lazy Eye"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2110141434, 631509805) index="0" unique_id=1064711938]
+text = "2 Focal flowers placed at opposite ends with 4 Fillers occupying the center. 6 Foliage placed anywhere."
+
+[node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=317564653 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_me3cj")
+layout_mode = 2
+unlock_id = "expedition"
+page = 1
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(317564653, 757080868) index="0" unique_id=923409529]
+position = Vector2(87.70509, 77)
+scale = Vector2(0.96297884, 0.96297884)
+texture = ExtResource("9_87l1f")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(317564653, 745472749) index="0" unique_id=697499992]
+text = "Expedition"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(317564653, 631509805) index="0" unique_id=1064711938]
+text = "3 Focal flowers placed at the center surrounded by 2 Fillers and 6 Foliage. "
+
+[node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(317564653, 1961349098) index="2" unique_id=1744207426]
+visible = false
+
 [node name="NinePatchRect3" type="NinePatchRect" parent="Control/HBoxContainer" unique_id=746937437]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -321,7 +461,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=811958972 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_3jh8o")
+material = SubResource("ShaderMaterial_lebdj")
 layout_mode = 2
 unlock_id = "sky_bloom"
 
@@ -339,7 +479,7 @@ Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1814695313 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_dfyeo")
+material = SubResource("ShaderMaterial_87l1f")
 custom_minimum_size = Vector2(0, 256.82)
 layout_mode = 2
 unlock_id = "nectar"
@@ -359,7 +499,7 @@ text = "Type: Filler
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1475027700 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_33p6p")
+material = SubResource("ShaderMaterial_w070k")
 custom_minimum_size = Vector2(0, 284.71)
 layout_mode = 2
 unlock_id = "filigree"
@@ -388,6 +528,64 @@ visible = false
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 
+[node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=758683401]
+layout_mode = 2
+alignment = 1
+
+[node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=869739390 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_u1a33")
+layout_mode = 2
+unlock_id = "six_pin"
+page = 1
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(869739390, 757080868) index="0" unique_id=923409529]
+position = Vector2(87.70509, 77)
+scale = Vector2(0.96297884, 0.96297884)
+texture = ExtResource("13_w070k")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(869739390, 745472749) index="0" unique_id=697499992]
+text = "Six Pin"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(869739390, 631509805) index="0" unique_id=1064711938]
+text = "6 Focal flowers and 2 Fillers placed anywhere. No Foliage."
+
+[node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=2007412129 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_ya6h1")
+layout_mode = 2
+unlock_id = "the/_grasshopper"
+page = 1
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2007412129, 757080868) index="0" unique_id=923409529]
+position = Vector2(87.70509, 77)
+scale = Vector2(0.96297884, 0.96297884)
+texture = ExtResource("14_j2dwy")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(2007412129, 745472749) index="0" unique_id=697499992]
+text = "The Grasshopper"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2007412129, 631509805) index="0" unique_id=1064711938]
+text = "2 Focal flowers placed at opposite ends with 4 Fillers occupying the center. 6 Foliage placed anywhere."
+
+[node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1833564703 instance=ExtResource("2_dgncb")]
+material = SubResource("ShaderMaterial_tfgky")
+layout_mode = 2
+unlock_id = "four_pence"
+page = 1
+
+[node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1833564703, 757080868) index="0" unique_id=923409529]
+position = Vector2(87.70509, 77)
+scale = Vector2(0.96297884, 0.96297884)
+texture = ExtResource("9_87l1f")
+
+[node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1833564703, 745472749) index="0" unique_id=697499992]
+text = "Four Pence"
+
+[node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1833564703, 631509805) index="0" unique_id=1064711938]
+text = "4 Focal flowers and 6 Foliage placed anywhere. No Fillers."
+
+[node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(1833564703, 1961349098) index="2" unique_id=1744207426]
+visible = false
+
 [node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=797295414]
 layout_mode = 0
 offset_right = 40.0
@@ -401,7 +599,10 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("10_77dt5")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=428673899]
+[node name="Page" type="AnimationPlayer" parent="." unique_id=1970370527]
+libraries/ = SubResource("AnimationLibrary_djh34")
+
+[node name="Close" type="Button" parent="." unique_id=419999855]
 z_index = -1
 layout_mode = 1
 anchors_preset = 15
@@ -409,18 +610,51 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.9986329, 1)
-mouse_filter = 2
-color = Color(0, 0, 0, 0.1882353)
+flat = true
 
-[node name="Page" type="AnimationPlayer" parent="." unique_id=1970370527]
-libraries/ = SubResource("AnimationLibrary_djh34")
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=562412771]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="NextPage" parent="MarginContainer" unique_id=218221572 instance=ExtResource("16_87l1f")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture = ExtResource("17_w070k")
+
+[node name="PreviousPage" parent="MarginContainer" unique_id=1305393828 instance=ExtResource("16_87l1f")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture = ExtResource("17_w070k")
+flip_h = true
 
 [connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="MarginContainer/NextPage" to="." method="_on_next_page_pressed"]
+[connection signal="pressed" from="MarginContainer/PreviousPage" to="." method="_on_previous_page_pressed"]
 
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry"]
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry2"]
 [editable path="Control/HBoxContainer/NinePatchRect/PageLeft/0/Entry3"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry2"]
+[editable path="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3"]
 [editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry"]
 [editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry2"]
 [editable path="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2"]
+[editable path="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3"]

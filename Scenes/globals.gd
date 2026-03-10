@@ -15,6 +15,7 @@ var customer_budjet: int = 0
 var total_value: int = 0
 var popularity: int = 0
 var day : int = 0
+var day_controller : DayController
 
 @export var flower_to_count_map: Dictionary[Resource, int] = {}
 
@@ -38,18 +39,17 @@ func _ready():
 	flower_to_count_map[load("res://resources/SpikeFlower.tres")] = 10
 
 func unlock_entry(id : String):
-	print("b")
 	for unlock in unlocks:
-		print("c")
 		if unlock.unlock_id == id:
-			print("d")
 			await book.turn_to_page(unlock.page)
 			unlock.animation.play("paint_in")
 
+func end_day():
+	day_controller.start_new_day()
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("debug") and DEBUG:
-		print("a")
-		unlock_entry("butter_lilly")
+		end_day()
 
 func get_current_arrangement_flower_resources(): 
 	return get_tree().get_first_node_in_group("arrangement").get_list_of_flower_resources()

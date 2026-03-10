@@ -13,7 +13,7 @@ seamless = true
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_w34sh"]
 shader = ExtResource("1_upaa7")
 shader_parameter/scale = Vector2(5, 5)
-shader_parameter/strength = 0.2
+shader_parameter/strength = 0.1
 shader_parameter/fps = 2.0
 shader_parameter/noise = SubResource("NoiseTexture2D_62yas")
 

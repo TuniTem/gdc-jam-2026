@@ -7,4 +7,5 @@ z_index = 1
 script = ExtResource("1_nk2up")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=636861792]
-position = Vector2(1388, 685)
+unique_name_in_owner = true
+position = Vector2(1356, 725)

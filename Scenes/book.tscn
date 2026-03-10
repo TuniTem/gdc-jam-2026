@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="16_87l1f"]
 [ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="17_w070k"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_77dt5"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_87l1f"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -30,7 +30,7 @@ shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_k1bli"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w070k"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -42,19 +42,7 @@ shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ltm2x"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3jh8o"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j2dwy"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -79,42 +67,6 @@ shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_me3cj"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_lebdj"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_87l1f"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_w070k"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -151,6 +103,54 @@ shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tfgky"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nstcm"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qhfrj"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lhow1"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u0j67"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -253,6 +253,7 @@ _data = {
 }
 
 [node name="Book" type="Control" unique_id=698370101]
+z_index = 51
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -271,7 +272,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.9986329, 1)
 mouse_filter = 2
-color = Color(0, 0, 0, 0.1882353)
+color = Color(0.21, 0.20216, 0.1512, 0.84313726)
 
 [node name="Control" type="Control" parent="." unique_id=1521628650]
 layout_mode = 1
@@ -324,7 +325,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1064202854 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_77dt5")
+material = SubResource("ShaderMaterial_87l1f")
 layout_mode = 2
 unlock_id = "butter_lilly"
 
@@ -337,7 +338,7 @@ Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1037982163 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_k1bli")
+material = SubResource("ShaderMaterial_w070k")
 layout_mode = 2
 unlock_id = "devils_pitchfork"
 
@@ -355,7 +356,7 @@ A symbol of power and prestige, but too many may induce painful headaches
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=2066904684 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_ltm2x")
+material = SubResource("ShaderMaterial_j2dwy")
 layout_mode = 2
 unlock_id = "crystal_heart"
 
@@ -380,7 +381,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=1185869832 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_3jh8o")
+material = SubResource("ShaderMaterial_jy4s3")
 layout_mode = 2
 unlock_id = "barthemelo"
 page = 1
@@ -394,10 +395,11 @@ texture = ExtResource("7_33p6p")
 text = "Barthemelo"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1185869832, 631509805) index="0" unique_id=1064711938]
+theme_override_font_sizes/normal_font_size = 35
 text = "3 Focal flowers placed at the center surrounded by 2 Fillers and 6 Foliage. "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=2110141434 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_jy4s3")
+material = SubResource("ShaderMaterial_me3cj")
 layout_mode = 2
 unlock_id = "lazy_eye"
 page = 1
@@ -411,10 +413,11 @@ texture = ExtResource("8_lebdj")
 text = "The Lazy Eye"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2110141434, 631509805) index="0" unique_id=1064711938]
+theme_override_font_sizes/normal_font_size = 35
 text = "2 Focal flowers placed at opposite ends with 4 Fillers occupying the center. 6 Foliage placed anywhere."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=317564653 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_me3cj")
+material = SubResource("ShaderMaterial_u1a33")
 layout_mode = 2
 unlock_id = "expedition"
 page = 1
@@ -428,7 +431,8 @@ texture = ExtResource("9_87l1f")
 text = "Expedition"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(317564653, 631509805) index="0" unique_id=1064711938]
-text = "3 Focal flowers placed at the center surrounded by 2 Fillers and 6 Foliage. "
+theme_override_font_sizes/normal_font_size = 35
+text = "1 Focal flower and 3 Fillers placed diagonally with 3 Foliage on either side"
 
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(317564653, 1961349098) index="2" unique_id=1744207426]
 visible = false
@@ -461,7 +465,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=811958972 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_lebdj")
+material = SubResource("ShaderMaterial_ya6h1")
 layout_mode = 2
 unlock_id = "sky_bloom"
 
@@ -479,7 +483,7 @@ Smells like candy floss. It’s scent is a natural remedy for a stuffy nose.
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1814695313 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_87l1f")
+material = SubResource("ShaderMaterial_tfgky")
 custom_minimum_size = Vector2(0, 256.82)
 layout_mode = 2
 unlock_id = "nectar"
@@ -499,7 +503,7 @@ text = "Type: Filler
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1475027700 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_w070k")
+material = SubResource("ShaderMaterial_nstcm")
 custom_minimum_size = Vector2(0, 284.71)
 layout_mode = 2
 unlock_id = "filigree"
@@ -533,7 +537,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=869739390 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_u1a33")
+material = SubResource("ShaderMaterial_qhfrj")
 layout_mode = 2
 unlock_id = "six_pin"
 page = 1
@@ -547,10 +551,11 @@ texture = ExtResource("13_w070k")
 text = "Six Pin"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(869739390, 631509805) index="0" unique_id=1064711938]
+theme_override_font_sizes/normal_font_size = 35
 text = "6 Focal flowers and 2 Fillers placed anywhere. No Foliage."
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=2007412129 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_ya6h1")
+material = SubResource("ShaderMaterial_lhow1")
 layout_mode = 2
 unlock_id = "the/_grasshopper"
 page = 1
@@ -564,10 +569,11 @@ texture = ExtResource("14_j2dwy")
 text = "The Grasshopper"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2007412129, 631509805) index="0" unique_id=1064711938]
+theme_override_font_sizes/normal_font_size = 35
 text = "2 Focal flowers placed at opposite ends with 4 Fillers occupying the center. 6 Foliage placed anywhere."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1833564703 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_tfgky")
+material = SubResource("ShaderMaterial_u0j67")
 layout_mode = 2
 unlock_id = "four_pence"
 page = 1
@@ -581,6 +587,7 @@ texture = ExtResource("9_87l1f")
 text = "Four Pence"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1833564703, 631509805) index="0" unique_id=1064711938]
+theme_override_font_sizes/normal_font_size = 35
 text = "4 Focal flowers and 6 Foliage placed anywhere. No Fillers."
 
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(1833564703, 1961349098) index="2" unique_id=1744207426]
@@ -614,9 +621,14 @@ flat = true
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=562412771]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.5
+offset_left = 50.0
+offset_top = -75.0
+offset_right = -50.0
+offset_bottom = 75.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2

@@ -20,6 +20,7 @@ func show_book():
 	page_anims.play("pull_up")
 	show()
 	shown = true
+	update_arrow_visibility()
 
 
 func hide_book():
@@ -46,24 +47,34 @@ func switch_page(page : int, animate : bool = true):
 		child.visible = child.name == str(page)
 	
 	current_page = page
+	update_arrow_visibility()
 	if animate:
 		await page_anims.animation_finished
-
+	
+	
+func _input(event: InputEvent) -> void:
+	if not visible: return
+	if event.is_action_pressed("close"):
+		_on_close_pressed()
+	elif event.is_action_pressed("next_page"):
+		_on_next_page_pressed()
+	elif event.is_action_pressed("previous_page"):
+		_on_previous_page_pressed()
 
 func _on_close_pressed() -> void:
 	hide_book()
 	print("colose")
 	
 
+func update_arrow_visibility():
+	next_page.visible = current_page < NUMBER_PAGES - 1
+	previous_page.visible = current_page > 0
 
 func _on_previous_page_pressed() -> void:
 	print("prev")
 	if current_page > 0:
 		current_page -= 1
 		switch_page(current_page)
-	
-	next_page.visible = current_page < NUMBER_PAGES - 1
-	previous_page.visible = current_page > 0
 
 
 func _on_next_page_pressed() -> void:
@@ -71,6 +82,3 @@ func _on_next_page_pressed() -> void:
 	if current_page < NUMBER_PAGES - 1:
 		current_page += 1
 		switch_page(current_page)
-	
-	next_page.visible = current_page < NUMBER_PAGES - 1
-	previous_page.visible = current_page > 0

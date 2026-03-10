@@ -101,7 +101,7 @@ func sim_flowers(delta):
 func _draw() -> void:
 	for flower : Flower in flowers:
 		draw_circle(flower.stem_pos, STEM_LINE_WIDTH/2.0, Color(0.245, 0.51, 0.245, 1.0))
-		draw_line(flower.position, flower.stem_pos, Color(0.245, 0.51, 0.245, 1.0), STEM_LINE_WIDTH, true)
+		draw_line(flower.position,  %Marker2D.position, Color(0.245, 0.51, 0.245, 1.0), STEM_LINE_WIDTH, true)
 
 func _flower_out_of_range() -> bool:
 	return get_local_mouse_position().x < 580

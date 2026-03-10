@@ -13,7 +13,8 @@ func _ready():
 	print("Start Game")
 	total_number_of_clients = len(Globals.characters)
 	print("Total number of clients: ", total_number_of_clients)
-	
+	Globals.clients_a_day = clients_a_day
+	Globals.total_days = total_days
 	
 func _on_give_button_pressed():
 	Globals.current_character = (Globals.current_character + 1) % len(Globals.characters)
@@ -31,11 +32,14 @@ func _on_give_button_pressed():
 		get_tree().root.add_child(game_over_scene)
 		return
 	if day_ended:
-		Globals.end_day()
+		_end_day()
 	$ClientDisplay._display_current_client()
 	$FlowerUI/Arrangement.clear_flowers()
 	$FlowerUI/SideBouquet.clear_flowers()
 
+func _end_day() -> void:
+	Globals.end_day()
+	
 func _is_day_over() -> bool:
 	#print("bouquets_made: ", bouquets_made)
 	return bouquets_made % clients_a_day == 0

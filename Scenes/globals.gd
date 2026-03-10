@@ -57,6 +57,8 @@ func _ready():
 	# flower_to_count_map[load("res://resources/AquaFlower.tres")] = 30
 	for flower in FLOWERS.keys():
 		flower_to_count_map[flower] = 7
+	flower_to_count_map["silkweed"] = 15
+	flower_to_count_map["filigree"] = 15
 	# flower_to_count_map[load("res://resources/CactusFlower.tres")] = 30
 	
 	for flower in FLOWERS.keys():
@@ -243,7 +245,6 @@ func generate_new_character():
 		clients_left = randi_range(CLIENTS_PER_DAY[0], CLIENTS_PER_DAY[1])
 		end_day()
 		return false
-		
 
 func create_custom_chracter(day : float) -> Dictionary:
 	var file : FileAccess = FileAccess.open(CLIENT_DIALOG_PATH, FileAccess.READ)

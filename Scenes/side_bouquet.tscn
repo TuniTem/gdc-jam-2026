@@ -28,7 +28,7 @@ color = Color(0.6848602, 0.6163695, 0.31834266, 1)
 [node name="Flowers" type="Node2D" parent="." unique_id=515002604]
 
 [node name="Pivot" type="Marker2D" parent="." unique_id=1851309414]
-position = Vector2(221, 241)
+position = Vector2(232, 245)
 
 [node name="RefImage" type="Sprite2D" parent="." unique_id=616298233]
 position = Vector2(1, 69)

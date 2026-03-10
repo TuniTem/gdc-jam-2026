@@ -4,7 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://b6na3rf6infyf" path="res://Scenes/flower_button.tscn" id="2_efdvc"]
 [ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="9_36sho"]
 [ext_resource type="Texture2D" uid="uid://c2l0jdkl40kvx" path="res://sprites/flowers/flower-top-test.png" id="9_d4lsf"]
+[ext_resource type="Texture2D" uid="uid://d2007pxcovgg4" path="res://sprites/flowers/silkweed-side.png" id="9_j5qct"]
 [ext_resource type="Resource" uid="uid://ct2bvnnk0annp" path="res://resources/ButterFlower.tres" id="10_1db8e"]
+[ext_resource type="Resource" uid="uid://cdi6ml7ktfc00" path="res://resources/SilkweedFlower.tres" id="10_s1m2c"]
 [ext_resource type="Texture2D" uid="uid://6rfk3phx1q8x" path="res://sprites/flowers/Devils_Pitchfork_Full.png" id="11_u0w1q"]
 [ext_resource type="Resource" uid="uid://opiqiovquw51" path="res://resources/DevilsFlower.tres" id="12_soyoc"]
 [ext_resource type="Texture2D" uid="uid://dfreoolhyyyer" path="res://sprites/flowers/nectars/nectar-side-2.png" id="13_5olr0"]
@@ -63,6 +65,11 @@ offset_right = 1860.0
 offset_bottom = 322.0
 mouse_filter = 2
 alignment = 2
+
+[node name="FlowerButton4" parent="Foliage" unique_id=1722297704 groups=["flower_button"] instance=ExtResource("2_efdvc")]
+layout_mode = 2
+texture_normal = ExtResource("9_j5qct")
+flower_res = ExtResource("10_s1m2c")
 
 [node name="FlowerButton3" parent="Foliage" unique_id=842116920 groups=["flower_button"] instance=ExtResource("2_efdvc")]
 layout_mode = 2

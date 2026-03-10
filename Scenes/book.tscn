@@ -451,7 +451,7 @@ text = "Expedition"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(317564653, 631509805) index="0" unique_id=1064711938]
 theme_override_font_sizes/normal_font_size = 35
-text = "1 Focal flower and 3 Fillers placed diagonally with 3 Foliage on either side."
+text = "1 Focal flower and 3 Fillers placed diagonally with 6 Foliage both sides."
 
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(317564653, 1961349098) index="2" unique_id=1744207426]
 visible = false

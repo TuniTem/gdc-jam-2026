@@ -41,7 +41,7 @@ func get_bouquet_type(flowers):
 		return Enums.BouquetType.Barthemelo
 	elif focal_count == 2 and filler_count == 4 and foliage_count == 6:
 		return Enums.BouquetType.LazyEye
-	elif focal_count == 1 and filler_count == 3 and foliage_count == 3:
+	elif focal_count == 1 and filler_count == 3 and foliage_count == 6:
 		return Enums.BouquetType.Expedition
 	elif focal_count == 6 and filler_count == 2 and foliage_count == 0:
 		return Enums.BouquetType.SixPin

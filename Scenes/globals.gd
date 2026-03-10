@@ -78,6 +78,28 @@ func end_day():
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("debug") and DEBUG:
 		end_day()
+	
+	if event.is_action_pressed("reset"):
+		get_tree().reload_current_scene()
+		for flower in FLOWERS.keys():
+			flower_to_count_map[flower] = 7
+		
+		day = 0
+		clients_left = 4
+		day_end_stats = {
+			"people_helped": 0,
+			"flowers_used" : 0,
+			"money_made" : 0,
+			"start_popularity" : 0.0,
+			"current_popularity" : 0.0
+		}
+		
+		money = 100
+		clients.load_new_client()
+		
+		
+		
+	
 
 func get_current_arrangement_flower_resources(): 
 	return get_tree().get_first_node_in_group("arrangement").get_list_of_flower_resources()
@@ -234,7 +256,7 @@ func create_custom_chracter(day : float) -> Dictionary:
 	var difficulty_increase_chance : float = 1.0 - (pow(DIFFICULTY_UPGRADE_CHANCE_CURVE, day + 1.0)) 
 	print(difficulty_increase_chance)
 	for i in range(3):
-		if randf_range(0.0, 1.0) < difficulty_increase_chance:
+		if randf_range(0.0, 1.0) < difficulty_increase_chance and difficulty < day:
 			difficulty += 1
 		else: 
 			break

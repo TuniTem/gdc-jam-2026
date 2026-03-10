@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://df2dn84ernos2"]
+
+[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="1_ojehl"]
+[ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="2_8fo1c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8fo1c"]
+font = ExtResource("1_ojehl")
+font_size = 128
+
+[node name="GameOver" type="Node2D" unique_id=891879705]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1307323464]
+
+[node name="GameOverLabel" type="Label" parent="CanvasLayer" unique_id=355620834]
+offset_left = 622.0
+offset_top = 574.0
+offset_right = 1333.0
+offset_bottom = 739.0
+text = "Game Over"
+label_settings = SubResource("LabelSettings_8fo1c")
+horizontal_alignment = 1
+
+[node name="PurpleBg" type="Sprite2D" parent="." unique_id=1713995806]
+position = Vector2(960, 639)
+scale = Vector2(3.75, 2.4804688)
+texture = ExtResource("2_8fo1c")

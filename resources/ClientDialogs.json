@@ -9,12 +9,10 @@
 	"...",
 	"Hmm...",
 	"Hmm... You remind me of someone.",
-	"Bro,",
 	"I recognize everyone in Salt Creek, but not you... ",
 	"Oo... You're new to Salt Creek aren't you?",
 	"*avoiding eye contact",
 	"*blushing*",
-	"Hey there young lass,",
 	"Hey hey there,",
 	"*staring straight into your soul*",
 	"Hello.",
@@ -25,11 +23,9 @@
   ],
   "intro_comments": [
 	"Woa! It's been forever since I've stepped in here",
-	"*Their eyes explore your dusty old shop*",
 	"*cough cough*",
 	"Damn, I wasn't expecting to run into a florist in Salt Creek.",
 	"...",
-	"*judging you intensly*",
 	"Hmmm...",
 	"I never thought I'd walk into this store again.",
 	"*snorts*",
@@ -59,7 +55,6 @@
 	"I look forward to witnessing what you can do little one.",
 	"...",
 	"*snorts*",
-	"*their beady eyes watch you as you work*",
 	"*Sighs*",
 	"*Sighs* I can't wait for this day to be over so that I can hit my bed.",
 	"*fingertapping impatiently*",
@@ -141,13 +136,12 @@
 		"My older sister is getting married tonight, can you believe it? Cause I can't... well, I was wondering if you could uhh... make me a [color=#4169E1][bouquet][/color] bouquet?",
 		"I can't believe my little brother is getting married and here I am doing these damned fetch quests, still single and alone. Anyway, could you make me a [color=#4169E1][bouquet][/color] bouquet please?",
 		"Do you know how to make a [color=#4169E1][bouquet][/color]? I'm getting married tommorow and I need everything to be nothing short of purr-fect, capiche?",
-		"Did you know it's marriage season in Salt Creek? Wanna guess who's the lucky lass? It's obviously meeeeee! And it's only customary that I celebrate my significant other by gifting them a [color=#4169E1][bouquet][/color] bouquet and a dazzling new fit.",
+		"Did you know it's marriage season in Salt Creek? Wanna guess who's the lucky one? It's obviously meeeeee! And it's only customary that I celebrate my significant other by gifting them a [color=#4169E1][bouquet][/color] bouquet and a dazzling new fit.",
         "My best friend is getting married in the next hour. Could you do me a [color=#4169E1][bouquet][/color] please?"
 	  ],
 	  "event_specific_flower_hints": {
 		"nectar_red": [
 		  "... I hope they know that I [color=#8435c4]love[/color] them despite abandoning me in the middle of the woods.",
-		  "... Oof, words can't fully express how much in [color=#8435c4]love[/color] i'm in with the groom, I even have their name tattooed onto me, wanna see? Oh, wait I forgot it's uhh... in a rather risky area.",
           "... I absolutely [color=#8435c4]adore[/color] them."
 		],
 		"nectar_green": [
@@ -160,7 +154,7 @@
           "... Oh I wish I could leave a [color=#8435c4]powerful[/color] impression on them."
 		],
 		"crystal_heart": [
-          "... Y'know a lil birdie told me that the wedding location might be [color=#8435c4]haunted[/color], apparantly several people were hanged nearby, that's so cool right?"
+          "... Y'know a lil birdie told me that the wedding location might be [color=#8435c4]haunted[/color], apparantly several people went missing nearby, that's so cool right?"
 		],
 		"butter_lilly": [
           "... Oh shoot, I totally forgot that it's pollen season, my [color=#8435c4]nose[/color] is going to drive me insane."

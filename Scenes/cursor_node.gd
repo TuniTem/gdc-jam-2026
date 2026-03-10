@@ -14,10 +14,10 @@ func _ready():
 	# Changes a specific shape of the cursor
 	Input.set_custom_mouse_cursor(open_hand_cursor, Input.CURSOR_POINTING_HAND)
 
-func _process(delta: float) -> void:
-	if  Globals.hand_closed:
-		Input.set_custom_mouse_cursor(closed_hand_cursor)
-		Input.set_custom_mouse_cursor(closed_hand_cursor, Input.CURSOR_POINTING_HAND)
-	else:
-		Input.set_custom_mouse_cursor(arrow)		
-		Input.set_custom_mouse_cursor(open_hand_cursor, Input.CURSOR_POINTING_HAND)
+#func _process(delta: float) -> void:
+	#if  Globals.hand_closed:
+		#Input.set_custom_mouse_cursor(closed_hand_cursor)
+		#Input.set_custom_mouse_cursor(closed_hand_cursor, Input.CURSOR_POINTING_HAND)
+	#else:
+		#Input.set_custom_mouse_cursor(arrow)		
+		#Input.set_custom_mouse_cursor(open_hand_cursor, Input.CURSOR_POINTING_HAND)

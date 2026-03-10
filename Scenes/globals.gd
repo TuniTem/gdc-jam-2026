@@ -50,6 +50,9 @@ var day_end_stats : Dictionary = {
 }
 
 func _ready():
+	randomize()
+	unseen_males.shuffle()
+	unseen_females.shuffle()
 	# flower_to_count_map[load("res://resources/PurpleFlower.tres")] = 30
 	# flower_to_count_map[load("res://resources/AquaFlower.tres")] = 30
 	for flower in FLOWERS.keys():
@@ -181,6 +184,35 @@ const PICS : Dictionary = {
 	]
 }
 
+var unseen_females = [
+	preload("res://sprites/characters/char-3.png"),
+	preload("res://sprites/characters/char-5.png")
+]
+var seen_females = []
+var unseen_males = [
+	preload("res://sprites/characters/char-0.png"),
+	preload("res://sprites/characters/char-1.png"),
+	preload("res://sprites/characters/char-2.png"),
+	preload("res://sprites/characters/char-4.png")
+]
+var seen_males = []
+
+func get_next_char_sprite(is_male):
+	if is_male:
+		if unseen_males.is_empty():
+			unseen_males = seen_males.duplicate()
+			unseen_males.shuffle()
+		var next_male = unseen_males.pop_front()
+		seen_males.push_back(next_male)
+		return next_male
+	else:
+		if unseen_females.is_empty():
+			unseen_females = seen_females.duplicate()
+			unseen_females.shuffle()
+		var next_female = unseen_females.pop_front()
+		seen_females.push_back(next_female)
+		return next_female
+
 const FLOWERS : Dictionary[String, Resource] = {
 	"aqua" : preload("res://resources/AquaFlower.tres"),
 	"butter_lilly": preload("res://resources/ButterFlower.tres"),
@@ -244,7 +276,7 @@ func create_custom_chracter(day : float) -> Dictionary:
 	var temp_boquet_validation : Dictionary = BOUQUETS[selected_boquet].duplicate()
 	
 	var prompt : String = event_dict["scenarios"][scenario]["prompt"].pick_random()
-	var gender : String = "female" if randi_range(0, 1) == 1 else "male" 
+	var gender : String = "female" if randi_range(0, 2) == 0 else "male" 
 	prompt = prompt.replace("[bouquet]", selected_boquet.capitalize()).replace("[name]", NAMES[gender].pick_random())
 	
 	var flower_requests : Array[String] = []
@@ -273,7 +305,8 @@ func create_custom_chracter(day : float) -> Dictionary:
 	var final_dialog : String = greeting + (" " if compliment != "" else "") + "\n\n" + compliment + " " + prompt + (" " if flower_request_prompt != "" else "") + flower_request_prompt + " \n\n" + ending_commnet
 	
 	var character_name : String = NAMES[gender].pick_random()
-	var character_pic : Texture = PICS[gender].pick_random()
+	# var character_pic : Texture = PICS[gender].pick_random()
+	var character_pic = get_next_char_sprite(gender == "male")
 	
 	var comission_amount : int = materials_cost * Util.randf_array(COMMISSION_BASE_MULT)
 	for flower_request in flower_requests:

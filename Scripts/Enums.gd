@@ -10,3 +10,13 @@ enum FlowerType {
 enum SpecialType {
 	NONE,
 }
+
+enum BouquetType {
+	NONE,
+	Barthemelo,
+	LazyEye,
+	Expedition,
+	SixPin,
+	Grasshopper,
+	FourPence
+}

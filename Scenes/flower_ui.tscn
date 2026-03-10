@@ -8,8 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
 [ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="6_u4bsn"]
 [ext_resource type="Texture2D" uid="uid://djk2t1jk8fwi2" path="res://sprites/ui/purple-bg.png" id="7_u4bsn"]
-[ext_resource type="Script" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
+[ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
+font_size = 32
 
 [node name="FlowerUI" type="Control" unique_id=1189810247]
 layout_mode = 3
@@ -89,5 +92,15 @@ offset_bottom = -41.0
 grow_horizontal = 0
 grow_vertical = 0
 texture = ExtResource("6_u4bsn")
+
+[node name="BouquetType" type="Label" parent="." unique_id=660679541]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1217.0
+offset_right = 535.0
+offset_bottom = 1262.0
+text = "Bouquet type: None"
+label_settings = SubResource("LabelSettings_b0ouy")
+horizontal_alignment = 1
 
 [connection signal="pressed" from="BookButton" to="." method="_on_book_button_pressed"]

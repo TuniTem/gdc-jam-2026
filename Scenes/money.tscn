@@ -10,6 +10,7 @@ font_size = 47
 [sub_resource type="LabelSettings" id="LabelSettings_no3si"]
 font = ExtResource("1_no3si")
 font_size = 47
+font_color = Color(0.8578078, 0.80295897, 0.7350015, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1mtjo"]
 font = ExtResource("1_no3si")

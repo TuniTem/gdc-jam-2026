@@ -16,6 +16,7 @@ func _ready() -> void:
 	hide()
 
 func show_book():
+	$OpenBook.play()
 	switch_page(0, false)
 	page_anims.play("pull_up")
 	show()

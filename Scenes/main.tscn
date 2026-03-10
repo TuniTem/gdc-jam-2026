@@ -2,11 +2,7 @@
 
 [ext_resource type="Script" uid="uid://6kl1ncysxdnk" path="res://Scenes/main.gd" id="1_kry3j"]
 [ext_resource type="PackedScene" uid="uid://dkgygmk7t2m2p" path="res://Scenes/money.tscn" id="2_21xkr"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" path="res://Scenes/clients.tscn" id="2_bo1nx"]
-=======
-[ext_resource type="PackedScene" uid="uid://xq8e2gga6a3x" path="res://Scenes/clients.tscn" id="2_bo1nx"]
->>>>>>> refs/remotes/origin/main
 [ext_resource type="Script" uid="uid://cfgq4fim0fix8" path="res://clientOrders.gd" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]

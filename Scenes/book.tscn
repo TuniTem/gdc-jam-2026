@@ -557,7 +557,7 @@ text = "6 Focal flowers and 2 Fillers placed anywhere. No Foliage."
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=2007412129 instance=ExtResource("2_dgncb")]
 material = SubResource("ShaderMaterial_lhow1")
 layout_mode = 2
-unlock_id = "the/_grasshopper"
+unlock_id = "grasshopper"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2007412129, 757080868) index="0" unique_id=923409529]

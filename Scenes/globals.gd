@@ -77,6 +77,22 @@ func get_current_arrangement_flower_resources():
 
 
 const COMPLIMENT_CHANCE = 5 # /10
+const BOUQUETS : Array[String] = [
+	"barthemelo",
+	"lazy_eye",
+	"expedition",
+	"six_pin",
+	"grasshopper",
+	"four_pence"
+]
+const FLOWERS : Array[String] = [
+	"butter_lilly",
+	"devils_pitchfork",
+	"crystal_heart",
+	"sky_bloom",
+	"nectar",
+	"filigree"
+]
 
 func create_custom_event(day : int):
 	var file : FileAccess = FileAccess.open(CLIENT_DIALOG_PATH, FileAccess.READ)
@@ -88,7 +104,14 @@ func create_custom_event(day : int):
 	if randi_range(1, 10) <= COMPLIMENT_CHANCE:
 		compliment = event_dict["intro_comments"].pick_random()
 	
-	var 
+	var ending_commnets : String = event_dict["ending_comments"].pick_random()
+	var success_response : String = event_dict["successful_response"].pick_random()
+	var failiure_response : String = event_dict["failiure_response"].pick_random()
+	
+	var difficulty : int = 0
+	
+	for i in range(3):
+	
 	
 	
 	

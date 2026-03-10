@@ -3,6 +3,7 @@ extends Node2D
 const DEBUG = true
 const CLIENT_DIALOG_PATH = "res://resources/ClientDialogs.json"
 
+
 var selected_flower = null
 var selected_flower_res = null
 var characters = null
@@ -74,9 +75,22 @@ func _input(event: InputEvent) -> void:
 func get_current_arrangement_flower_resources(): 
 	return get_tree().get_first_node_in_group("arrangement").get_list_of_flower_resources()
 
+
+const COMPLIMENT_CHANCE = 5 # /10
+
 func create_custom_event(day : int):
 	var file : FileAccess = FileAccess.open(CLIENT_DIALOG_PATH, FileAccess.READ)
 	var event_dict : Dictionary = JSON.parse_string(file.get_as_text())
 	file.close()
+	
+	var greeting : String = event_dict["greetings"].pick_random()
+	var compliment : String = ""
+	if randi_range(1, 10) <= COMPLIMENT_CHANCE:
+		compliment = event_dict["intro_comments"].pick_random()
+	
+	var 
+	
+	
+	
 	
 	

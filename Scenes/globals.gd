@@ -29,9 +29,9 @@ var clients_a_day: int = 0
 var total_days: int = 0
 var flowers_a_day: int = 0
 var money_a_day: int = 0
-var money_days_past: int = 0
 var starting_money: int = 0
 var main : Control
+var hand_closed: bool = false
 
 @export var flower_to_count_map: Dictionary[String, int] = {}
 var flowers_unlocked = 3
@@ -67,13 +67,12 @@ func unlock_entry(id : String):
 			unlock.animation.play("paint_in")
 
 func end_day():
-	money_a_day = money - money_days_past
-	if day == 0:
-		money_a_day -= starting_money
-	money_days_past = money
+	print("end day")
+	money_a_day = money - starting_money
 	#day_end_stats["people_helped"] = clients_a_day
-	#day_end_stats["flowers_used"] = flowers_a_day
-	#day_end_stats["money_made"] = money_a_day
+	day_end_stats["flowers_used"] = flowers_a_day
+	flowers_a_day = 0
+	day_end_stats["money_made"] = money_a_day
 	day_controller.start_new_day()
 
 func _input(event: InputEvent) -> void:

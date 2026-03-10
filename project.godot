@@ -32,6 +32,7 @@ window/size/viewport_height=1280
 window/size/window_width_override=960
 window/size/window_height_override=640
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="uid://bwer0yht2rou"
 
 [global_group]
 

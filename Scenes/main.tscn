@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="7_6bp64"]
+[ext_resource type="Script" uid="uid://ddkh64yjnh08" path="res://Scenes/cursor_node.gd" id="8_344ge"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
 content_margin_left = 16.0
@@ -247,6 +248,9 @@ Thanks for playing."
 label_settings = SubResource("LabelSettings_jkdf5")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CursorNode" type="Node" parent="." unique_id=1233928515]
+script = ExtResource("8_344ge")
 
 [connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]
 [connection signal="pressed" from="ResetFlowers" to="." method="_on_reset_flowers_pressed"]

@@ -38,6 +38,7 @@ func _on_give_button_pressed():
 			return
 	else:
 		var bouquet_type = BouquetHelpers.get_bouquet_type(Globals.get_current_arrangement_flower_resources())
+		var flowers_used_on_client = len(Globals.get_current_arrangement_flower_resources())
 		if Globals.day == -1:
 			if Globals.characters[Globals.current_character].bouquet == bouquet_type or Input.is_action_pressed("debug_skip"):
 				Globals.current_character = (Globals.current_character + 1) % len(Globals.characters)
@@ -82,7 +83,9 @@ func _on_give_button_pressed():
 				"meh":
 					await client_display.run_response(Globals.random_selected_character["meh_response"], response)
 					
-			
+			if response != "bad":
+				print("Flowers used: ", flowers_used_on_client)
+				Globals.flowers_a_day += flowers_used_on_client
 	
 	$ClientDisplay._display_current_client()
 	$FlowerUI/Arrangement.clear_flowers()

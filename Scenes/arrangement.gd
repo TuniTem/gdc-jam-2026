@@ -18,7 +18,8 @@ var return_flower : bool = false
 
 @export var use_placeholder_flower = false
 
-#func _ready() -> void:
+func _ready() -> void:
+	Globals.arrangement = self
 	#for key : Flower in flowers:
 		#velocity[key] = Vector2.ZERO
 
@@ -49,6 +50,7 @@ func _input(event: InputEvent) -> void:
 	var can_place_flower = use_placeholder_flower or (Globals.selected_flower != null and !is_hovering_over_flower_button() and get_global_mouse_position().distance_to(Globals.flower_center_pos) <= Globals.PLACEABLE_DIST)
 	
 	if event.is_action_pressed("pick_flower") and can_place_flower:
+		SFX.play("pick")
 		var inst : Flower = FLOWER_SCENE.instantiate()
 		inst.position = get_local_mouse_position()
 		placing_flower = inst
@@ -67,8 +69,10 @@ func _input(event: InputEvent) -> void:
 			Globals.flower_to_count_map[placing_flower.flower_res.flower_id] -= 1
 			if Globals.flower_to_count_map[placing_flower.flower_res.flower_id] == 0:
 				get_tree().get_first_node_in_group("flower_interface").deselect_flower()
+				
 		placing_flower.modulate.a = 1.0
 		placing_flower = null
+		SFX.play("place")
 
 func return_flowers():
 	queue_clear_flowers = true

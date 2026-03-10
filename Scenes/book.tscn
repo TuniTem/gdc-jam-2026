@@ -13,9 +13,16 @@
 [ext_resource type="Texture2D" uid="uid://rfgu532qld24" path="res://sprites/flowers/Expedition_Bouquet.png" id="9_87l1f"]
 [ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="9_djh34"]
 [ext_resource type="Texture2D" uid="uid://bvx58elvr7fq7" path="res://Assets/Book_Border_And_Texture.png" id="10_77dt5"]
+[ext_resource type="Texture2D" uid="uid://hyfvxh8i045h" path="res://Assets/Focal_Icon.png" id="12_tfgky"]
+[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="13_j2dwy"]
+[ext_resource type="Texture2D" uid="uid://8fau0nh581w5" path="res://Assets/Filler_Icon.png" id="13_nstcm"]
 [ext_resource type="Texture2D" uid="uid://d0r2iulqrrxek" path="res://sprites/flowers/SixPence_Bouquet.png" id="13_w070k"]
 [ext_resource type="Texture2D" uid="uid://8n51v522y2ff" path="res://sprites/flowers/FourPence_Bouquet.png" id="14_j2dwy"]
+[ext_resource type="FontFile" uid="uid://c60akh4hswo54" path="res://Fonts/KGTeacherJordan.ttf" id="14_jy4s3"]
+[ext_resource type="Texture2D" uid="uid://b7fvhxecrj6ub" path="res://Assets/Foliage_Icon.png" id="14_qhfrj"]
+[ext_resource type="Material" uid="uid://ddk0gocbtpfam" path="res://resources/parchment.tres" id="15_me3cj"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="16_87l1f"]
+[ext_resource type="Texture2D" uid="uid://d2007pxcovgg4" path="res://sprites/flowers/silkweed-side.png" id="16_u1a33"]
 [ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="17_w070k"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_87l1f"]
@@ -89,6 +96,11 @@ shader_parameter/background_threshold = -0.517999929605
 shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_me3cj"]
+font = ExtResource("13_j2dwy")
+font_size = 19
+font_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ya6h1"]
 resource_local_to_scene = true
@@ -379,7 +391,6 @@ A glamorous flower that absorbs negative energy slowly loses its shimmering glow
 visible = false
 
 [node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=1674284482]
-visible = false
 layout_mode = 2
 alignment = 1
 
@@ -390,6 +401,7 @@ unlock_id = "barthemelo"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1185869832, 757080868) index="0" unique_id=923409529]
+material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
 texture = ExtResource("7_33p6p")
@@ -408,6 +420,7 @@ unlock_id = "lazy_eye"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2110141434, 757080868) index="0" unique_id=923409529]
+material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
 texture = ExtResource("8_lebdj")
@@ -426,6 +439,7 @@ unlock_id = "expedition"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(317564653, 757080868) index="0" unique_id=923409529]
+material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
 texture = ExtResource("9_87l1f")
@@ -435,10 +449,64 @@ text = "Expedition"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(317564653, 631509805) index="0" unique_id=1064711938]
 theme_override_font_sizes/normal_font_size = 35
-text = "1 Focal flower and 3 Fillers placed diagonally with 3 Foliage on either side"
+text = "1 Focal flower and 3 Fillers placed diagonally with 3 Foliage on either side."
 
 [node name="MarginContainer" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Entry3/VBoxContainer2" parent_id_path=PackedInt32Array(317564653, 1961349098) index="2" unique_id=1744207426]
 visible = false
+
+[node name="Control2" type="Control" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=729408026]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Node2D" type="Node2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Control2" unique_id=1016743763]
+position = Vector2(150, -831)
+rotation = 0.27190927
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Control2/Node2D" unique_id=1506728758]
+offset_left = 277.69485
+offset_top = -13.060648
+offset_right = 727.69495
+offset_bottom = 46.939354
+rotation = -0.32470497
+text = "Legend!"
+label_settings = SubResource("LabelSettings_me3cj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Control2/Node2D" unique_id=189950992]
+custom_minimum_size = Vector2(400, 0)
+offset_left = 381.802
+offset_top = -75.30777
+offset_right = 781.802
+offset_bottom = 62.69223
+rotation = -0.23741141
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("14_jy4s3")
+theme_override_fonts/bold_font = ExtResource("14_jy4s3")
+theme_override_font_sizes/normal_font_size = 29
+bbcode_enabled = true
+text = "Focal
+Filler
+Foliage
+"
+fit_content = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Control2/Node2D" unique_id=802919092]
+position = Vector2(367.41754, -59.877632)
+scale = Vector2(0.59079313, 0.59079313)
+texture = ExtResource("12_tfgky")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Control2/Node2D" unique_id=739677292]
+position = Vector2(374.35385, -27.55291)
+scale = Vector2(0.76432526, 0.76432526)
+texture = ExtResource("13_nstcm")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1/Control2/Node2D" unique_id=345294039]
+position = Vector2(381.44778, 1.6134422)
+scale = Vector2(0.73645407, 0.73645407)
+texture = ExtResource("14_qhfrj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect/PageLeft" unique_id=653906473]
+layout_mode = 2
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="Control/HBoxContainer" unique_id=746937437]
 layout_mode = 2
@@ -464,7 +532,6 @@ theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
 [node name="0" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=909329525]
-visible = false
 layout_mode = 2
 alignment = 1
 
@@ -535,8 +602,44 @@ visible = false
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 
+[node name="Node2D" type="Node2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Control" unique_id=636575812]
+position = Vector2(15, -864)
+rotation = 0.27190927
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Control/Node2D" unique_id=628241039]
+offset_left = 39.558136
+offset_top = 0.39016914
+offset_right = 489.55823
+offset_bottom = 60.390167
+rotation = -0.32470497
+text = "New Find: Silkweed!"
+label_settings = SubResource("LabelSettings_me3cj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Control/Node2D" unique_id=585124767]
+custom_minimum_size = Vector2(400, 0)
+offset_left = 204.98828
+offset_top = -28.085793
+offset_right = 604.9883
+offset_bottom = 109.91421
+rotation = -0.23741141
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("14_jy4s3")
+theme_override_fonts/bold_font = ExtResource("14_jy4s3")
+theme_override_font_sizes/normal_font_size = 29
+bbcode_enabled = true
+text = "Type: Foliage
+Cats seem to love this plant - very calming!
+"
+fit_content = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Control/Node2D" unique_id=281363381]
+material = ExtResource("15_me3cj")
+position = Vector2(160.24162, 31.106594)
+scale = Vector2(0.8270644, 0.40482333)
+texture = ExtResource("16_u1a33")
+
 [node name="1" type="VBoxContainer" parent="Control/HBoxContainer/NinePatchRect3/PageRight" unique_id=758683401]
-visible = false
 layout_mode = 2
 alignment = 1
 
@@ -547,6 +650,7 @@ unlock_id = "six_pin"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(869739390, 757080868) index="0" unique_id=923409529]
+material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
 texture = ExtResource("13_w070k")
@@ -565,6 +669,7 @@ unlock_id = "grasshopper"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2007412129, 757080868) index="0" unique_id=923409529]
+material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
 texture = ExtResource("14_j2dwy")
@@ -574,7 +679,7 @@ text = "The Grasshopper"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(2007412129, 631509805) index="0" unique_id=1064711938]
 theme_override_font_sizes/normal_font_size = 35
-text = "2 Focal flowers placed at opposite ends with 4 Fillers occupying the center. 6 Foliage placed anywhere."
+text = "1 Filler placed at the center surrounded by 7 Foliage. No Focal flowers."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1833564703 instance=ExtResource("2_dgncb")]
 material = SubResource("ShaderMaterial_u0j67")
@@ -583,6 +688,7 @@ unlock_id = "four_pence"
 page = 1
 
 [node name="Sprite2D" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1833564703, 757080868) index="0" unique_id=923409529]
+material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
 texture = ExtResource("9_87l1f")

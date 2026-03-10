@@ -36,7 +36,6 @@ func start_new_day():
 	for entry : CatalogEntry in catalog_entries:
 		entry.cart_amount = 0
 	
-	
 	next_stage()
 	
 
@@ -72,4 +71,5 @@ func _process(delta: float) -> void:
 
 
 func _on_next_pressed() -> void:
+	SFX.play("notebook")
 	next_stage()

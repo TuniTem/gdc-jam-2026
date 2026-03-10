@@ -75,7 +75,9 @@ func _on_give_button_pressed():
 					await client_display.run_response(Globals.random_selected_character["success_response"], response)
 				
 				"bad":
+					Globals.arrangement.return_flowers()
 					await client_display.run_response(Globals.random_selected_character["failiure_response"], response)
+					
 				
 				"meh":
 					await client_display.run_response(Globals.random_selected_character["meh_response"], response)

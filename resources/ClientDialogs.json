@@ -176,6 +176,7 @@
           "... God, if you can hear me, I hope there are some pudgy lil [color=#8435c4]cats[/color] around to play with at the wedding."
 		]
 	  },
+	},
 	  "event_type_Funeral": {
 		"prompt": [
 		  "Did ya notice the entire towns hung up wreaths round their doors. Poor [name] got his head bashed in by an eagle earlier today! I don't really wanna attend but, I mean, free snacks ya know? Could you be a dear and make me a [color=#4169E1][bouquet][/color] bouquet to leave behind at their memorial please?",
@@ -214,34 +215,5 @@
 		  ]
 		}
 	  },
-	  "event_type_name": {
-		"prompt": [
-		  "One [boquet] pls!",
-          "pls [boquet]"
-		],
-		"flower_requests": {
-		  "devils_whatever": [
-            "I'm so [color=#ffff66]angry[/color]!!"
-		  ],
-		  "other_flower": [
-            "i [color=#ffff66]hate[/color] flowers...."
-		  ]
-		}
-	  },
-	  "event_3_name": {
-		"prompt": [
-		  "One [boquet] pls!",
-          "pls [boquet]"
-		],
-		"flower_requests": {
-		  "devils_whatever": [
-            "I'm so [color=#ffff66]angry[/color]!!"
-		  ],
-		  "other_flower": [
-            "i [color=#ffff66]hate[/color] flowers...."
-		  ]
-		}
-	  }
 	}
   }
-}

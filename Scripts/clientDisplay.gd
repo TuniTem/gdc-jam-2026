@@ -25,6 +25,8 @@ func load_new_client():
 	name_label.text = Globals.random_selected_character["name"]
 	commission.text = "Commission: $" + str(Globals.random_selected_character["price"])
 	intro.play("text")
+	await Util.wait(2.0)
+	SFX.play("talk")
 
 
 func run_response(text : String, response : String):
@@ -38,6 +40,7 @@ func run_response(text : String, response : String):
 	
 	Util.tween(texture_rect_node, "modulate", Color.WHITE, 0.5, Tween.EASE_OUT, Tween.TRANS_CUBIC)
 	intro.play("text_only")
+	SFX.play("talk")
 	dialog.text = text
 	await intro.animation_finished
 	await Util.wait(1.0)

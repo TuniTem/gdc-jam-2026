@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cpnxovvg8bdma"]
+
+[ext_resource type="Script" uid="uid://cs7ihoevu7nfu" path="res://Scenes/sfx_controller.gd" id="1_iqi36"]
+[ext_resource type="AudioStream" uid="uid://c4h0fsd8nof51" path="res://Assets/Audio/infiltrateSFX-READY.wav" id="2_wuqr0"]
+[ext_resource type="AudioStream" uid="uid://dt0ia6s20ya3h" path="res://Assets/Audio/infiltrateSFX-MENU_NOISE.wav" id="3_mtfrd"]
+[ext_resource type="AudioStream" uid="uid://8hdx8la0i32t" path="res://Assets/Audio/BUBBLE-SFX-NarwhalTele.wav" id="4_awwnn"]
+[ext_resource type="AudioStream" uid="uid://bwo0k1uvywbfu" path="res://Assets/Audio/infiltrateSFX-MENUBUTTONPRESS.wav" id="5_u33mk"]
+[ext_resource type="AudioStream" uid="uid://tcgunei7mxg8" path="res://Assets/Audio/infiltrateSFX-UNREADY.wav" id="6_pv36b"]
+[ext_resource type="AudioStream" uid="uid://cdethflwey0wa" path="res://Assets/Audio/caddy.wav" id="7_awwnn"]
+[ext_resource type="AudioStream" uid="uid://cfyx0mvgrmytj" path="res://Assets/Audio/cc0/255902__xlizarraga__charlie-brown-style-teacher_44100hz_monophonic_2.wav" id="7_mtfrd"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_0ch5u"]
+random_pitch = 1.470442
+streams_count = 1
+stream_0/stream = ExtResource("2_wuqr0")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_2jfq3"]
+random_pitch = 1.5157166
+random_volume_offset_db = 4.88
+streams_count = 1
+stream_0/stream = ExtResource("3_mtfrd")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_vvtsb"]
+random_pitch = 1.1289644
+streams_count = 1
+stream_0/stream = ExtResource("4_awwnn")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_pp5a4"]
+random_pitch = 1.6964277
+streams_count = 1
+stream_0/stream = ExtResource("6_pv36b")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_awwnn"]
+random_pitch = 1.2047635
+streams_count = 1
+stream_0/stream = ExtResource("7_mtfrd")
+
+[node name="SFXController" type="Node" unique_id=233327297]
+script = ExtResource("1_iqi36")
+
+[node name="pick" type="AudioStreamPlayer" parent="." unique_id=828374034]
+stream = SubResource("AudioStreamRandomizer_0ch5u")
+max_polyphony = 32
+
+[node name="place" type="AudioStreamPlayer" parent="." unique_id=13605651]
+stream = SubResource("AudioStreamRandomizer_2jfq3")
+volume_db = 4.444
+max_polyphony = 32
+
+[node name="customer" type="AudioStreamPlayer" parent="." unique_id=2070550281]
+stream = SubResource("AudioStreamRandomizer_vvtsb")
+volume_db = -13.38
+max_polyphony = 32
+
+[node name="buy" type="AudioStreamPlayer" parent="." unique_id=178588666]
+stream = ExtResource("5_u33mk")
+pitch_scale = 3.4
+max_polyphony = 32
+
+[node name="notebook" type="AudioStreamPlayer" parent="." unique_id=2015144039]
+stream = SubResource("AudioStreamRandomizer_pp5a4")
+volume_db = -11.005
+pitch_scale = 2.2
+max_polyphony = 32
+
+[node name="no_buy" type="AudioStreamPlayer" parent="." unique_id=1038571382]
+stream = ExtResource("5_u33mk")
+pitch_scale = 1.52
+max_polyphony = 14
+
+[node name="music" type="AudioStreamPlayer" parent="." unique_id=1623471955]
+stream = ExtResource("7_awwnn")
+volume_db = -5.779
+autoplay = true
+
+[node name="talk" type="AudioStreamPlayer" parent="." unique_id=360550731]
+stream = SubResource("AudioStreamRandomizer_awwnn")
+volume_db = -4.257
+pitch_scale = 1.43

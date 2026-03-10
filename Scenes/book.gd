@@ -62,6 +62,7 @@ func _input(event: InputEvent) -> void:
 		_on_previous_page_pressed()
 
 func _on_close_pressed() -> void:
+	SFX.play("notebook")
 	hide_book()
 	print("colose")
 	
@@ -73,12 +74,18 @@ func update_arrow_visibility():
 func _on_previous_page_pressed() -> void:
 	print("prev")
 	if current_page > 0:
+		SFX.play("notebook")
 		current_page -= 1
 		switch_page(current_page)
+	else:
+		SFX.play("no_buy")
 
 
 func _on_next_page_pressed() -> void:
 	print("next")
 	if current_page < NUMBER_PAGES - 1:
+		SFX.play("notebook")
 		current_page += 1
 		switch_page(current_page)
+	else:
+		SFX.play("no_buy")

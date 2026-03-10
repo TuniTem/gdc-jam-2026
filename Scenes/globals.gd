@@ -13,6 +13,7 @@ var current_character = 0
 
 var random_selected_character : Dictionary
 var clients : Node
+var arrangement 
 
 var flower_center_pos = Vector2(1329, 737)
 var unlocks : Array[Entry]
@@ -112,9 +113,9 @@ var BOUQUETS : Dictionary[String, Dictionary] = {
 		Enums.FlowerType.FILLER : 0
 	},
 	"grasshopper": {
-		Enums.FlowerType.FOCAL : 2,
-		Enums.FlowerType.FOLIAGE : 6,
-		Enums.FlowerType.FILLER : 4
+		Enums.FlowerType.FOCAL : 0,
+		Enums.FlowerType.FOLIAGE : 7,
+		Enums.FlowerType.FILLER : 1
 	},
 	"four_pence": {
 		Enums.FlowerType.FOCAL : 4,
@@ -168,6 +169,7 @@ func generate_new_character():
 	print("clients left: ", clients_left)
 	if clients_left != 0:
 		day_end_stats["people_helped"] += 1
+		SFX.play("customer")
 		random_selected_character = create_custom_chracter(day)
 		return true
 	else:
@@ -201,7 +203,7 @@ func create_custom_chracter(day : float) -> Dictionary:
 			difficulty += 1
 		else: 
 			break
-	
+	print("scenarios ", event_dict["scenarios"].keys())
 	var scenario : String = event_dict["scenarios"].keys().pick_random()
 	var selected_boquet : String = BOUQUETS.keys().pick_random()
 	var temp_boquet_validation : Dictionary = BOUQUETS[selected_boquet].duplicate()
@@ -234,10 +236,7 @@ func create_custom_chracter(day : float) -> Dictionary:
 	for type : Enums.FlowerType in [Enums.FlowerType.FOCAL, Enums.FlowerType.FOLIAGE, Enums.FlowerType.FILLER]:
 		materials_cost += base_price[type] * temp_boquet_validation[type]
 	
-	
 	var final_dialog : String = greeting + (" " if compliment != "" else "") + "\n\n" + compliment + " " + prompt + (" " if flower_request_prompt != "" else "") + flower_request_prompt + " \n\n" + ending_commnet
-	
-	
 	
 	var character_name : String = NAMES[gender].pick_random()
 	var character_pic : Texture = PICS[gender].pick_random()

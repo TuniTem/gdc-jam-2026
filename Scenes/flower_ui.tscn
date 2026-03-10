@@ -4,15 +4,20 @@
 [ext_resource type="Script" uid="uid://dn3c44lavn3tj" path="res://Scenes/flower_ui.gd" id="1_ibd2s"]
 [ext_resource type="Texture2D" uid="uid://b6s1o00ftsab7" path="res://sprites/ui/BackgroundVase.png" id="2_cw6xy"]
 [ext_resource type="PackedScene" uid="uid://wtpsan6b8r5g" path="res://Scenes/flower_interface.tscn" id="3_ay4m0"]
-[ext_resource type="PackedScene" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
+[ext_resource type="PackedScene" uid="uid://ci1ehmhfc568t" path="res://Scenes/side_bouquet.tscn" id="4_j13ie"]
 [ext_resource type="Texture2D" uid="uid://xfb0as5g4rc0" path="res://sprites/ui/top-down_tabletop.png" id="6_fg743"]
 [ext_resource type="Script" uid="uid://bjpobq1dp7bt0" path="res://Scenes/valid_circle.gd" id="8_g6g17"]
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="9_b0ouy"]
 [ext_resource type="Texture2D" uid="uid://mog6qt32xl3l" path="res://Assets/IMG_0361.png" id="10_ar7t0"]
+[ext_resource type="FontFile" uid="uid://dhrp5tfx0hd0s" path="res://Fonts/Welcome Darling.otf" id="11_ar7t0"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="11_l58pg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b0ouy"]
+font = ExtResource("11_ar7t0")
 font_size = 32
+font_color = Color(0.5372549, 0.4117647, 0.3254902, 1)
+outline_size = 17
+outline_color = Color(0, 0, 0, 0.9098039)
 
 [sub_resource type="LabelSettings" id="LabelSettings_l58pg"]
 font_size = 32
@@ -108,12 +113,11 @@ visible = false
 layout_mode = 1
 
 [node name="BouquetType" type="Label" parent="." unique_id=660679541]
-visible = false
 layout_mode = 0
-offset_left = 36.0
-offset_top = 1217.0
-offset_right = 535.0
-offset_bottom = 1262.0
+offset_left = 1044.0
+offset_top = 42.0
+offset_right = 1543.0
+offset_bottom = 87.0
 text = "Bouquet type: None"
 label_settings = SubResource("LabelSettings_b0ouy")
 horizontal_alignment = 1

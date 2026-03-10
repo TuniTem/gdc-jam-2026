@@ -3,13 +3,8 @@ extends TextureButton
 @export var flower_res : Resource = null
 @export var flower_cost: int = 0
 @export var count : Label
-@onready var texture_rect: TextureRect = $TextureRect
-@onready var texture_rect2: TextureRect = $TextureRect
-
 func _ready():
 	texture_normal = flower_res.side_texture
-	texture_rect.texture = flower_res.side_texture
-	texture_rect2.texture = flower_res.side_texture
 	count.text = "$" + str(flower_res.flower_cost)
 	tooltip_text = flower_res.flower_name
 	

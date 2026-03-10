@@ -26,6 +26,8 @@ func _ready() -> void:
 	title.text = flower
 	cart.text = "0"
 	description.text = "Type: " + type + " \nPrice: $" + str(price)
+
+func _process(delta: float) -> void:
 	inventory.text = str(Globals.flower_to_count_map[flower_id])
 	
 

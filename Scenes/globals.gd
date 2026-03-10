@@ -126,11 +126,47 @@ var BOUQUETS : Dictionary[String, Dictionary] = {
 const NAMES : Dictionary = {
 	"male": [
 		"John",
+		"Jon",
+		"Joe",
+		"Ben",
+		"Chris",
+		"Tom",
+		"Kenny",
+		"Charlie",
+		"David",
+		"Matt",
+		"Liam",
+		"Ory",
+		"Ty",
+		"Rick",
+		"Earl",
+		"Sam",
+		"Andy",
+		"Nathan",
+		"DW"
 	],
 	"female": [
 		"Jane",
+		"Amber",
+		"Marie",
+		"Pam",
+		"Sara",
+		"Christine",
+		"Emma",
+		"Tiffany",
+		"Joann",
+		"Ashley",
+		"Faye",
+		"Ashe",
+		"Rhea",
+		"Jenna",
+		"Lu",
+		"Daf",
+		"Des",
+		"Liv"
 	]
 }
+
 
 const PICS : Dictionary = {
 	"male": [

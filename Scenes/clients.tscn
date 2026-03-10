@@ -272,7 +272,7 @@ offset_bottom = 630.0
 texture = ExtResource("2_bcg28")
 
 [node name="BookBorderHalf" type="Sprite2D" parent="PurpleBg" unique_id=1945975115]
-position = Vector2(375, 474)
+position = Vector2(363, 472)
 texture = ExtResource("3_y550o")
 
 [node name="TextureRect" type="TextureRect" parent="PurpleBg" unique_id=1663414359]
@@ -281,7 +281,7 @@ layout_mode = 0
 offset_left = 26.0
 offset_top = 123.0
 offset_right = 586.0
-offset_bottom = 629.9996
+offset_bottom = 629.99963
 pivot_offset_ratio = Vector2(0.5, 0.5)
 texture = ExtResource("2_xw3gm")
 expand_mode = 2

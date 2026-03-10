@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cero17deafd3u" path="res://Scenes/flower_interface.gd" id="1_efdvc"]
 [ext_resource type="PackedScene" uid="uid://b6na3rf6infyf" path="res://Scenes/flower_button.tscn" id="2_efdvc"]
+[ext_resource type="Material" uid="uid://v8f0hq6jj70" path="res://resources/dropshadow.tres" id="4_u3chn"]
 [ext_resource type="Texture2D" uid="uid://b0f13klj7jley" path="res://sprites/flowers/Butter_Lilly_Full.png" id="9_36sho"]
 [ext_resource type="Texture2D" uid="uid://c2l0jdkl40kvx" path="res://sprites/flowers/flower-top-test.png" id="9_d4lsf"]
 [ext_resource type="Texture2D" uid="uid://d2007pxcovgg4" path="res://sprites/flowers/silkweed-side.png" id="9_j5qct"]
@@ -141,6 +142,7 @@ rotation = 0.9973895
 scale = Vector2(1.3290373, 1.3290373)
 
 [node name="FlowerButton" parent="Focal/Node2D" unique_id=478105241 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_right = 160.0
 offset_bottom = 226.0
 texture_normal = ExtResource("9_36sho")
@@ -152,6 +154,7 @@ position = Vector2(-15, 51)
 scale = Vector2(1.6505709, 1.6505709)
 
 [node name="FlowerButton2" parent="Focal/Node2D2" unique_id=289216086 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_right = 100.0
 offset_bottom = 226.0
 texture_normal = ExtResource("15_8jo5i")
@@ -161,6 +164,7 @@ count = NodePath("../../../PinkCount2")
 [node name="Node2D3" type="Node2D" parent="Focal" unique_id=183135170]
 
 [node name="FlowerButton9" parent="Focal/Node2D3" unique_id=992282279 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_left = 281.0
 offset_top = 104.0
 offset_right = 407.0
@@ -186,6 +190,7 @@ rotation = -0.32438698
 scale = Vector2(1.1586008, 1.1586008)
 
 [node name="FlowerButton4" parent="Foliage/Node2D" unique_id=1722297704 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_left = 371.0
 offset_right = 471.0
 offset_bottom = 248.0
@@ -198,6 +203,7 @@ position = Vector2(-26, 30)
 scale = Vector2(1.0084442, 1.0084442)
 
 [node name="FlowerButton3" parent="Foliage/Node2D2" unique_id=842116920 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_left = 444.0
 offset_top = 114.0
 offset_right = 544.0
@@ -225,6 +231,7 @@ scale = Vector2(1.2872441, 1.2872441)
 
 [node name="FlowerButton6" parent="Filler/Node2D" unique_id=273296678 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
 z_index = 60
+material = ExtResource("4_u3chn")
 offset_left = 63.29957
 offset_top = 101.70276
 offset_right = 183.29956
@@ -240,6 +247,7 @@ rotation = -0.4785966
 scale = Vector2(1.4118178, 1.4118178)
 
 [node name="FlowerButton7" parent="Filler/Node2D2" unique_id=1510934142 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_right = 120.0
 offset_bottom = 210.0
 texture_normal = ExtResource("13_5olr0")
@@ -251,6 +259,7 @@ position = Vector2(185, -18)
 scale = Vector2(0.7478684, 0.7478684)
 
 [node name="FlowerButton8" parent="Filler/Node2D3" unique_id=362231441 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_left = 40.0
 offset_top = -57.0
 offset_right = 160.0
@@ -267,6 +276,7 @@ rotation = 1.4601467
 scale = Vector2(1.1060354, 1.1853769)
 
 [node name="FlowerButton10" parent="Filler/Node2D4" unique_id=532369918 node_paths=PackedStringArray("count") groups=["flower_button"] instance=ExtResource("2_efdvc")]
+material = ExtResource("4_u3chn")
 offset_left = 134.0
 offset_top = -209.0
 offset_right = 234.0

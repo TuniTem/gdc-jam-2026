@@ -247,7 +247,7 @@ pivot_offset_ratio = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="SideBouquet" unique_id=335201139]
 z_index = 758
-position = Vector2(206.47382, 300.44058)
+position = Vector2(248.9374, 319.20355)
 scale = Vector2(0.35582006, 0.35582006)
 texture = ExtResource("7_ar7t0")
 

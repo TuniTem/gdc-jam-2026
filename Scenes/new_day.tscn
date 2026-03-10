@@ -690,7 +690,11 @@ resource = ExtResource("15_uhypf")
 scale = Vector2(0.9577134, 0.9577134)
 texture = ExtResource("16_blig7")
 
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry4/VBoxContainer2" parent_id_path=PackedInt32Array(1587496563, 230176611) index="2" unique_id=1177044838]
+visible = false
+
 [node name="CatalogEntry3" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=690930237 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
+visible = false
 layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")

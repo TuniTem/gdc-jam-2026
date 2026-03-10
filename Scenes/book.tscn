@@ -24,19 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://cciwyovfa0224" path="res://GodotUtils/Nodes/image_button.tscn" id="16_87l1f"]
 [ext_resource type="Texture2D" uid="uid://d2007pxcovgg4" path="res://sprites/flowers/silkweed-side.png" id="16_u1a33"]
 [ext_resource type="Texture2D" uid="uid://csibvqmfdtlm7" path="res://Assets/Arrow.png" id="17_w070k"]
+[ext_resource type="Texture2D" uid="uid://ydcyac7w3di5" path="res://sprites/flowers/Grasshopper_Bouquet.png" id="21_qhfrj"]
 [ext_resource type="AudioStream" uid="uid://co3b54q2pjmn0" path="res://Assets/Audio/PaperCrumble.wav" id="25_nstcm"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qhfrj"]
-resource_local_to_scene = true
-shader = ExtResource("4_uu3s8")
-shader_parameter/progress = 0.06
-shader_parameter/speed = 0.1
-shader_parameter/pixelation = Vector2(1, 1)
-shader_parameter/zoom = 2.0
-shader_parameter/background_threshold = -0.517999929605
-shader_parameter/color_threshold = 0.3710000176225
-shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
-shader_parameter/seed = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lhow1"]
 resource_local_to_scene = true
@@ -98,11 +87,6 @@ shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
-[sub_resource type="LabelSettings" id="LabelSettings_me3cj"]
-font = ExtResource("13_j2dwy")
-font_size = 19
-font_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hoiak"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
@@ -114,6 +98,11 @@ shader_parameter/background_threshold = -0.517999929605
 shader_parameter/color_threshold = 0.3710000176225
 shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_me3cj"]
+font = ExtResource("13_j2dwy")
+font_size = 19
+font_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fb2wo"]
 resource_local_to_scene = true
@@ -164,6 +153,18 @@ shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
 shader_parameter/seed = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_baow7"]
+resource_local_to_scene = true
+shader = ExtResource("4_uu3s8")
+shader_parameter/progress = 0.06
+shader_parameter/speed = 0.1
+shader_parameter/pixelation = Vector2(1, 1)
+shader_parameter/zoom = 2.0
+shader_parameter/background_threshold = -0.517999929605
+shader_parameter/color_threshold = 0.3710000176225
+shader_parameter/color = Color(0.8666667, 0.8392157, 0.74509805, 1)
+shader_parameter/seed = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sj0xk"]
 resource_local_to_scene = true
 shader = ExtResource("4_uu3s8")
 shader_parameter/progress = 0.06
@@ -339,7 +340,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1064202854 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_qhfrj")
+material = SubResource("ShaderMaterial_lhow1")
 layout_mode = 2
 unlock_id = "butter_lilly"
 
@@ -352,7 +353,7 @@ Smells like candy floss. Its scent is a natural remedy for a stuffy nose and itc
 "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=1037982163 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_lhow1")
+material = SubResource("ShaderMaterial_u0j67")
 layout_mode = 2
 unlock_id = "devils_pitchfork"
 
@@ -370,7 +371,7 @@ A symbol of power and prestige, but too many may induce painful headaches
 "
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/0" unique_id=2066904684 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_u0j67")
+material = SubResource("ShaderMaterial_35bpk")
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
 unlock_id = "crystal_heart"
@@ -396,7 +397,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=1185869832 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_35bpk")
+material = SubResource("ShaderMaterial_h4mfn")
 layout_mode = 2
 unlock_id = "barthemelo"
 page = 1
@@ -415,7 +416,7 @@ theme_override_font_sizes/normal_font_size = 35
 text = "3 Focal flowers placed at the center surrounded by 2 Fillers and 6 Foliage. "
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=2110141434 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_h4mfn")
+material = SubResource("ShaderMaterial_jh4bv")
 layout_mode = 2
 unlock_id = "lazy_eye"
 page = 1
@@ -434,7 +435,7 @@ theme_override_font_sizes/normal_font_size = 35
 text = "2 Focal flowers placed at opposite ends with 4 Fillers occupying the center. 6 Foliage placed anywhere."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect/PageLeft/1" unique_id=317564653 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_jh4bv")
+material = SubResource("ShaderMaterial_hoiak")
 layout_mode = 2
 unlock_id = "expedition"
 page = 1
@@ -537,7 +538,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=811958972 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_hoiak")
+material = SubResource("ShaderMaterial_fb2wo")
 layout_mode = 2
 unlock_id = "sky_bloom"
 
@@ -554,7 +555,7 @@ text = "Type: Focal
 The emblem flower of the town of Salt Creek. Commonly used in various celebrations, this flower is a symbol of birth and death."
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1814695313 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_fb2wo")
+material = SubResource("ShaderMaterial_hojef")
 custom_minimum_size = Vector2(0, 256.82)
 layout_mode = 2
 color = Color(1, 1, 1, 0)
@@ -574,7 +575,7 @@ text = "Type: Filler
 This flower releases a sticky aromatic glue when squeezed at the neck. Purple Necktars symbolize peace and respect. Red symbolizes love. Green symbolizes sorrow or regret."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0" unique_id=1475027700 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_hojef")
+material = SubResource("ShaderMaterial_6uw0j")
 custom_minimum_size = Vector2(0, 284.71)
 layout_mode = 2
 unlock_id = "filigree"
@@ -592,7 +593,7 @@ texture = ExtResource("9_djh34")
 text = "Filigree"
 
 [node name="RichTextLabel" parent="Control/HBoxContainer/NinePatchRect3/PageRight/0/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer/MarginContainer" parent_id_path=PackedInt32Array(1475027700, 631509805) index="0" unique_id=1064711938]
-text = "Type: Filler
+text = "Type: Foliage
 Found near coastal shores, these refreshing bramble bushes soak up smelly air but six too many may induce a high
 "
 
@@ -645,7 +646,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="Entry" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=869739390 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_6uw0j")
+material = SubResource("ShaderMaterial_cau6t")
 layout_mode = 2
 unlock_id = "six_pin"
 page = 1
@@ -664,7 +665,7 @@ theme_override_font_sizes/normal_font_size = 35
 text = "6 Focal flowers and 2 Fillers placed anywhere. No Foliage."
 
 [node name="Entry2" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=2007412129 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_cau6t")
+material = SubResource("ShaderMaterial_baow7")
 layout_mode = 2
 unlock_id = "grasshopper"
 page = 1
@@ -673,7 +674,7 @@ page = 1
 material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
-texture = ExtResource("14_j2dwy")
+texture = ExtResource("21_qhfrj")
 
 [node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry2/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(2007412129, 745472749) index="0" unique_id=697499992]
 text = "The Grasshopper"
@@ -683,7 +684,7 @@ theme_override_font_sizes/normal_font_size = 35
 text = "1 Filler placed at the center surrounded by 7 Foliage. No Focal flowers."
 
 [node name="Entry3" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1833564703 instance=ExtResource("2_dgncb")]
-material = SubResource("ShaderMaterial_baow7")
+material = SubResource("ShaderMaterial_sj0xk")
 layout_mode = 2
 unlock_id = "four_pence"
 page = 1
@@ -692,7 +693,7 @@ page = 1
 material = null
 position = Vector2(87.70509, 77)
 scale = Vector2(0.96297884, 0.96297884)
-texture = ExtResource("9_87l1f")
+texture = ExtResource("14_j2dwy")
 
 [node name="Label" parent="Control/HBoxContainer/NinePatchRect3/PageRight/1/Entry3/VBoxContainer2/HBoxContainer/VBoxContainer" parent_id_path=PackedInt32Array(1833564703, 745472749) index="0" unique_id=697499992]
 text = "Four Pence"

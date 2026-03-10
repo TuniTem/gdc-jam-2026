@@ -28,9 +28,9 @@ var clients_a_day: int = 0
 var total_days: int = 0
 var flowers_a_day: int = 0
 var money_a_day: int = 0
-var money_days_past: int = 0
 var starting_money: int = 0
 var main : Control
+var hand_closed: bool = false
 
 @export var flower_to_count_map: Dictionary[String, int] = {}
 var flowers_unlocked = 3

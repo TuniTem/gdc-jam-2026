@@ -15,7 +15,8 @@ func _ready() -> void:
 	Globals.starting_money = starting_money
 	Globals.money = Globals.starting_money
 	print("starting money: ", Globals.starting_money)
-
+	if Globals.use_jon_short_version:
+		$%MoneyLabel.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -23,7 +24,8 @@ func _process(delta: float) -> void:
 	bouquet = Globals.get_current_arrangement_flower_resources()
 	_set_bouquet_cost()
 	_set_total_value()
-	$CanvasLayer/BudgetAmt.text = "$" + str(Globals.characters[Globals.current_character].budget)
+	if Globals.current_character < 6:
+		$CanvasLayer/BudgetAmt.text = "$" + str(Globals.characters[Globals.current_character].budget)
 	
 func _set_bouquet_cost() -> void:
 	var total = 0

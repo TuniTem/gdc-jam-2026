@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://j6ddc35k57y0" path="res://Scripts/text_box.gd" id="1_rclgu"]
 
 [node name="TextBox" type="ScrollContainer" unique_id=695939280]
-offset_right = 434.0
+offset_right = 514.0
 offset_bottom = 172.0
 follow_focus = true
 script = ExtResource("1_rclgu")
@@ -19,7 +19,7 @@ theme_override_constants/margin_bottom = 8
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 2
 size_flags_vertical = 8
-theme_override_constants/separation = 16
+theme_override_constants/separation = 24
 alignment = 2
 
 [node name="TextTimer" type="Timer" parent="." unique_id=136431800]

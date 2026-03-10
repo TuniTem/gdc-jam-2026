@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bmqe63vl221ob"]
 
-[ext_resource type="Texture2D" uid="uid://byi3exrkpe2my" path="res://sprites/flowers/9-patch_paper-texture.png" id="1_2e8b3"]
+[ext_resource type="Texture2D" uid="uid://cm22aq3xmewlg" path="res://sprites/flowers/9-patch-less-rounded.png" id="1_2e8b3"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rclgu"]
 texture = ExtResource("1_2e8b3")
@@ -14,8 +14,7 @@ font_size = 32
 font_color = Color(0.096204735, 0.09620475, 0.096204735, 1)
 
 [node name="TextLabel" type="Label" unique_id=957355905]
-visible = false
-offset_right = 239.0
+offset_right = 277.0
 offset_bottom = 93.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxTexture_rclgu")

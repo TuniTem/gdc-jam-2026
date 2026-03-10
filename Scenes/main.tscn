@@ -38,6 +38,121 @@ corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 corner_detail = 16
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynf5e"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.75578314, 0.42065844, 0.42657351, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hptm8"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.42690885, 0.17416912, 0.2365225, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d1ilt"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color(0.65189284, 0.32709968, 0.39259344, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6iyac"]
+bg_color = Color(0.8411035, 0.5014796, 0.34467506, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="LabelSettings" id="LabelSettings_6bp64"]
+font_size = 32
+
+[sub_resource type="Animation" id="Animation_6bp64"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IncorrectOrder:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("IncorrectOrder:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_344ge"]
+resource_name = "flash_incorrect"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IncorrectOrder:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("IncorrectOrder:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.0333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ynf5e"]
+_data = {
+&"RESET": SubResource("Animation_6bp64"),
+&"flash_incorrect": SubResource("Animation_344ge")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdnlq"]
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_jkdf5"]
+font_size = 64
+
 [node name="Main" type="Control" unique_id=272740684]
 layout_mode = 3
 anchors_preset = 15
@@ -61,15 +176,29 @@ script = ExtResource("3_8gbba")
 [node name="GiveButton" type="Button" parent="." unique_id=1070884650]
 layout_mode = 0
 offset_left = 119.0
-offset_top = 1120.0
+offset_top = 1084.0
 offset_right = 445.0
-offset_bottom = 1195.0
+offset_bottom = 1159.0
 mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_21xkr")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_344ge")
 theme_override_styles/hover = SubResource("StyleBoxFlat_6bp64")
 text = "Give Flowers"
+
+[node name="ResetFlowers" type="Button" parent="." unique_id=1457568996]
+layout_mode = 0
+offset_left = 1431.0
+offset_top = 1174.0
+offset_right = 1682.0
+offset_bottom = 1234.0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_ynf5e")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hptm8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d1ilt")
+text = "Reset Flowers
+"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=648619161]
 layer = 68
@@ -79,4 +208,43 @@ visible = false
 
 [node name="NewDay" parent="CanvasLayer" unique_id=1241479211 instance=ExtResource("7_6bp64")]
 
+[node name="IncorrectOrder" type="Label" parent="." unique_id=425418576]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 992.0
+offset_right = 473.0
+offset_bottom = 1043.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6iyac")
+text = "Incorrect order!"
+label_settings = SubResource("LabelSettings_6bp64")
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1233541907]
+libraries/ = SubResource("AnimationLibrary_ynf5e")
+
+[node name="EndDisplay" type="ColorRect" parent="." unique_id=120577194]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.46618086, 0.4661808, 0.4661808, 0.12941177)
+
+[node name="EndLabel" type="Label" parent="EndDisplay" unique_id=1667647905]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 119.0
+offset_right = 1400.0
+offset_bottom = 989.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fdnlq")
+text = "You helped everyone!
+
+Thanks for playing."
+label_settings = SubResource("LabelSettings_jkdf5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="GiveButton" to="." method="_on_give_button_pressed"]
+[connection signal="pressed" from="ResetFlowers" to="." method="_on_reset_flowers_pressed"]

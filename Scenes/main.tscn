@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d68sg0l48obt" path="res://Scenes/flower_ui.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://o6a1recw7j23" path="res://Scenes/book.tscn" id="5_kry3j"]
 [ext_resource type="PackedScene" uid="uid://b1tagb5wr20ph" path="res://Scenes/new_day.tscn" id="7_6bp64"]
-[ext_resource type="Script" uid="uid://ddkh64yjnh08" path="res://Scenes/cursor_node.gd" id="8_344ge"]
+[ext_resource type="Script" path="res://Scenes/cursor_node.gd" id="8_344ge"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
 content_margin_left = 16.0

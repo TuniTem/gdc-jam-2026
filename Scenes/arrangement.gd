@@ -50,7 +50,6 @@ func _input(event: InputEvent) -> void:
 	var can_place_flower = use_placeholder_flower or (Globals.selected_flower != null and !is_hovering_over_flower_button() and get_global_mouse_position().distance_to(Globals.flower_center_pos) <= Globals.PLACEABLE_DIST)
 	
 	if event.is_action_pressed("pick_flower") and can_place_flower:
-		SFX.play("pick")
 		var inst : Flower = FLOWER_SCENE.instantiate()
 		inst.position = get_local_mouse_position()
 		placing_flower = inst

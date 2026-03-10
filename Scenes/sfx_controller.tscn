@@ -75,5 +75,5 @@ autoplay = true
 
 [node name="talk" type="AudioStreamPlayer" parent="." unique_id=360550731]
 stream = SubResource("AudioStreamRandomizer_awwnn")
-volume_db = -4.257
+volume_db = -14.9
 pitch_scale = 1.43

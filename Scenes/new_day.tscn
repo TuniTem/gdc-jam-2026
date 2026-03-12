@@ -16,8 +16,11 @@
 [ext_resource type="Texture2D" uid="uid://cglst50867iry" path="res://Assets/Necktars_Green_Full.png" id="7_t3i60"]
 [ext_resource type="Resource" uid="uid://c8dudicc8fyj5" path="res://resources/IceFlower.tres" id="9_kiiin"]
 [ext_resource type="Resource" uid="uid://b7eujf8wf6t1w" path="res://resources/NectarFlower_3.tres" id="11_6dxfq"]
+[ext_resource type="Resource" uid="uid://ddctvkpap61cf" path="res://resources/NectarFlower_1.tres" id="11_kiiin"]
+[ext_resource type="Resource" uid="uid://dv3spvcukvk7v" path="res://resources/NectarFlower_2.tres" id="13_6dxfq"]
 [ext_resource type="Resource" uid="uid://0bilfgl6raiy" path="res://resources/FireworkFlower.tres" id="13_yvqa5"]
 [ext_resource type="Texture2D" uid="uid://drygkpeuxeafp" path="res://Assets/Sky_Blooms_Full.png" id="14_5v5t5"]
+[ext_resource type="Texture2D" uid="uid://bmc1vc6vb4xoy" path="res://Assets/Necktars_Red_Full.png" id="14_yvqa5"]
 [ext_resource type="Resource" uid="uid://cdi6ml7ktfc00" path="res://resources/SilkweedFlower.tres" id="15_uhypf"]
 [ext_resource type="Texture2D" uid="uid://dm314mima5n0y" path="res://Assets/Filigree_Full.png" id="16_6dxfq"]
 [ext_resource type="Texture2D" uid="uid://d2007pxcovgg4" path="res://sprites/flowers/silkweed-side.png" id="16_blig7"]
@@ -648,21 +651,59 @@ theme_override_constants/margin_bottom = 40
 [node name="1" type="VBoxContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight" unique_id=1829377573]
 layout_mode = 2
 mouse_filter = 2
+theme_override_constants/separation = -23
 alignment = 1
 
 [node name="CatalogEntry2" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1515368373 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
 mouse_filter = 2
 controller = NodePath("../../../../../..")
-flower = "Nectar"
+flower = "Nectar (Red)"
+flower_id = "nectar_red"
+type = "filler"
+resource = ExtResource("11_kiiin")
+
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1515368373, 1052660984) index="0" unique_id=1428303788]
+position = Vector2(73.33313, 71.63869)
+scale = Vector2(0.39951688, 0.39951688)
+texture = ExtResource("7_t3i60")
+
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2/VBoxContainer2" parent_id_path=PackedInt32Array(1515368373, 230176611) index="2" unique_id=1177044838]
+theme_override_constants/margin_top = -30
+
+[node name="CatalogEntry5" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=2075487929 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
+layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "Nectar (Green)"
+flower_id = "nectar_green"
+type = "filler"
+resource = ExtResource("13_6dxfq")
+
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry5/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(2075487929, 1052660984) index="0" unique_id=1428303788]
+position = Vector2(77.99999, 76.500015)
+scale = Vector2(0.37324014, 0.37324014)
+texture = ExtResource("14_yvqa5")
+
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry5/VBoxContainer2" parent_id_path=PackedInt32Array(2075487929, 230176611) index="2" unique_id=1177044838]
+theme_override_constants/margin_top = -30
+
+[node name="CatalogEntry6" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1423004606 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
+layout_mode = 2
+mouse_filter = 2
+controller = NodePath("../../../../../..")
+flower = "Nectar (Purple)"
 flower_id = "nectar_purple"
 type = "filler"
 resource = ExtResource("11_6dxfq")
 
-[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1515368373, 1052660984) index="0" unique_id=1428303788]
-position = Vector2(79.99999, 94.500015)
-scale = Vector2(0.5102255, 0.5102255)
+[node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry6/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1423004606, 1052660984) index="0" unique_id=1428303788]
+position = Vector2(73.000046, 78.49997)
+scale = Vector2(0.34897584, 0.34897584)
 texture = ExtResource("7_t3i60")
+
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry6/VBoxContainer2" parent_id_path=PackedInt32Array(1423004606, 230176611) index="2" unique_id=1177044838]
+theme_override_constants/margin_top = -30
 
 [node name="CatalogEntry" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1928572418 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
@@ -676,6 +717,9 @@ resource = ExtResource("13_yvqa5")
 [node name="Sprite2D" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry/VBoxContainer2/HBoxContainer/Control" parent_id_path=PackedInt32Array(1928572418, 1052660984) index="0" unique_id=1428303788]
 scale = Vector2(0.97730607, 0.97730607)
 texture = ExtResource("16_6dxfq")
+
+[node name="MarginContainer" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry/VBoxContainer2" parent_id_path=PackedInt32Array(1928572418, 230176611) index="2" unique_id=1177044838]
+theme_override_constants/margin_top = -30
 
 [node name="CatalogEntry4" parent="Catalog/HBoxContainer/NinePatchRect3/PageRight/1" unique_id=1587496563 node_paths=PackedStringArray("controller") instance=ExtResource("3_l0g8d")]
 layout_mode = 2
@@ -893,6 +937,8 @@ libraries/ = SubResource("AnimationLibrary_acooa")
 [editable path="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry4"]
 [editable path="Catalog/HBoxContainer/NinePatchRect/PageLeft/0/CatalogEntry3"]
 [editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry2"]
+[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry5"]
+[editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry6"]
 [editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry"]
 [editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry4"]
 [editable path="Catalog/HBoxContainer/NinePatchRect3/PageRight/1/CatalogEntry3"]

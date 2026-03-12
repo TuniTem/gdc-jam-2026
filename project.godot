@@ -13,6 +13,8 @@ config_version=5
 config/name="Jam @ GDC 2026"
 run/main_scene="uid://b3yu8csaby48v"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/bg_color=Color(0.4392157, 0.3647059, 0.2784314, 1)
+boot_splash/image="uid://cbdobmew74i2m"
 config/icon="res://icon.svg"
 
 [autoload]
